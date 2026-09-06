@@ -1,0 +1,32 @@
+# Environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Data, caches, and artifacts that are reproducible from configs
+data/
+runs/
+cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+qdrant_storage/
+
+# Results: keep the small aggregate tables and plots, drop the bulk
+results/**/*.parquet
+!results/tables/*.parquet
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Secrets
+.env
