@@ -140,3 +140,81 @@ result, which matters when the deliverable is "a stranger could reproduce this".
 
 **Would change if:** corpus scale outgrew the local mode. FiQA at 57,638
 documents is nowhere near it.
+
+---
+
+## D10 — nDCG: linear gain, IDCG truncated at k
+
+**Decided:** `gain = grade` (linear), discount `1/log2(rank+1)`, and the ideal
+DCG computed over the ideal ranking **truncated at k**.
+
+**Alternatives:** exponential gain `2^grade - 1`, which a large fraction of the
+RAG-evaluation literature assumes; IDCG over all relevant documents.
+
+**Why:** not chosen on taste — measured. Before writing the implementation we
+probed `pytrec_eval` with fixtures constructed so the conventions give different
+answers, and read the semantics off the result:
+
+| probe | prediction (linear) | prediction (exponential) | pytrec_eval |
+|---|---|---|---|
+| grade-1 doc ranked above grade-2 doc, k=2 | 0.8597186999 | 0.7967075810 | **0.8597186999** |
+
+| probe | prediction (IDCG truncated) | prediction (IDCG over all rel) | pytrec_eval |
+|---|---|---|---|
+| 3 relevant, 2 retrieved perfectly, k=2 | 1.0 | 0.7653606370 | **1.0** |
+
+The same probe confirmed D2 independently: with a relevant document tied against
+a non-relevant one, `recall_1` came back 0.0, which is only possible if ties
+break by *descending* doc id.
+
+Both conventions are pinned by named tests (`test_ndcg_uses_linear_gain_not_exponential`,
+`test_ndcg_truncates_idcg_at_k`) that assert the wrong answer is *not* produced,
+so a future refactor toward the "textbook" formula fails loudly.
+
+The IDCG truncation is the one that would have quietly cost us a result.
+NFCorpus averages 38.2 relevant documents per query, so an IDCG computed over
+all of them makes nDCG@10 unreachable by construction, and depresses every score
+by a per-query factor. It would not look like a bug; it would look like NFCorpus
+being hard.
+
+**Would change if:** we reported nDCG against a different reference. The gain
+function is a convention, and ours is "whatever trec_eval does", stated openly
+rather than assumed silently.
+
+---
+
+## D11 — Metrics return per-query values, not means
+
+**Decided:** `evaluate()` returns `{measure: {query_id: value}}`; averaging is a
+separate call.
+
+**Why:** every CI and every paired significance test resamples over queries.
+Aggregating inside the metric would throw away exactly the information the
+inference needs, and there would be no way to add CIs later without rewriting
+the interface. §5 rule 1 is only enforceable if the per-query vector survives.
+
+Macro-averaging (`mean_scores`) weights every query equally. Micro-averaging on
+NFCorpus, where judgment counts run from a handful to hundreds, would let a few
+heavily-judged queries decide the dataset's result.
+
+---
+
+## D12 — Paired bootstrap for A-vs-B, never overlapping marginal CIs
+
+**Decided:** all A-vs-B comparisons go through `paired_bootstrap`, resampling
+query indices and applying them to the paired per-query differences.
+
+**Why:** query difficulty dominates the variance in retrieval. Some queries
+every system answers, some none do. Two systems' marginal CIs therefore both
+span the whole difficulty range and overlap heavily, *even when one system wins
+on every single query*. `test_pairing_detects_what_marginal_intervals_would_miss`
+constructs exactly that case: system A beats B on 100% of 300 queries, the
+marginal intervals overlap, and only the paired test sees it.
+
+Reading overlap as "no significant difference" is a common and directional
+error — it makes you miss real effects, which for this project would mean
+reporting a null that is not there.
+
+**p-values** use `(count + 1) / (n_resamples + 1)` so they are strictly
+positive. Reporting `p = 0` would claim more resolution than 10,000 replicates
+have.

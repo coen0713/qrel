@@ -1,0 +1,66 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+env:
+  # Keep the heavy extras out of CI: the parity test — the one that matters —
+  # needs no torch, so the job that guards our numbers stays fast.
+  UV_SYSTEM_PYTHON: 1
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv pip install --system ruff
+      - run: ruff check src tests
+      - run: ruff format --check src tests
+
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        # Windows is in the matrix deliberately: pytrec_eval is a C++ extension
+        # and the reproduction instructions in the README claim to work there.
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install
+        run: uv pip install --system -e ".[dev]"
+
+      - name: Cache BEIR corpora
+        uses: actions/cache@v4
+        with:
+          path: data/beir
+          # Bump the suffix to force a re-download if a loader changes.
+          key: beir-scifact-nfcorpus-fiqa-v1
+
+      - name: Download corpora
+        run: reval corpus download
+
+      - name: M0 acceptance — loaders reproduce the published BEIR statistics
+        run: |
+          reval corpus stats scifact --strict
+          reval corpus stats nfcorpus --strict
+          reval corpus stats fiqa --strict
+
+      - name: M1 acceptance — metrics match pytrec_eval to 1e-6
+        run: pytest tests/test_metrics_parity.py -v
+
+      - name: Full suite
+        run: pytest -q

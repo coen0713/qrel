@@ -1,0 +1,10 @@
+# Normalise to LF in the repo. Run files, qrels and configs are consumed by
+# tools (trec_eval, awk pipelines) that are not reliably CRLF-tolerant, and a
+# checkout that rewrote them would make our files disagree with everyone else's.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.parquet binary
+*.npy binary
+*.zip binary
