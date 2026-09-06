@@ -218,3 +218,107 @@ reporting a null that is not there.
 **p-values** use `(count + 1) / (n_resamples + 1)` so they are strictly
 positive. Reporting `p = 0` would claim more resolution than 10,000 replicates
 have.
+
+---
+
+## D13 — Embedding cache key excludes `chunker_config`
+
+**Decided:** key is `sha256(encoder_identity || text)`, where `encoder_identity`
+covers model name, resolved commit SHA, normalisation, prefixes, and max
+sequence length.
+
+**This is a deliberate deviation from PLAN.md M2**, which specifies
+`sha256(model_name + model_revision + chunker_config + chunk_text)`.
+
+**Why:** an embedding is a pure function of (model, revision, pre/post
+processing, text). The chunker that produced the text has no influence on the
+resulting vector. Including `chunker_config` would mean that changing chunk size
+from 256 to 320 invalidates every entry — including the many chunks whose text
+did not change — which defeats the cache's stated purpose ("a re-run re-embeds
+only what actually changed").
+
+What *does* belong in the key and is easy to miss: the encoder's prefix. An
+E5-style model embeds `"query: X"` and `"passage: X"` differently, so a cache
+that shared one entry between them would serve the wrong vector with no error
+and no crash — just a quietly worse retriever.
+`test_queries_and_passages_do_not_share_entries_for_asymmetric_models` pins it.
+
+**Storage:** one packed float32 blob plus a SQLite index, not one file per
+vector. FiQA produces >70,000 chunks; that many small files is slow to write and
+slower to enumerate, especially on Windows. The blob is appended before the
+index rows are committed, so a killed process leaves orphan bytes (harmless)
+rather than index rows pointing at data that was never written (corruption).
+
+---
+
+## D14 — Index reuse by content fingerprint
+
+**Decided:** `DenseRetriever.index()` computes
+`sha256(encoder_identity || each chunk_id || each chunk text)`, stores it beside
+the collection, and skips rebuilding when it matches and the point count agrees.
+
+**Why:** the M2 acceptance criterion is a warm re-run in under 10 seconds, and
+with the embedding cache alone it took **95s**. The cache had a 100% hit rate —
+zero chunks re-embedded, exactly as designed — but re-uploading 7,892 points
+into embedded Qdrant dominated the remaining time. Caching the embeddings solves
+the encoder cost; only reconciliation solves the index cost.
+
+Chunk *count* alone would be an inadequate fingerprint: two chunkers can produce
+the same number of differently-cut chunks. Hashing every chunk id and body makes
+any chunker or encoder change invalidate.
+
+Measured: 272s cold → **2.2-2.4s warm**, index reused, zero re-embedded.
+
+---
+
+## D15 — `resolved_revision` must not load model weights
+
+**Decided:** the HF commit SHA is resolved via a Hub metadata call, cached on
+disk in `cache/resolved_revisions.json`, and deliberately *not* routed through
+`Encoder.load()`.
+
+**Why:** found by profiling the warm run after D14 landed and it was still 34s.
+The breakdown was unambiguous:
+
+| stage | warm cost |
+|---|---|
+| load_dataset | 0.08s |
+| chunk_corpus | 0.81s |
+| **encoder.load() (weights + Hub round-trip)** | **18.71s** |
+| open embedded Qdrant | 1.03s |
+| index() reuse path | 0.01s |
+
+The index fingerprint depends on `identity`, `identity` depends on
+`resolved_revision`, and `resolved_revision` was calling `load()`. So a run that
+reused its index and never embedded anything still paid for loading 22M
+parameters — to compute a string it already knew. Splitting the two, plus
+caching the resolution, took the warm run to 2.2s.
+
+The general lesson worth keeping: *lazy loading that is only lazy in the
+constructor is not lazy.* A property that transitively forces the expensive path
+is the same bug with a nicer signature.
+
+---
+
+## D16 — BM25 uses Anserini's BEIR parameters, not the library defaults
+
+**Decided:** `k1=0.9, b=0.4`, Lucene scoring, Porter stemming, English stopwords.
+
+**Why:** `bm25s` defaults to `k1=1.5, b=0.75`. BEIR's published BM25 numbers come
+from Anserini at 0.9/0.4 with stemming on. Using the library defaults would make
+our sparse baseline quietly different from every published BM25 number, and
+weaker — which would hand the dense retrievers unearned margin in precisely the
+comparison PLAN.md §1 says has to be credible.
+
+**Validation.** Our BM25 nDCG@10 against BEIR's published figures:
+
+| dataset | BEIR published | ours |
+|---|---|---|
+| SciFact | 0.665 | 0.682 |
+| NFCorpus | 0.325 | 0.314 |
+| FiQA | 0.236 | 0.235 |
+
+Independent evidence that the loader, chunker, aggregation, tie-breaking and
+metrics are all correct end to end — the parity test proves the metrics match an
+oracle, and this proves the *pipeline feeding them* matches the literature.
+We chunk and BEIR does not, which is the likeliest source of the SciFact gap.

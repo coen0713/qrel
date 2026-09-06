@@ -21,6 +21,11 @@ dependencies = [
     "pyarrow>=16.0",
     "duckdb>=1.0",
     "bm25s>=0.2",
+    # Porter stemming for the BM25 baseline. BEIR's published BM25 numbers come
+    # from Anserini with stemming on; without it our sparse baseline would be
+    # weaker than the literature's for a reason unrelated to the comparison we
+    # are actually making, which would quietly flatter the dense retrievers.
+    "PyStemmer>=2.2",
     "requests>=2.32",
     "tqdm>=4.66",
 ]

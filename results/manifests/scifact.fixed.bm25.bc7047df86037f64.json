@@ -1,0 +1,122 @@
+{
+  "cache": {},
+  "chunker": {
+    "breakpoint_percentile": 25.0,
+    "child_kind": "fixed",
+    "chunk_chars": 1200,
+    "chunk_tokens": 256,
+    "kind": "fixed",
+    "max_chunk_chars": 2000,
+    "min_chunk_chars": 200,
+    "overlap_chars": 150,
+    "overlap_tokens": 32,
+    "parent_chars": 3000,
+    "tokenizer": "word"
+  },
+  "config": {
+    "bootstrap": {
+      "confidence": 0.95,
+      "n_resamples": 10000
+    },
+    "chunker": {
+      "breakpoint_percentile": 25.0,
+      "child_kind": "fixed",
+      "chunk_chars": 1200,
+      "chunk_tokens": 256,
+      "kind": "fixed",
+      "max_chunk_chars": 2000,
+      "min_chunk_chars": 200,
+      "overlap_chars": 150,
+      "overlap_tokens": 32,
+      "parent_chars": 3000,
+      "tokenizer": "word"
+    },
+    "dataset": "scifact",
+    "encoder": {
+      "batch_size": 64,
+      "device": null,
+      "max_seq_length": null,
+      "name": "minilm",
+      "normalize": true,
+      "revision": "main"
+    },
+    "eval": {
+      "aggregation": "max",
+      "ks": [
+        1,
+        5,
+        10,
+        20,
+        100
+      ],
+      "rel_threshold": 1,
+      "tie_break": "trec",
+      "top_k": 100
+    },
+    "name": "bm25-scifact",
+    "retriever": {
+      "b": 0.4,
+      "k1": 0.9,
+      "kind": "bm25",
+      "method": "lucene",
+      "qdrant_mode": "embedded",
+      "qdrant_url": "http://localhost:6333",
+      "stemmer": "english",
+      "stopwords": "en"
+    },
+    "seed": 0,
+    "split": null,
+    "synthetic_queries": null
+  },
+  "config_hash": "bc7047df86037f64",
+  "corpus_checksums": {
+    "corpus.jsonl": "dec31c8182f3d744c7d2c09423756fd1d17cbef75808db13ba01cc0aab4d1ac6",
+    "qrels/test.tsv": "0864bb985e0ca2367ba217977e72004d549054b2b06666ed9d4825ac7c21284c",
+    "queries.jsonl": "8ff84a7c903f722981cd8d595c022660140c51867b27608a6d4910db86080313"
+  },
+  "counts": {
+    "chunks": 7892,
+    "documents": 5183,
+    "queries": 300
+  },
+  "created_utc": "2026-09-06T03:17:50.664896+00:00",
+  "dataset": "scifact",
+  "encoder": {},
+  "git": {
+    "dirty": true,
+    "sha": "14a92dbe372c4aa7e04bb7dc8cbc2c1cbfaad212"
+  },
+  "packages": {
+    "PyStemmer": "3.1.0",
+    "bm25s": "0.3.11",
+    "numpy": "2.4.6",
+    "pytrec-eval-terrier": "0.5.10",
+    "qdrant-client": "1.19.0",
+    "qrel": "0.1.0",
+    "sentence-transformers": "6.0.1",
+    "torch": "2.14.0"
+  },
+  "platform_": "Windows-10-10.0.26200-SP0",
+  "python": "3.11.9",
+  "retriever": {
+    "b": 0.4,
+    "k1": 0.9,
+    "kind": "bm25",
+    "method": "lucene",
+    "qdrant_mode": "embedded",
+    "qdrant_url": "http://localhost:6333",
+    "stemmer": "english",
+    "stopwords": "en"
+  },
+  "run_tag": "scifact.fixed.bm25.bc7047df86037f64",
+  "seed": 0,
+  "split": "test",
+  "timing_seconds": {
+    "bootstrap": 0.464,
+    "chunk": 0.616,
+    "index": 1.19,
+    "load": 0.0,
+    "score": 0.083,
+    "search": 0.059
+  }
+}

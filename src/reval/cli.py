@@ -12,6 +12,8 @@ from rich.console import Console
 
 from reval import __version__
 from reval.cli_corpus import app as corpus_app
+from reval.cli_index import app as index_app
+from reval.cli_run import app as run_app
 
 app = typer.Typer(
     name="reval",
@@ -22,6 +24,8 @@ app = typer.Typer(
 console = Console()
 
 app.add_typer(corpus_app, name="corpus", help="Download and inspect BEIR corpora.")
+app.add_typer(index_app, name="index", help="Build indexes and warm the embedding cache.")
+app.add_typer(run_app, name="run", help="Run experiments and score them with CIs.")
 
 
 @app.command()

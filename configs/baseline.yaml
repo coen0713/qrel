@@ -1,0 +1,35 @@
+# The reference experiment: SciFact, fixed-token chunks, dense retrieval.
+#
+# Used for the M2 acceptance criterion:
+#   reval index build --config configs/baseline.yaml   # cold, embeds
+#   reval index build --config configs/baseline.yaml   # warm, must embed zero
+name: baseline
+dataset: scifact
+seed: 0
+
+chunker:
+  kind: fixed
+  chunk_tokens: 256
+  overlap_tokens: 32
+  tokenizer: word
+
+encoder:
+  name: minilm
+  revision: main
+  normalize: true
+  batch_size: 64
+
+retriever:
+  kind: dense
+  qdrant_mode: embedded
+
+eval:
+  ks: [1, 5, 10, 20, 100]
+  top_k: 100
+  aggregation: max
+  tie_break: trec
+  rel_threshold: 1
+
+bootstrap:
+  n_resamples: 10000
+  confidence: 0.95

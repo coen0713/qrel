@@ -1,0 +1,27 @@
+# Sparse baseline. PLAN.md §1: a dense-only benchmark with no sparse baseline
+# is not credible, and BM25 beats dense retrievers on several BEIR datasets.
+name: bm25-fiqa
+dataset: fiqa
+seed: 0
+
+chunker:
+  kind: fixed
+  chunk_tokens: 256
+  overlap_tokens: 32
+  tokenizer: word
+
+retriever:
+  kind: bm25
+  # Anserini's BEIR defaults, not bm25s's library defaults (1.5 / 0.75).
+  k1: 0.9
+  b: 0.4
+  method: lucene
+  stemmer: english
+
+eval:
+  ks: [1, 5, 10, 20, 100]
+  top_k: 100
+  aggregation: max
+
+bootstrap:
+  n_resamples: 10000
