@@ -1,0 +1,31 @@
+{
+  "background_per_query": 5,
+  "background_rate": 0.048666666666666664,
+  "calibration_auc": 0.9821278269419862,
+  "calibration_fpr": 0.048666666666666664,
+  "calibration_tpr": 0.9351032448377581,
+  "chunker": "fixed",
+  "confusion_profile": {
+    "gap": -0.19171719536840975,
+    "mean_negative_containment": 0.3855030626745212,
+    "mean_positive_containment": 0.577220258042931,
+    "n_negatives": 538,
+    "n_positives": 339
+  },
+  "dataset": "scifact",
+  "depth": 50,
+  "difficulty_bands": {
+    "not_retrieved": 27,
+    "rank_1": 167,
+    "rank_11_100": 25,
+    "rank_2_10": 81
+  },
+  "encoder": null,
+  "enrichment": 16.863013698630137,
+  "n_candidates": 3000,
+  "n_suspected": 2462,
+  "per_query": 10,
+  "retriever": "bm25",
+  "suspected_fraction": 0.8206666666666667,
+  "threshold": -7.627042770385742
+}

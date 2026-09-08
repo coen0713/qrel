@@ -455,3 +455,75 @@ against the other three at 77.8 [74.1, 81.5]. The bounds **touch at exactly
 74.1**, so they are not separated. `test_touching_intervals_are_not_separated`
 pins the strict comparison, because a `<=` there would have converted this null
 into a claimed finding on a boundary coincidence.
+
+---
+
+## D22 — The cross-encoder threshold is calibrated two-sided, not one-sided
+
+**First attempt, which was wrong.** Take a low percentile (p5) of the
+judged-relevant score distribution, reasoning that anything scoring above the
+weakest true positives "looks as relevant as a real positive".
+
+On SciFact that gave a threshold of **−8.50** while the positive median was
+**+2.23** — the positive distribution has a long left tail, so p5 sat below
+almost every document in the corpus and flagged **88.4%** of mined candidates.
+The flaw is structural, not a bad percentile: a one-sided calibration never
+looks at what an *irrelevant* document scores, so it has no way to know which
+part of the tail is unusual.
+
+**What replaced it.** Score judged-relevant pairs *and* a seeded random
+background sample of (query, unjudged document) pairs, then take the threshold
+maximising Youden's J (TPR − FPR). On SciFact/BM25 that yields:
+
+| | value |
+|---|---|
+| threshold | −7.63 |
+| AUC (positives vs background) | **0.982** |
+| TPR at threshold | 93.5% |
+| FPR at threshold | 4.9% |
+
+The AUC is reported alongside every run, and a value below 0.8 prints a warning:
+if the cross-encoder cannot separate the classes on a corpus, the filter is weak
+evidence there and should be said to be.
+
+**Would change if:** a corpus had enough grade-0 judgments to use as the
+negative reference class instead of random documents. SciFact and FiQA have
+none; NFCorpus's are all grade 1 or 2.
+
+---
+
+## D23 — 82% of mined hard negatives are suspected false negatives
+
+**Not a bug — the M4 result.** With the corrected calibration, SciFact/BM25
+mining at depth 50, 10 per query:
+
+| | share clearing the relevance bar |
+|---|---|
+| random corpus documents | 4.9% |
+| **top-ranked unjudged documents** | **82.1%** |
+
+A **17x enrichment**. The threshold is set so only 1 in 20 random documents
+clears it; 4 in 5 mined candidates do.
+
+This is PLAN.md M4's trap, quantified. SciFact judges 1.1 documents relevant per
+query out of 5,183, so the judgments are radically incomplete, and BM25's
+top-ranked unjudged results are mostly on-topic abstracts about the same claim.
+Mining selects for them **by construction**: the better the retriever, the more
+unlabelled positives it hands you as "negatives".
+
+The highest-scoring "negative" found makes it concrete — a **rank-1** document
+for its query:
+
+> query: *Macropinocytosis contributes to a cell's supply of amino acids via the
+> intracellular uptake of protein.*
+> "negative": *Macropinocytosis of protein is an amino acid supply route in
+> Ras-transformed cells*
+
+That is the correct answer, unjudged. Meanwhile the genuine hard negatives are
+recognisable lexical traps — a query about venules and arterioles retrieving
+*"spatial filters to create smoothed maps of health data"* on the shared stem
+*smooth*.
+
+**Consequence for the writeup:** hard negatives mined from a sparsely-judged
+corpus without a relevance filter are mostly not negatives. Anyone using them to
+build a "difficulty-stratified" eval subset is stratifying on label noise.

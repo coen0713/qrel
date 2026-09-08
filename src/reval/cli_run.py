@@ -17,6 +17,14 @@ app = typer.Typer(no_args_is_help=True, add_completion=False)
 console = Console()
 
 
+def _is_contamination(path: Path) -> bool:
+    """Whether a config file targets the contamination runner rather than this one."""
+    import yaml
+
+    data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    return "retrievers" in data
+
+
 def _results_table(results: list[RunResult], title: str) -> Table:
     """Point estimate with a 95% CI in every cell. PLAN.md §5 rule 1.
 
@@ -61,7 +69,11 @@ def main(
 
     paths = list(config or [])
     if all_configs:
-        paths = sorted(configs_dir().glob("*.yaml"))
+        # configs/ holds two kinds of file. The contamination experiment has its
+        # own runner and its own shape (`retrievers` plural, a list of synthetic
+        # sets), so parsing it as a single-retriever ExperimentConfig would fail
+        # on an unknown key and take `--all` down with it.
+        paths = [p for p in sorted(configs_dir().glob("*.yaml")) if not _is_contamination(p)]
     if not paths:
         raise typer.BadParameter("pass --config <file> at least once, or --all")
 

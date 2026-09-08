@@ -1,0 +1,31 @@
+{
+  "background_per_query": 5,
+  "background_rate": 0.055,
+  "calibration_auc": 0.9653138921453693,
+  "calibration_fpr": 0.055,
+  "calibration_tpr": 0.8974208675263775,
+  "chunker": "fixed",
+  "confusion_profile": {
+    "gap": 0.017212467420980426,
+    "mean_negative_containment": 0.5127388801691918,
+    "mean_positive_containment": 0.49552641274821135,
+    "n_negatives": 268,
+    "n_positives": 1706
+  },
+  "dataset": "fiqa",
+  "depth": 50,
+  "difficulty_bands": {
+    "not_retrieved": 169,
+    "rank_1": 143,
+    "rank_11_100": 174,
+    "rank_2_10": 162
+  },
+  "encoder": null,
+  "enrichment": 17.429854096520764,
+  "n_candidates": 6480,
+  "n_suspected": 6212,
+  "per_query": 10,
+  "retriever": "bm25",
+  "suspected_fraction": 0.9586419753086419,
+  "threshold": -9.947380065917969
+}

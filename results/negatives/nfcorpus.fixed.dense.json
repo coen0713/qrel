@@ -1,0 +1,31 @@
+{
+  "background_per_query": 5,
+  "background_rate": 0.33939774153074026,
+  "calibration_auc": 0.716965495608532,
+  "calibration_fpr": 0.33939774153074026,
+  "calibration_tpr": 0.6745,
+  "chunker": "fixed",
+  "confusion_profile": {
+    "gap": -0.07416219298651326,
+    "mean_negative_containment": 0.11274751483084818,
+    "mean_positive_containment": 0.18690970781736144,
+    "n_negatives": 504,
+    "n_positives": 12334
+  },
+  "dataset": "nfcorpus",
+  "depth": 50,
+  "difficulty_bands": {
+    "not_retrieved": 56,
+    "rank_1": 135,
+    "rank_11_100": 42,
+    "rank_2_10": 90
+  },
+  "encoder": "minilm",
+  "enrichment": 2.485792783330199,
+  "n_candidates": 3224,
+  "n_suspected": 2720,
+  "per_query": 10,
+  "retriever": "dense",
+  "suspected_fraction": 0.8436724565756824,
+  "threshold": -10.260886192321777
+}

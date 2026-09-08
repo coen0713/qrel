@@ -79,12 +79,12 @@
     "documents": 57638,
     "queries": 648
   },
-  "created_utc": "2026-09-06T03:01:27.405689+00:00",
+  "created_utc": "2026-09-08T16:37:26.235051+00:00",
   "dataset": "fiqa",
   "encoder": {},
   "git": {
     "dirty": true,
-    "sha": "14a92dbe372c4aa7e04bb7dc8cbc2c1cbfaad212"
+    "sha": "dde128f960a88eae16e518948e571d70e3ed0ea5"
   },
   "packages": {
     "PyStemmer": "3.1.0",
@@ -112,11 +112,11 @@
   "seed": 0,
   "split": "test",
   "timing_seconds": {
-    "bootstrap": 0.878,
-    "chunk": 4.897,
-    "index": 9.491,
+    "bootstrap": 0.57,
+    "chunk": 3.296,
+    "index": 6.446,
     "load": 0.0,
-    "score": 0.234,
-    "search": 0.534
+    "score": 0.195,
+    "search": 0.458
   }
 }

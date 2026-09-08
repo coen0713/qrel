@@ -1,7 +1,7 @@
 {
   "cache": {
-    "hits": 0,
-    "misses": 300,
+    "hits": 300,
+    "misses": 0,
     "requested": 300
   },
   "chunker": {
@@ -83,7 +83,7 @@
     "documents": 5183,
     "queries": 300
   },
-  "created_utc": "2026-09-06T03:17:48.051985+00:00",
+  "created_utc": "2026-09-08T16:37:14.719861+00:00",
   "dataset": "scifact",
   "encoder": {
     "model": "sentence-transformers/all-MiniLM-L6-v2",
@@ -91,7 +91,7 @@
   },
   "git": {
     "dirty": true,
-    "sha": "14a92dbe372c4aa7e04bb7dc8cbc2c1cbfaad212"
+    "sha": "dde128f960a88eae16e518948e571d70e3ed0ea5"
   },
   "packages": {
     "PyStemmer": "3.1.0",
@@ -119,11 +119,11 @@
   "seed": 0,
   "split": "test",
   "timing_seconds": {
-    "bootstrap": 0.534,
-    "chunk": 0.632,
-    "index": 1.491,
+    "bootstrap": 0.264,
+    "chunk": 0.351,
+    "index": 0.934,
     "load": 0.0,
-    "score": 0.108,
-    "search": 25.43
+    "score": 0.071,
+    "search": 13.113
   }
 }
