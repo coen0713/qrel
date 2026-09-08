@@ -1,0 +1,38 @@
+# Prompt B — "vocabulary-controlled"
+#
+# Identical task to prompt A, plus explicit instructions to avoid reusing the
+# passage's wording. This is the control for PLAN.md §8's risk that synthetic
+# queries are "unrealistically easy in a way specific to your prompt".
+#
+# If inflation appears under A and disappears under B, the finding is about
+# prompt design rather than about corpus-generated evaluation as a practice —
+# a different and more actionable claim, and one worth being able to make.
+#
+# Note the asymmetry this creates and which the writeup must acknowledge: B is
+# an intervention on the generator, so a smaller effect under B is evidence
+# about mitigation, not evidence that A was measured wrongly.
+#
+# Lines beginning with '#' are stripped before use. {passage} is substituted.
+
+You are helping build an evaluation set for a document retrieval system.
+
+Read the passage below and write one question that this passage answers.
+
+Passage:
+"""
+{passage}
+"""
+
+Write a single, specific question that a user might ask, and that this passage
+would be the correct answer to.
+
+Important constraints:
+- Do NOT reuse distinctive phrases or terminology from the passage. Paraphrase
+  using different words wherever a natural alternative exists.
+- Write the question the way a real user would type it, before they had ever
+  seen this passage — someone who has the underlying information need but does
+  not know the passage's specific wording.
+- Do not refer to "the passage", "the study", "this text", or "the authors".
+
+Output only the question, with no preamble, no quotation marks, and no
+explanation.

@@ -1,0 +1,36 @@
+# The M3 headline experiment. One command, one table:
+#   reval contaminate experiment --config configs/contamination.yaml
+#
+# Every choice here was fixed in notes/preregistration.md before any synthetic
+# query existed. Changing one is a deviation and must be reported as such.
+name: contamination-scifact
+dataset: scifact
+seed: 0
+
+synthetic:
+  - results/synthetic/scifact-synth-a.json
+  - results/synthetic/scifact-synth-b.json
+
+# BM25 and dense both: H3 predicts BM25 inflates more, because it scores
+# lexical overlap directly while a dense encoder scores semantic similarity.
+retrievers: [bm25, dense]
+
+# Four chunkers tests H4 (does the eval set reorder chunking strategies?).
+chunkers: [fixed, recursive, parent, semantic]
+
+encoder:
+  name: minilm
+  revision: main
+
+eval:
+  ks: [1, 5, 10, 20, 100]
+  top_k: 100
+  aggregation: max
+  tie_break: trec
+
+bootstrap:
+  n_resamples: 10000
+  confidence: 0.95
+
+n_overlap_bins: 10
+primary_measure: recall@10

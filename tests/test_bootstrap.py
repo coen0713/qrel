@@ -10,7 +10,12 @@ from __future__ import annotations
 import numpy as np
 import pytest
 
-from reval.metrics.bootstrap import bootstrap_ci, estimate_all, paired_bootstrap
+from reval.metrics.bootstrap import (
+    bootstrap_ci,
+    estimate_all,
+    paired_bootstrap,
+    unpaired_bootstrap,
+)
 
 
 def test_point_estimate_is_the_plain_mean():
@@ -164,3 +169,89 @@ def test_estimate_all_covers_every_measure():
 
 def test_estimate_renders_in_percentage_points():
     assert bootstrap_ci([0.5] * 10, n_resamples=200).as_pct().startswith("50.0 [50.0, 50.0]")
+
+
+# ---- unpaired comparison (M3: synthetic vs human queries) ------------------
+
+
+def test_unpaired_difference_is_the_difference_of_means():
+    a = {f"a{i}": 0.8 for i in range(50)}
+    b = {f"b{i}": 0.5 for i in range(40)}
+    cmp = unpaired_bootstrap(a, b, n_resamples=2000)
+    assert cmp.mean_diff == pytest.approx(0.3)
+
+
+def test_unpaired_accepts_different_sized_groups():
+    """The whole reason it exists.
+
+    SciFact has 300 human queries; the synthetic set has ~500. There is no
+    per-query pairing between them, so paired_bootstrap cannot be used and
+    would raise on the length mismatch anyway.
+    """
+    a = list(np.random.default_rng(0).random(500))
+    b = list(np.random.default_rng(1).random(300))
+    cmp = unpaired_bootstrap(a, b, n_resamples=1000)
+    assert cmp.n == 800  # total observations across both groups
+    assert cmp.lo < cmp.mean_diff < cmp.hi
+
+
+def test_unpaired_rejects_nothing_that_paired_would_reject_for_length():
+    # paired_bootstrap must refuse these inputs; unpaired must accept them.
+    a, b = [1.0, 1.0, 1.0], [0.0, 0.0]
+    with pytest.raises(ValueError):
+        paired_bootstrap(a, b)
+    assert unpaired_bootstrap(a, b, n_resamples=500).mean_diff == pytest.approx(1.0)
+
+
+def test_unpaired_finds_no_difference_between_samples_of_one_distribution():
+    rng = np.random.default_rng(0)
+    a = list(rng.random(400))
+    b = list(rng.random(400))
+    cmp = unpaired_bootstrap(a, b, n_resamples=4000, seed=0)
+    assert not cmp.significant
+    assert cmp.lo < 0 < cmp.hi
+
+
+def test_unpaired_detects_a_real_shift():
+    rng = np.random.default_rng(0)
+    a = list(rng.random(300) * 0.5 + 0.5)  # mean ~0.75
+    b = list(rng.random(300) * 0.5)  # mean ~0.25
+    cmp = unpaired_bootstrap(a, b, n_resamples=4000, seed=0)
+    assert cmp.significant
+    assert cmp.mean_diff == pytest.approx(0.5, abs=0.06)
+
+
+def test_unpaired_is_wider_than_paired_on_correlated_data():
+    """Why pairing matters, stated as a test.
+
+    On paired data the unpaired interval discards the shared per-query
+    difficulty and is therefore wider. Using unpaired where paired applies
+    loses power; using paired where it does not apply (M3's between-condition
+    contrast) is simply invalid.
+    """
+    rng = np.random.default_rng(0)
+    difficulty = rng.random(300)
+    b = {f"q{i}": float(d) for i, d in enumerate(difficulty)}
+    a = {f"q{i}": float(min(d + 0.05, 1.0)) for i, d in enumerate(difficulty)}
+
+    paired = paired_bootstrap(a, b, n_resamples=3000, seed=0)
+    unpaired = unpaired_bootstrap(a, b, n_resamples=3000, seed=0)
+    assert (unpaired.hi - unpaired.lo) > (paired.hi - paired.lo)
+
+
+def test_unpaired_same_seed_reproduces():
+    a, b = list(np.linspace(0, 1, 100)), list(np.linspace(0.2, 1.2, 80))
+    first = unpaired_bootstrap(a, b, n_resamples=1000, seed=5)
+    second = unpaired_bootstrap(a, b, n_resamples=1000, seed=5)
+    assert (first.lo, first.hi, first.p_value) == (second.lo, second.hi, second.p_value)
+
+
+def test_unpaired_p_value_is_never_exactly_zero():
+    a, b = [1.0] * 100, [0.0] * 100
+    cmp = unpaired_bootstrap(a, b, n_resamples=1000)
+    assert 0 < cmp.p_value <= 1 / 1001 + 1e-12
+
+
+def test_unpaired_rejects_empty_groups():
+    with pytest.raises(ValueError, match="empty"):
+        unpaired_bootstrap([], [1.0, 2.0])

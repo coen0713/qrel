@@ -176,6 +176,60 @@ def paired_bootstrap(
     )
 
 
+def unpaired_bootstrap(
+    a: dict[str, float] | list[float] | np.ndarray,
+    b: dict[str, float] | list[float] | np.ndarray,
+    n_resamples: int = DEFAULT_RESAMPLES,
+    confidence: float = 0.95,
+    seed: int = 0,
+) -> Comparison:
+    """Two-sample bootstrap for ``mean(a) - mean(b)`` on *unrelated* groups.
+
+    Required by the M3 contamination experiment. Synthetic and human-authored
+    queries are different queries over the same corpus: there is no per-query
+    correspondence between the conditions, so :func:`paired_bootstrap` does not
+    apply — and with 500 synthetic against 300 human queries it would refuse the
+    inputs anyway. Reaching for the paired test here because it is the one we
+    already had would be a real statistical error, which is why the
+    pre-registration names this distinction before any data existed.
+
+    Each group is resampled independently to its own size, which is what makes
+    the interval reflect the variance of two separate samples rather than of one
+    set of differences. On genuinely paired data this interval is *wider* than
+    the paired one, because it throws away the shared per-query difficulty — so
+    use the paired test wherever pairing genuinely exists.
+    """
+    arr_a, arr_b = _as_array(a), _as_array(b)
+    if len(arr_a) == 0 or len(arr_b) == 0:
+        raise ValueError("unpaired_bootstrap: both groups must be non-empty")
+
+    observed = float(arr_a.mean() - arr_b.mean())
+    n_a, n_b = len(arr_a), len(arr_b)
+
+    rng = np.random.default_rng(seed)
+    means_a = arr_a[rng.integers(0, n_a, size=(n_resamples, n_a))].mean(axis=1)
+    means_b = arr_b[rng.integers(0, n_b, size=(n_resamples, n_b))].mean(axis=1)
+    resampled = means_a - means_b
+
+    alpha = (1.0 - confidence) / 2.0
+    lo, hi = np.quantile(resampled, [alpha, 1.0 - alpha])
+
+    centred = resampled - observed
+    extreme = int(np.sum(np.abs(centred) >= abs(observed)))
+    p_value = (extreme + 1) / (n_resamples + 1)
+
+    return Comparison(
+        mean_diff=observed,
+        lo=float(lo),
+        hi=float(hi),
+        p_value=float(p_value),
+        # Total observations across both groups; the groups differ in size, so a
+        # single n is only meaningful as the combined count.
+        n=n_a + n_b,
+        confidence=confidence,
+    )
+
+
 def estimate_all(
     per_query: dict[str, dict[str, float]],
     n_resamples: int = DEFAULT_RESAMPLES,

@@ -1,0 +1,1994 @@
+{
+  "name": "scifact-synth-a",
+  "provenance": {
+    "corpus": "scifact",
+    "effort": "low",
+    "excluded": {
+      "model_declined": 6,
+      "too_long": 2
+    },
+    "generated_utc": "2026-09-08T05:16:51.199221+00:00",
+    "model": "claude-opus-5",
+    "n_requested": 500,
+    "n_usable": 492,
+    "prompt_sha256_16": "b0d7ac0bb6788b43",
+    "prompt_variant": "a",
+    "usage": {
+      "calls": 500,
+      "input_tokens": 313615,
+      "output_tokens": 30420
+    }
+  },
+  "qrels": {
+    "syna-10009203": {
+      "10009203": 1
+    },
+    "syna-10010651": {
+      "10010651": 1
+    },
+    "syna-1006165": {
+      "1006165": 1
+    },
+    "syna-10071590": {
+      "10071590": 1
+    },
+    "syna-10162553": {
+      "10162553": 1
+    },
+    "syna-10209731": {
+      "10209731": 1
+    },
+    "syna-10486817": {
+      "10486817": 1
+    },
+    "syna-10530014": {
+      "10530014": 1
+    },
+    "syna-10555591": {
+      "10555591": 1
+    },
+    "syna-10660080": {
+      "10660080": 1
+    },
+    "syna-1068106": {
+      "1068106": 1
+    },
+    "syna-10704438": {
+      "10704438": 1
+    },
+    "syna-10761515": {
+      "10761515": 1
+    },
+    "syna-10795063": {
+      "10795063": 1
+    },
+    "syna-10846815": {
+      "10846815": 1
+    },
+    "syna-11011905": {
+      "11011905": 1
+    },
+    "syna-11090688": {
+      "11090688": 1
+    },
+    "syna-11117498": {
+      "11117498": 1
+    },
+    "syna-1122279": {
+      "1122279": 1
+    },
+    "syna-11230569": {
+      "11230569": 1
+    },
+    "syna-11254040": {
+      "11254040": 1
+    },
+    "syna-11469078": {
+      "11469078": 1
+    },
+    "syna-11532028": {
+      "11532028": 1
+    },
+    "syna-11721676": {
+      "11721676": 1
+    },
+    "syna-11774598": {
+      "11774598": 1
+    },
+    "syna-11822354": {
+      "11822354": 1
+    },
+    "syna-11844826": {
+      "11844826": 1
+    },
+    "syna-11903247": {
+      "11903247": 1
+    },
+    "syna-11915280": {
+      "11915280": 1
+    },
+    "syna-11921405": {
+      "11921405": 1
+    },
+    "syna-1192458": {
+      "1192458": 1
+    },
+    "syna-11939159": {
+      "11939159": 1
+    },
+    "syna-1203035": {
+      "1203035": 1
+    },
+    "syna-120626": {
+      "120626": 1
+    },
+    "syna-12086599": {
+      "12086599": 1
+    },
+    "syna-12100854": {
+      "12100854": 1
+    },
+    "syna-1215116": {
+      "1215116": 1
+    },
+    "syna-12152977": {
+      "12152977": 1
+    },
+    "syna-12156187": {
+      "12156187": 1
+    },
+    "syna-1220287": {
+      "1220287": 1
+    },
+    "syna-12224536": {
+      "12224536": 1
+    },
+    "syna-12232678": {
+      "12232678": 1
+    },
+    "syna-12428497": {
+      "12428497": 1
+    },
+    "syna-12440953": {
+      "12440953": 1
+    },
+    "syna-12489688": {
+      "12489688": 1
+    },
+    "syna-12513972": {
+      "12513972": 1
+    },
+    "syna-1259359": {
+      "1259359": 1
+    },
+    "syna-1265945": {
+      "1265945": 1
+    },
+    "syna-12909503": {
+      "12909503": 1
+    },
+    "syna-13036442": {
+      "13036442": 1
+    },
+    "syna-1322614": {
+      "1322614": 1
+    },
+    "syna-13277118": {
+      "13277118": 1
+    },
+    "syna-13277623": {
+      "13277623": 1
+    },
+    "syna-13296399": {
+      "13296399": 1
+    },
+    "syna-1336292": {
+      "1336292": 1
+    },
+    "syna-13445579": {
+      "13445579": 1
+    },
+    "syna-13450938": {
+      "13450938": 1
+    },
+    "syna-13466622": {
+      "13466622": 1
+    },
+    "syna-1358909": {
+      "1358909": 1
+    },
+    "syna-13624704": {
+      "13624704": 1
+    },
+    "syna-13714201": {
+      "13714201": 1
+    },
+    "syna-13760557": {
+      "13760557": 1
+    },
+    "syna-13791044": {
+      "13791044": 1
+    },
+    "syna-1379127": {
+      "1379127": 1
+    },
+    "syna-13878124": {
+      "13878124": 1
+    },
+    "syna-13914633": {
+      "13914633": 1
+    },
+    "syna-13934676": {
+      "13934676": 1
+    },
+    "syna-13938878": {
+      "13938878": 1
+    },
+    "syna-13944805": {
+      "13944805": 1
+    },
+    "syna-13955536": {
+      "13955536": 1
+    },
+    "syna-13958154": {
+      "13958154": 1
+    },
+    "syna-13969173": {
+      "13969173": 1
+    },
+    "syna-14060030": {
+      "14060030": 1
+    },
+    "syna-14079881": {
+      "14079881": 1
+    },
+    "syna-14105446": {
+      "14105446": 1
+    },
+    "syna-14192687": {
+      "14192687": 1
+    },
+    "syna-14332945": {
+      "14332945": 1
+    },
+    "syna-14362678": {
+      "14362678": 1
+    },
+    "syna-14380875": {
+      "14380875": 1
+    },
+    "syna-143868995": {
+      "143868995": 1
+    },
+    "syna-14390137": {
+      "14390137": 1
+    },
+    "syna-14471161": {
+      "14471161": 1
+    },
+    "syna-14479433": {
+      "14479433": 1
+    },
+    "syna-14501880": {
+      "14501880": 1
+    },
+    "syna-14657344": {
+      "14657344": 1
+    },
+    "syna-14663842": {
+      "14663842": 1
+    },
+    "syna-1469751": {
+      "1469751": 1
+    },
+    "syna-14711483": {
+      "14711483": 1
+    },
+    "syna-1472815": {
+      "1472815": 1
+    },
+    "syna-14768471": {
+      "14768471": 1
+    },
+    "syna-14797520": {
+      "14797520": 1
+    },
+    "syna-14827874": {
+      "14827874": 1
+    },
+    "syna-15041758": {
+      "15041758": 1
+    },
+    "syna-15048300": {
+      "15048300": 1
+    },
+    "syna-153744": {
+      "153744": 1
+    },
+    "syna-15381976": {
+      "15381976": 1
+    },
+    "syna-15635366": {
+      "15635366": 1
+    },
+    "syna-15648443": {
+      "15648443": 1
+    },
+    "syna-15657779": {
+      "15657779": 1
+    },
+    "syna-15670968": {
+      "15670968": 1
+    },
+    "syna-15685921": {
+      "15685921": 1
+    },
+    "syna-1576955": {
+      "1576955": 1
+    },
+    "syna-15868816": {
+      "15868816": 1
+    },
+    "syna-15907458": {
+      "15907458": 1
+    },
+    "syna-16098747": {
+      "16098747": 1
+    },
+    "syna-16128711": {
+      "16128711": 1
+    },
+    "syna-1616661": {
+      "1616661": 1
+    },
+    "syna-1617327": {
+      "1617327": 1
+    },
+    "syna-16322674": {
+      "16322674": 1
+    },
+    "syna-16488405": {
+      "16488405": 1
+    },
+    "syna-164985": {
+      "164985": 1
+    },
+    "syna-16527698": {
+      "16527698": 1
+    },
+    "syna-16644043": {
+      "16644043": 1
+    },
+    "syna-1667063": {
+      "1667063": 1
+    },
+    "syna-16701509": {
+      "16701509": 1
+    },
+    "syna-17000834": {
+      "17000834": 1
+    },
+    "syna-17050065": {
+      "17050065": 1
+    },
+    "syna-17088791": {
+      "17088791": 1
+    },
+    "syna-17150648": {
+      "17150648": 1
+    },
+    "syna-1727042": {
+      "1727042": 1
+    },
+    "syna-17518195": {
+      "17518195": 1
+    },
+    "syna-17553026": {
+      "17553026": 1
+    },
+    "syna-17671145": {
+      "17671145": 1
+    },
+    "syna-17691617": {
+      "17691617": 1
+    },
+    "syna-17708753": {
+      "17708753": 1
+    },
+    "syna-1771079": {
+      "1771079": 1
+    },
+    "syna-17821387": {
+      "17821387": 1
+    },
+    "syna-17829012": {
+      "17829012": 1
+    },
+    "syna-17844478": {
+      "17844478": 1
+    },
+    "syna-17945638": {
+      "17945638": 1
+    },
+    "syna-18027063": {
+      "18027063": 1
+    },
+    "syna-18078750": {
+      "18078750": 1
+    },
+    "syna-18098290": {
+      "18098290": 1
+    },
+    "syna-18231807": {
+      "18231807": 1
+    },
+    "syna-18263406": {
+      "18263406": 1
+    },
+    "syna-18361917": {
+      "18361917": 1
+    },
+    "syna-1840993": {
+      "1840993": 1
+    },
+    "syna-18488986": {
+      "18488986": 1
+    },
+    "syna-18639989": {
+      "18639989": 1
+    },
+    "syna-18654430": {
+      "18654430": 1
+    },
+    "syna-18758057": {
+      "18758057": 1
+    },
+    "syna-18855191": {
+      "18855191": 1
+    },
+    "syna-1904291": {
+      "1904291": 1
+    },
+    "syna-1910120": {
+      "1910120": 1
+    },
+    "syna-1944452": {
+      "1944452": 1
+    },
+    "syna-19572798": {
+      "19572798": 1
+    },
+    "syna-19673227": {
+      "19673227": 1
+    },
+    "syna-19701340": {
+      "19701340": 1
+    },
+    "syna-19822046": {
+      "19822046": 1
+    },
+    "syna-19824183": {
+      "19824183": 1
+    },
+    "syna-19945096": {
+      "19945096": 1
+    },
+    "syna-19974105": {
+      "19974105": 1
+    },
+    "syna-20109325": {
+      "20109325": 1
+    },
+    "syna-20183360": {
+      "20183360": 1
+    },
+    "syna-20188586": {
+      "20188586": 1
+    },
+    "syna-20279166": {
+      "20279166": 1
+    },
+    "syna-20311968": {
+      "20311968": 1
+    },
+    "syna-20313748": {
+      "20313748": 1
+    },
+    "syna-20333864": {
+      "20333864": 1
+    },
+    "syna-20372201": {
+      "20372201": 1
+    },
+    "syna-20381484": {
+      "20381484": 1
+    },
+    "syna-20491205": {
+      "20491205": 1
+    },
+    "syna-20646904": {
+      "20646904": 1
+    },
+    "syna-20649327": {
+      "20649327": 1
+    },
+    "syna-20675284": {
+      "20675284": 1
+    },
+    "syna-20732789": {
+      "20732789": 1
+    },
+    "syna-20886584": {
+      "20886584": 1
+    },
+    "syna-20888849": {
+      "20888849": 1
+    },
+    "syna-2097256": {
+      "2097256": 1
+    },
+    "syna-2099400": {
+      "2099400": 1
+    },
+    "syna-21050357": {
+      "21050357": 1
+    },
+    "syna-21164071": {
+      "21164071": 1
+    },
+    "syna-21181273": {
+      "21181273": 1
+    },
+    "syna-21221346": {
+      "21221346": 1
+    },
+    "syna-21250322": {
+      "21250322": 1
+    },
+    "syna-21372171": {
+      "21372171": 1
+    },
+    "syna-21472388": {
+      "21472388": 1
+    },
+    "syna-21550246": {
+      "21550246": 1
+    },
+    "syna-21562657": {
+      "21562657": 1
+    },
+    "syna-21616324": {
+      "21616324": 1
+    },
+    "syna-21692235": {
+      "21692235": 1
+    },
+    "syna-21746539": {
+      "21746539": 1
+    },
+    "syna-21866916": {
+      "21866916": 1
+    },
+    "syna-21874312": {
+      "21874312": 1
+    },
+    "syna-21884059": {
+      "21884059": 1
+    },
+    "syna-21884449": {
+      "21884449": 1
+    },
+    "syna-21922424": {
+      "21922424": 1
+    },
+    "syna-21958900": {
+      "21958900": 1
+    },
+    "syna-22107641": {
+      "22107641": 1
+    },
+    "syna-22547508": {
+      "22547508": 1
+    },
+    "syna-22688699": {
+      "22688699": 1
+    },
+    "syna-22896970": {
+      "22896970": 1
+    },
+    "syna-22914228": {
+      "22914228": 1
+    },
+    "syna-22937815": {
+      "22937815": 1
+    },
+    "syna-22942787": {
+      "22942787": 1
+    },
+    "syna-22963769": {
+      "22963769": 1
+    },
+    "syna-23078022": {
+      "23078022": 1
+    },
+    "syna-23126677": {
+      "23126677": 1
+    },
+    "syna-23531592": {
+      "23531592": 1
+    },
+    "syna-23535770": {
+      "23535770": 1
+    },
+    "syna-2356950": {
+      "2356950": 1
+    },
+    "syna-23716150": {
+      "23716150": 1
+    },
+    "syna-23848916": {
+      "23848916": 1
+    },
+    "syna-23863551": {
+      "23863551": 1
+    },
+    "syna-23929297": {
+      "23929297": 1
+    },
+    "syna-23934390": {
+      "23934390": 1
+    },
+    "syna-23972114": {
+      "23972114": 1
+    },
+    "syna-23983289": {
+      "23983289": 1
+    },
+    "syna-23985464": {
+      "23985464": 1
+    },
+    "syna-24003461": {
+      "24003461": 1
+    },
+    "syna-24019260": {
+      "24019260": 1
+    },
+    "syna-24044977": {
+      "24044977": 1
+    },
+    "syna-24101431": {
+      "24101431": 1
+    },
+    "syna-24498673": {
+      "24498673": 1
+    },
+    "syna-24541180": {
+      "24541180": 1
+    },
+    "syna-24554740": {
+      "24554740": 1
+    },
+    "syna-24706198": {
+      "24706198": 1
+    },
+    "syna-24721347": {
+      "24721347": 1
+    },
+    "syna-24725136": {
+      "24725136": 1
+    },
+    "syna-24863571": {
+      "24863571": 1
+    },
+    "syna-24921368": {
+      "24921368": 1
+    },
+    "syna-2494748": {
+      "2494748": 1
+    },
+    "syna-24998637": {
+      "24998637": 1
+    },
+    "syna-25263942": {
+      "25263942": 1
+    },
+    "syna-25300426": {
+      "25300426": 1
+    },
+    "syna-25301182": {
+      "25301182": 1
+    },
+    "syna-25404036": {
+      "25404036": 1
+    },
+    "syna-25413327": {
+      "25413327": 1
+    },
+    "syna-2541699": {
+      "2541699": 1
+    },
+    "syna-25435456": {
+      "25435456": 1
+    },
+    "syna-25462689": {
+      "25462689": 1
+    },
+    "syna-25562234": {
+      "25562234": 1
+    },
+    "syna-25606339": {
+      "25606339": 1
+    },
+    "syna-25816994": {
+      "25816994": 1
+    },
+    "syna-25842866": {
+      "25842866": 1
+    },
+    "syna-25886725": {
+      "25886725": 1
+    },
+    "syna-25900857": {
+      "25900857": 1
+    },
+    "syna-2593298": {
+      "2593298": 1
+    },
+    "syna-25942757": {
+      "25942757": 1
+    },
+    "syna-25950264": {
+      "25950264": 1
+    },
+    "syna-25953438": {
+      "25953438": 1
+    },
+    "syna-25974070": {
+      "25974070": 1
+    },
+    "syna-26108767": {
+      "26108767": 1
+    },
+    "syna-26231129": {
+      "26231129": 1
+    },
+    "syna-26244918": {
+      "26244918": 1
+    },
+    "syna-2638387": {
+      "2638387": 1
+    },
+    "syna-26462632": {
+      "26462632": 1
+    },
+    "syna-26672703": {
+      "26672703": 1
+    },
+    "syna-2682251": {
+      "2682251": 1
+    },
+    "syna-26887439": {
+      "26887439": 1
+    },
+    "syna-2701077": {
+      "2701077": 1
+    },
+    "syna-27129115": {
+      "27129115": 1
+    },
+    "syna-27243019": {
+      "27243019": 1
+    },
+    "syna-2727303": {
+      "2727303": 1
+    },
+    "syna-27446873": {
+      "27446873": 1
+    },
+    "syna-27545868": {
+      "27545868": 1
+    },
+    "syna-27580223": {
+      "27580223": 1
+    },
+    "syna-27840664": {
+      "27840664": 1
+    },
+    "syna-28006126": {
+      "28006126": 1
+    },
+    "syna-28069701": {
+      "28069701": 1
+    },
+    "syna-2824347": {
+      "2824347": 1
+    },
+    "syna-28247027": {
+      "28247027": 1
+    },
+    "syna-28264919": {
+      "28264919": 1
+    },
+    "syna-2828460": {
+      "2828460": 1
+    },
+    "syna-28338268": {
+      "28338268": 1
+    },
+    "syna-28386343": {
+      "28386343": 1
+    },
+    "syna-2842550": {
+      "2842550": 1
+    },
+    "syna-28441310": {
+      "28441310": 1
+    },
+    "syna-28517384": {
+      "28517384": 1
+    },
+    "syna-28617573": {
+      "28617573": 1
+    },
+    "syna-28647122": {
+      "28647122": 1
+    },
+    "syna-28712203": {
+      "28712203": 1
+    },
+    "syna-28937856": {
+      "28937856": 1
+    },
+    "syna-2919030": {
+      "2919030": 1
+    },
+    "syna-29362104": {
+      "29362104": 1
+    },
+    "syna-29689140": {
+      "29689140": 1
+    },
+    "syna-30122260": {
+      "30122260": 1
+    },
+    "syna-30353437": {
+      "30353437": 1
+    },
+    "syna-3052642": {
+      "3052642": 1
+    },
+    "syna-30884033": {
+      "30884033": 1
+    },
+    "syna-3090454": {
+      "3090454": 1
+    },
+    "syna-3095620": {
+      "3095620": 1
+    },
+    "syna-3098821": {
+      "3098821": 1
+    },
+    "syna-3099497": {
+      "3099497": 1
+    },
+    "syna-3107733": {
+      "3107733": 1
+    },
+    "syna-31293581": {
+      "31293581": 1
+    },
+    "syna-313403": {
+      "313403": 1
+    },
+    "syna-31933981": {
+      "31933981": 1
+    },
+    "syna-32001951": {
+      "32001951": 1
+    },
+    "syna-3215494": {
+      "3215494": 1
+    },
+    "syna-32324430": {
+      "32324430": 1
+    },
+    "syna-32423829": {
+      "32423829": 1
+    },
+    "syna-32532238": {
+      "32532238": 1
+    },
+    "syna-32587939": {
+      "32587939": 1
+    },
+    "syna-3285322": {
+      "3285322": 1
+    },
+    "syna-33169058": {
+      "33169058": 1
+    },
+    "syna-3330111": {
+      "3330111": 1
+    },
+    "syna-33387953": {
+      "33387953": 1
+    },
+    "syna-33723822": {
+      "33723822": 1
+    },
+    "syna-33912020": {
+      "33912020": 1
+    },
+    "syna-33920995": {
+      "33920995": 1
+    },
+    "syna-33986507": {
+      "33986507": 1
+    },
+    "syna-33989422": {
+      "33989422": 1
+    },
+    "syna-34016944": {
+      "34016944": 1
+    },
+    "syna-3413083": {
+      "3413083": 1
+    },
+    "syna-34254203": {
+      "34254203": 1
+    },
+    "syna-3430789": {
+      "3430789": 1
+    },
+    "syna-34544514": {
+      "34544514": 1
+    },
+    "syna-34559336": {
+      "34559336": 1
+    },
+    "syna-34905328": {
+      "34905328": 1
+    },
+    "syna-3504761": {
+      "3504761": 1
+    },
+    "syna-35256900": {
+      "35256900": 1
+    },
+    "syna-3545805": {
+      "3545805": 1
+    },
+    "syna-35531883": {
+      "35531883": 1
+    },
+    "syna-35828148": {
+      "35828148": 1
+    },
+    "syna-3588621": {
+      "3588621": 1
+    },
+    "syna-36025357": {
+      "36025357": 1
+    },
+    "syna-36202354": {
+      "36202354": 1
+    },
+    "syna-36271512": {
+      "36271512": 1
+    },
+    "syna-36480032": {
+      "36480032": 1
+    },
+    "syna-36653415": {
+      "36653415": 1
+    },
+    "syna-36830715": {
+      "36830715": 1
+    },
+    "syna-37156349": {
+      "37156349": 1
+    },
+    "syna-37182501": {
+      "37182501": 1
+    },
+    "syna-37205685": {
+      "37205685": 1
+    },
+    "syna-37438296": {
+      "37438296": 1
+    },
+    "syna-37450671": {
+      "37450671": 1
+    },
+    "syna-37480103": {
+      "37480103": 1
+    },
+    "syna-374902": {
+      "374902": 1
+    },
+    "syna-37608303": {
+      "37608303": 1
+    },
+    "syna-37699461": {
+      "37699461": 1
+    },
+    "syna-3801693": {
+      "3801693": 1
+    },
+    "syna-38025907": {
+      "38025907": 1
+    },
+    "syna-3828508": {
+      "3828508": 1
+    },
+    "syna-3831884": {
+      "3831884": 1
+    },
+    "syna-38355793": {
+      "38355793": 1
+    },
+    "syna-38376189": {
+      "38376189": 1
+    },
+    "syna-38794814": {
+      "38794814": 1
+    },
+    "syna-39128592": {
+      "39128592": 1
+    },
+    "syna-393001": {
+      "393001": 1
+    },
+    "syna-39334724": {
+      "39334724": 1
+    },
+    "syna-39984099": {
+      "39984099": 1
+    },
+    "syna-40044800": {
+      "40044800": 1
+    },
+    "syna-40349336": {
+      "40349336": 1
+    },
+    "syna-40367499": {
+      "40367499": 1
+    },
+    "syna-40476126": {
+      "40476126": 1
+    },
+    "syna-4067274": {
+      "4067274": 1
+    },
+    "syna-40710501": {
+      "40710501": 1
+    },
+    "syna-40754510": {
+      "40754510": 1
+    },
+    "syna-40971746": {
+      "40971746": 1
+    },
+    "syna-41120293": {
+      "41120293": 1
+    },
+    "syna-41264017": {
+      "41264017": 1
+    },
+    "syna-41925568": {
+      "41925568": 1
+    },
+    "syna-4200695": {
+      "4200695": 1
+    },
+    "syna-42035464": {
+      "42035464": 1
+    },
+    "syna-42080024": {
+      "42080024": 1
+    },
+    "syna-42373943": {
+      "42373943": 1
+    },
+    "syna-4313478": {
+      "4313478": 1
+    },
+    "syna-4319844": {
+      "4319844": 1
+    },
+    "syna-4320424": {
+      "4320424": 1
+    },
+    "syna-43419566": {
+      "43419566": 1
+    },
+    "syna-43427621": {
+      "43427621": 1
+    },
+    "syna-4345605": {
+      "4345605": 1
+    },
+    "syna-4350400": {
+      "4350400": 1
+    },
+    "syna-43557480": {
+      "43557480": 1
+    },
+    "syna-4373445": {
+      "4373445": 1
+    },
+    "syna-43880096": {
+      "43880096": 1
+    },
+    "syna-4391685": {
+      "4391685": 1
+    },
+    "syna-4391817": {
+      "4391817": 1
+    },
+    "syna-4394525": {
+      "4394525": 1
+    },
+    "syna-4402497": {
+      "4402497": 1
+    },
+    "syna-4407455": {
+      "4407455": 1
+    },
+    "syna-4409524": {
+      "4409524": 1
+    },
+    "syna-4421547": {
+      "4421547": 1
+    },
+    "syna-4421742": {
+      "4421742": 1
+    },
+    "syna-4422734": {
+      "4422734": 1
+    },
+    "syna-4423220": {
+      "4423220": 1
+    },
+    "syna-4449524": {
+      "4449524": 1
+    },
+    "syna-4454788": {
+      "4454788": 1
+    },
+    "syna-44572913": {
+      "44572913": 1
+    },
+    "syna-44614949": {
+      "44614949": 1
+    },
+    "syna-4462777": {
+      "4462777": 1
+    },
+    "syna-4464565": {
+      "4464565": 1
+    },
+    "syna-44947611": {
+      "44947611": 1
+    },
+    "syna-4506702": {
+      "4506702": 1
+    },
+    "syna-45199834": {
+      "45199834": 1
+    },
+    "syna-45200347": {
+      "45200347": 1
+    },
+    "syna-45341480": {
+      "45341480": 1
+    },
+    "syna-45364685": {
+      "45364685": 1
+    },
+    "syna-45457778": {
+      "45457778": 1
+    },
+    "syna-45920278": {
+      "45920278": 1
+    },
+    "syna-461550": {
+      "461550": 1
+    },
+    "syna-46182525": {
+      "46182525": 1
+    },
+    "syna-4662264": {
+      "4662264": 1
+    },
+    "syna-46837626": {
+      "46837626": 1
+    },
+    "syna-4701662": {
+      "4701662": 1
+    },
+    "syna-4702639": {
+      "4702639": 1
+    },
+    "syna-4824840": {
+      "4824840": 1
+    },
+    "syna-4857093": {
+      "4857093": 1
+    },
+    "syna-4896726": {
+      "4896726": 1
+    },
+    "syna-4993011": {
+      "4993011": 1
+    },
+    "syna-52175065": {
+      "52175065": 1
+    },
+    "syna-5256564": {
+      "5256564": 1
+    },
+    "syna-5278233": {
+      "5278233": 1
+    },
+    "syna-52944377": {
+      "52944377": 1
+    },
+    "syna-53211308": {
+      "53211308": 1
+    },
+    "syna-5321708": {
+      "5321708": 1
+    },
+    "syna-5372432": {
+      "5372432": 1
+    },
+    "syna-5398179": {
+      "5398179": 1
+    },
+    "syna-54490092": {
+      "54490092": 1
+    },
+    "syna-54562433": {
+      "54562433": 1
+    },
+    "syna-5487448": {
+      "5487448": 1
+    },
+    "syna-5560962": {
+      "5560962": 1
+    },
+    "syna-5596332": {
+      "5596332": 1
+    },
+    "syna-5650232": {
+      "5650232": 1
+    },
+    "syna-56893404": {
+      "56893404": 1
+    },
+    "syna-5800138": {
+      "5800138": 1
+    },
+    "syna-5849439": {
+      "5849439": 1
+    },
+    "syna-5914739": {
+      "5914739": 1
+    },
+    "syna-600808": {
+      "600808": 1
+    },
+    "syna-6106004": {
+      "6106004": 1
+    },
+    "syna-6112053": {
+      "6112053": 1
+    },
+    "syna-6171953": {
+      "6171953": 1
+    },
+    "syna-6176498": {
+      "6176498": 1
+    },
+    "syna-623486": {
+      "623486": 1
+    },
+    "syna-6250701": {
+      "6250701": 1
+    },
+    "syna-6325527": {
+      "6325527": 1
+    },
+    "syna-6372244": {
+      "6372244": 1
+    },
+    "syna-63858430": {
+      "63858430": 1
+    },
+    "syna-6417632": {
+      "6417632": 1
+    },
+    "syna-641786": {
+      "641786": 1
+    },
+    "syna-6503534": {
+      "6503534": 1
+    },
+    "syna-6549091": {
+      "6549091": 1
+    },
+    "syna-6766459": {
+      "6766459": 1
+    },
+    "syna-6828370": {
+      "6828370": 1
+    },
+    "syna-6910577": {
+      "6910577": 1
+    },
+    "syna-6945285": {
+      "6945285": 1
+    },
+    "syna-6947286": {
+      "6947286": 1
+    },
+    "syna-696006": {
+      "696006": 1
+    },
+    "syna-7046487": {
+      "7046487": 1
+    },
+    "syna-70704988": {
+      "70704988": 1
+    },
+    "syna-7185591": {
+      "7185591": 1
+    },
+    "syna-7211056": {
+      "7211056": 1
+    },
+    "syna-7227763": {
+      "7227763": 1
+    },
+    "syna-72580164": {
+      "72580164": 1
+    },
+    "syna-7268522": {
+      "7268522": 1
+    },
+    "syna-7451607": {
+      "7451607": 1
+    },
+    "syna-7506409": {
+      "7506409": 1
+    },
+    "syna-7514614": {
+      "7514614": 1
+    },
+    "syna-7650066": {
+      "7650066": 1
+    },
+    "syna-7837879": {
+      "7837879": 1
+    },
+    "syna-7850867": {
+      "7850867": 1
+    },
+    "syna-79231308": {
+      "79231308": 1
+    },
+    "syna-79336156": {
+      "79336156": 1
+    },
+    "syna-7975937": {
+      "7975937": 1
+    },
+    "syna-8002529": {
+      "8002529": 1
+    },
+    "syna-80109277": {
+      "80109277": 1
+    },
+    "syna-8133180": {
+      "8133180": 1
+    },
+    "syna-8148304": {
+      "8148304": 1
+    },
+    "syna-834336": {
+      "834336": 1
+    },
+    "syna-84244109": {
+      "84244109": 1
+    },
+    "syna-8426046": {
+      "8426046": 1
+    },
+    "syna-8428837": {
+      "8428837": 1
+    },
+    "syna-84884645": {
+      "84884645": 1
+    },
+    "syna-8496132": {
+      "8496132": 1
+    },
+    "syna-85394684": {
+      "85394684": 1
+    },
+    "syna-8595678": {
+      "8595678": 1
+    },
+    "syna-8596837": {
+      "8596837": 1
+    },
+    "syna-86160128": {
+      "86160128": 1
+    },
+    "syna-86326468": {
+      "86326468": 1
+    },
+    "syna-8659426": {
+      "8659426": 1
+    },
+    "syna-8702697": {
+      "8702697": 1
+    },
+    "syna-87430549": {
+      "87430549": 1
+    },
+    "syna-87758": {
+      "87758": 1
+    },
+    "syna-8780599": {
+      "8780599": 1
+    },
+    "syna-8816869": {
+      "8816869": 1
+    },
+    "syna-8903143": {
+      "8903143": 1
+    },
+    "syna-8925851": {
+      "8925851": 1
+    },
+    "syna-8997410": {
+      "8997410": 1
+    },
+    "syna-90756514": {
+      "90756514": 1
+    },
+    "syna-9076196": {
+      "9076196": 1
+    },
+    "syna-9095394": {
+      "9095394": 1
+    },
+    "syna-9142761": {
+      "9142761": 1
+    },
+    "syna-9301606": {
+      "9301606": 1
+    },
+    "syna-935538": {
+      "935538": 1
+    },
+    "syna-949309": {
+      "949309": 1
+    },
+    "syna-9505402": {
+      "9505402": 1
+    },
+    "syna-9600826": {
+      "9600826": 1
+    },
+    "syna-9658390": {
+      "9658390": 1
+    },
+    "syna-9737083": {
+      "9737083": 1
+    },
+    "syna-9764256": {
+      "9764256": 1
+    },
+    "syna-9881829": {
+      "9881829": 1
+    }
+  },
+  "queries": {
+    "syna-10009203": "How do dendritic arbors of Drosophila embryonic motoneurons like aCC structurally compensate for changes in presynaptic activity and release site density, and what signaling pathway mediates this adjustment?",
+    "syna-10010651": "What are the American Cancer Society's expert guidelines on nutrition and physical activity for cancer survivors after diagnosis and treatment?",
+    "syna-1006165": "What is the shortest siRNA duplex length that can still trigger effective RNAi in human cells, and does it work better than the standard 19-nt design?",
+    "syna-10071590": "Has acute myopericarditis been reported in an adolescent following multiple vaccinations, and how did the patient present and recover?",
+    "syna-10162553": "How does cyclosporine A treatment affect Aire-expressing MHC class II-high medullary thymic epithelial cells in mice, and how quickly do they regenerate compared to cyclophosphamide or dexamethasone treatment?",
+    "syna-10209731": "How do ischaemic heart disease, hypertensive disease, and cerebrovascular disease mortality rates compare among Chinese, Malay, and Indian adults aged 30\u201369 in Singapore?",
+    "syna-10486817": "How does CNBP overexpression suppress metastasis and induce cell death in fibrosarcoma cells via G-quadruplex formation in the hnRNP K promoter?",
+    "syna-10530014": "What gene mutation causes the severe bleeding, recurrent infections, and osteopetrosis seen in patients with a LAD-III-like integrin activation defect?",
+    "syna-10555591": "What role does zinc released from hippocampal mossy fiber terminals play \u2014 is it involved in presynaptic plasticity or does it act as a modulatory neurotransmitter on NMDA receptors?",
+    "syna-10660080": "Does SecDFyajC in E. coli actually function to maintain the proton motive force, or is the reported PMF defect in SecDFyajC-depleted membrane vesicles an artifact of the depletion conditions?",
+    "syna-1068106": "Should emotional dysregulation be considered a core part of adult ADHD psychopathology, given that ICD-10, DSM-IV, and DSM-5 don't include it?",
+    "syna-10704438": "How does DNA damage response signaling differ during mitosis compared to interphase, and what happens to mitotic cells that sustain double-strand breaks?",
+    "syna-10761515": "What proportion of colorectal cancer patients have detectable breath methane compared to people without large-bowel disease?",
+    "syna-10795063": "How does increasing cholesterol efflux from adult rat hippocampal slices (using CSF-HDL3 or methyl-\u03b2-cyclodextrin) affect CA1 synaptic plasticity and neuronal integrity?",
+    "syna-10846815": "How do mast cells reconcile the actin cortex acting as both a barrier and a facilitator of secretory granule exocytosis during antigen-triggered secretion?",
+    "syna-11011905": "How do Oct4, Sox2, and Klf4 recognize and bind their target sites within nucleosomal, silent chromatin during reprogramming?",
+    "syna-11090688": "Do GLP-1 receptor gene polymorphisms like rs10305420 and rs6923761 predict how much weight obese women with PCOS lose on liraglutide?",
+    "syna-11117498": "How does stereotactic radiosurgery compare to surgical resection in terms of cost per life year gained for treating solitary metastatic brain tumors?",
+    "syna-1122279": "Does exercise training restore endothelium-dependent (bradykinin-mediated) relaxation and eNOS mRNA expression in collateral-dependent coronary arterioles after chronic coronary occlusion in swine?",
+    "syna-11230569": "How much would it cost annually to reach universal access to HIV prevention and treatment by 2015 under a strategic investment framework, and how many infections and deaths could it avert compared with current approaches?",
+    "syna-11254040": "What proportion of multidrug-resistant tuberculosis patients experience adverse drug events during second-line treatment, and which types are most common?",
+    "syna-11469078": "Can ecologic studies validly estimate contextual (group-level) health effects, or does variation in the distribution of individual-level effects across areas bias those estimates too?",
+    "syna-11532028": "Which novel BMI-associated genetic loci were discovered in a genome-wide association meta-analysis of East Asian populations?",
+    "syna-11721676": "What protein isoform was identified by 2-DE and MALDI-TOF MS only in the peripheral portion of rat lumbar spinal nerves relative to dorsal root ganglia, and how does it change after sciatic nerve injury?",
+    "syna-11774598": "How did the discovery of the retinoid X receptor and other orphan receptors reshape our understanding of nuclear hormone receptor signaling networks in molecular endocrinology?",
+    "syna-11822354": "How does the RNA-binding protein UNR contribute to targeting the MSL complex to the X chromosome in Drosophila dosage compensation?",
+    "syna-11844826": "What is the COMMD protein family, and how do its members relate to MURR1 and NF-kappaB regulation?",
+    "syna-11903247": "How does cytoplasmic p53 regulate autophagy, and does its degradation contribute to autophagy induction by stimuli like starvation and rapamycin?",
+    "syna-11915280": "What effect does conditional deletion of the de novo methyltransferase Dnmt3b have on the different stages of intestinal tumor development in Apc(Min/+) mice?",
+    "syna-11921405": "How does the intestinal epithelium limit Salmonella Typhimurium replication within enterocytes during early infection, and are IL-1\u03b1/\u03b2 and IL-18 required for this defense?",
+    "syna-1192458": "How does smokeless tobacco exposure in oral fibroblasts affect neighboring epithelial cells' proliferation, invasiveness, and marker expression?",
+    "syna-11939159": "Does influenza vaccination reduce major adverse cardiovascular events in patients at high cardiovascular risk, and is the benefit greater in those with a recent acute coronary syndrome?",
+    "syna-1203035": "In low-grade cervical squamous intraepithelial lesions, is basal keratinocyte tetrasomy associated only with particular high-risk HPV types, or does it occur across high- and intermediate-risk types generally?",
+    "syna-120626": "How does obesity lead to insulin resistance, and why is \u03b2-cell dysfunction necessary for type 2 diabetes to develop?",
+    "syna-12086599": "Can rDNA repeat expansion in yeast occur without Fob1 and the canonical homologous recombination proteins Rad52, Rad51, and Rad59?",
+    "syna-12100854": "How do H3K9 methyltransferases (Ehmt1/Ehmt2/Setdb1) and HP1\u03b3/Cbx3 act as barriers to iPSC reprogramming, and does Cbx3 bind repressed or active genes in pre-iPSCs versus ESCs?",
+    "syna-1215116": "What are the shared characteristics of neglected tropical diseases like lymphatic filariasis, onchocerciasis, guinea worm, leprosy, and trachoma that make them targets for integrated control in Africa?",
+    "syna-12152977": "What role does the SWI/SNF chromatin remodeler Brg1 play in embryonic stem cell self-renewal and pluripotency, and which pluripotency gene promoters does it occupy?",
+    "syna-12156187": "Which histone chaperones, when co-depleted in human cells, trigger all the hallmarks of alternative lengthening of telomeres (ALT)?",
+    "syna-1220287": "Does chronic FTY720 (fingolimod) treatment improve motor function, survival, and brain pathology in the R6/2 mouse model of Huntington disease?",
+    "syna-12224536": "How did calorie intake from sugar-sweetened beverages among U.S. youth and adults change between 1999-2000 and 2009-2010 according to NHANES dietary recall data?",
+    "syna-12232678": "How is dosage compensation of Z-linked genes organized in chickens \u2014 are there chromosomal regions or neighborhoods that are compensated together, or is it regulated gene by gene across tissues and life stages?",
+    "syna-12428497": "What country-level factors, such as GAVI support, vaccine price, or neighboring countries' choices, influence how quickly national governments decide to adopt Hib vaccine?",
+    "syna-12440953": "How do microRNAs help biological systems remain robust against genetic and environmental perturbations?",
+    "syna-12489688": "How does the myeloperoxidase\u2013hydrogen peroxide\u2013chloride system kill microorganisms inside neutrophil phagosomes, and how can the same oxidants damage host tissue?",
+    "syna-12513972": "Is there echocardiographic evidence that patients with large, ruptured, or multiple intracranial aneurysms have enlarged aortic root dimensions, suggesting a shared underlying aortopathy?",
+    "syna-1259359": "What proportion of tuberculosis patients and blood donors at Zomba General Hospital in Malawi tested positive for HIV antibodies in the late 1980s?",
+    "syna-1265945": "Which HLA allele was identified as having a primary shared role in both Crohn's disease and ulcerative colitis in high-density MHC SNP mapping of over 32,000 IBD patients, and in which disease was heterozygous advantage observed?",
+    "syna-12909503": "How do DNA-PKcs and RPA32 phosphorylation contribute to ATR-Chk1 checkpoint signaling and prevention of mitotic entry with unrepaired damage during replication stress?",
+    "syna-13036442": "Why does a yeast strain lacking Met4p grow poorly even in rich media containing excess methionine, and how do loss-of-function mutations in OPI1 suppress this growth defect?",
+    "syna-1322614": "What new features and improvements were introduced in version 2.4 of the ATSAS software package for small-angle X-ray and neutron scattering data analysis?",
+    "syna-13277118": "Where did the maternal lineage of modern polar bears originate, and what does that imply about hybridization between polar bears and brown bears?",
+    "syna-13277623": "How does the SCF-type ubiquitin ligase FBW7 act as a tumour suppressor, and which proto-oncogenic substrates does it target for degradation?",
+    "syna-13296399": "How was CRISPR/Cas9 used in vivo to selectively disrupt the mutant rhodopsin allele in the S334ter-3 rat model of autosomal dominant retinitis pigmentosa, and did it preserve vision?",
+    "syna-1336292": "How does FTY720 cause peripheral lymphopenia \u2014 does it block mature T cells from exiting the thymus, and what evidence from intrathymic FITC labeling supports this?",
+    "syna-13445579": "What is the prevalence of intracranial aneurysms detected by MRA screening in adult patients with aortic coarctation, and is hypertension associated with their presence?",
+    "syna-13450938": "Which zinc fingers of human ZFP57 mediate binding to the methylated TGCCGC motif, and how do ZFP57 mutations or TNDM1 ICR hypomethylation disrupt this binding in transient neonatal diabetes type 1?",
+    "syna-13466622": "How does metformin lower blood glucose at the molecular level, and what roles do mitochondrial complex I inhibition and AMPK activation play in its effects on diabetes and cancer?",
+    "syna-1358909": "What is the prevalence of peripheral arterial disease versus intermittent claudication in adults aged 55 and over, and how often do people with a low ankle-arm index actually report claudication symptoms?",
+    "syna-13624704": "How effective is a single intravenous dose of ondansetron (0.1 mg/kg) at preventing postoperative nausea and vomiting in children undergoing tonsillectomy, and does it reduce nursing time and resource use?",
+    "syna-13714201": "Is gut microbiome diversity associated with carotid-femoral pulse wave velocity in middle-aged women, and is that link mediated by metabolic syndrome factors?",
+    "syna-13760557": "Which TRPC channel works together with STIM1 and Orai1 to permit Sr2+ entry and maximize Ca2+ influx and degranulation in RBL-2H3 mast cells?",
+    "syna-13791044": "How does cerebral palsy risk vary with gestational age among term and postterm singleton births, and is 40 weeks associated with the lowest risk?",
+    "syna-1379127": "Which store-operated calcium entry proteins have been shown to be required for breast cancer cell migration and metastasis, and does inhibiting them reduce metastasis in mouse models?",
+    "syna-13878124": "How does the attachment of radial glial cell processes to the meningeal basement membrane, via beta1 integrins and laminins, affect radial glial survival and cortical size?",
+    "syna-13914633": "What are the out-of-pocket costs and time burdens faced by patients accessing free HIV pre-ART, ART, and TB services in rural South Africa, and how do they pay for them?",
+    "syna-13934676": "Which chronic health conditions contribute most to dependence among people aged 65 and over in Latin America, China and India, and what proportion of dependence is attributable to dementia?",
+    "syna-13938878": "How well do age-specific clinical sign and symptom algorithms perform for diagnosing malaria in children versus adults in a moderate-transmission area of Kilifi, Kenya?",
+    "syna-13944805": "How does maternal obesity affect the epigenetic regulation of zfp423 and the adipogenic capacity of visceral fat progenitor cells in male offspring mice?",
+    "syna-13955536": "When does demethylation of imprints, X-linked CpG islands, and germline-specific genes occur relative to global methylation loss during mouse primordial germ cell development?",
+    "syna-13958154": "How does palmitate exposure alter the transcriptome of human pancreatic islets, and what mechanisms of \u03b2-cell dysfunction and death does RNA sequencing reveal?",
+    "syna-13969173": "How can astrocytes be generated from living ALS patients' fibroblasts to test whether they are toxic to motor neurons in both familial and sporadic disease?",
+    "syna-14060030": "How did the discovery of myocyte mitosis and resident primitive cells in the myocardium overturn the long-held view, established in the 1970s, that the heart is a postmitotic organ incapable of regenerating cardiomyocytes?",
+    "syna-14079881": "Does how old a person looks in a photograph actually predict how long they will live, independent of their actual chronological age?",
+    "syna-14105446": "How does treating axolotl limb skin with actinomycin D before amputation affect wound epidermis function and the timing of blastema formation during regeneration?",
+    "syna-14192687": "Can induced pluripotent stem cells derived from fibroblasts be differentiated into neurons that functionally integrate into the brain and relieve symptoms in a rat model of Parkinson's disease?",
+    "syna-14332945": "What role does RAD52 play in restarting collapsed DNA replication forks in cancer cells under oncogene-induced replication stress, and does deleting it reduce tumor growth in mice?",
+    "syna-14362678": "How does chronic \u03b2-adrenergic receptor stimulation trigger mitochondrial permeability transition pore opening in cardiomyocytes, and what role does CaMKII phosphorylation of Drp1 at serine 616 play in this process?",
+    "syna-14380875": "How does the glucocorticoid receptor repress NF-kappaB-driven transcription of IL-8 and ICAM-1 \u2014 does it block NF-kappaB DNA binding or preinitiation complex assembly, or something else?",
+    "syna-143868995": "Do older adults' self-reported memory ratings actually correspond to their performance on objective memory tests?",
+    "syna-14390137": "How do rates of hepatitis C testing, infection, and interferon treatment compare between VA patients with schizophrenia, substance use disorders, or both, and patients without these diagnoses?",
+    "syna-14471161": "How does restricting feeding to a set time window slow pancreatic tumor growth in mice if the tumor's own clock genes stay arrhythmic?",
+    "syna-14479433": "Which gene encoding a nuclear bile acid receptor was found mutated in families with neonatal-onset progressive familial intrahepatic cholestasis featuring low GGT, coagulopathy, and absent BSEP expression?",
+    "syna-14501880": "How does kynurenic acid link nutritional state to feeding behavior after fasting in C. elegans?",
+    "syna-14657344": "Can TLR2 agonists such as Leishmania mexicana LPG or Pam3Cys reverse the functional exhaustion (low cytotoxicity, proliferation, IFN\u03b3, high PD-1) of CD8 T cells from diffuse cutaneous leishmaniasis patients?",
+    "syna-14663842": "How do heterozygous IDH1 mutations affect TCA cycle flux and reductive glutamine metabolism under hypoxia, and does this create a targetable vulnerability?",
+    "syna-1469751": "How can osteogenic siRNA be delivered specifically to osteoblasts rather than just to bone tissue, and does such a cell-level targeted approach actually increase bone formation in vivo?",
+    "syna-14711483": "In the randomized trial of inhaled nitric oxide (80 ppm for 4 hours) for acute vaso-occlusive crisis in children and young adults with sickle cell disease, did it reduce pain scores and narcotic use compared with placebo?",
+    "syna-1472815": "In adults with major depressive disorder, which white matter tracts show reduced fractional anisotropy on diffusion tensor imaging, and does this reduction correlate with depressive symptom severity?",
+    "syna-14768471": "How do extracellular vesicles from renal cancer stem cells alter mesenchymal stromal cells' gene expression and behavior to support tumor growth and vascularization?",
+    "syna-14797520": "How does Arabidopsis RNA polymerase IVb/Pol V transcription of intergenic regions contribute to siRNA-mediated heterochromatin formation and silencing of nearby genes and transposons?",
+    "syna-14827874": "How do aromatase inhibitors compare with clomiphene citrate for ovulation induction in terms of efficacy, antiestrogenic side effects, and multiple pregnancy risk?",
+    "syna-15041758": "Does collaborative care that treats depression alongside diabetes and coronary heart disease risk factors improve patients' social role functioning and quality of life compared with usual primary care?",
+    "syna-15048300": "How do cost-effectiveness estimates for Cox-2 inhibitors differ when based on real-world GPRD prescribing and outcome data instead of randomized trial data like VIGOR and CLASS?",
+    "syna-153744": "How does Herpesvirus saimiri use its noncoding RNAs (HSURs) to reduce the levels of the host microRNA miR-27 in transformed T cells?",
+    "syna-15381976": "How does morin affect airway inflammation and remodeling in ovalbumin-induced asthma models, and what role does ROS/MAPK signaling play in its mechanism?",
+    "syna-15635366": "What is the role of the polycomb group protein L3mbtl2 in embryonic stem cells and early mouse development, and which repressive complex does it recruit to its target genes?",
+    "syna-15648443": "Did the CAPP2 randomised trial show that 600 mg daily aspirin reduces colorectal cancer incidence in Lynch syndrome carriers over long-term follow-up?",
+    "syna-15657779": "How do unopposed gap junction hemichannels in astrocytes contribute to glutamate and aspartate release, and what evidence rules out glutamate transporter reversal or volume-sensitive anion channels as the mechanism?",
+    "syna-15670968": "Why is it problematic to use the WHO-CHOICE cost-effectiveness thresholds (one to three times GDP per capita per DALY averted) to guide health resource allocation decisions?",
+    "syna-15685921": "How does blocking BK(Ca) channels with charybdotoxin differentially affect excitatory and inhibitory synaptic currents and firing patterns of mouse retinal ganglion cells under dark versus light adaptation?",
+    "syna-1576955": "How do daf-2 and age-1 mutations in the insulin-like signaling pathway affect C. elegans fertility and embryonic development, and does daf-16 suppress those effects?",
+    "syna-15868816": "How were the par genes originally identified in C. elegans, and why are the PAR proteins thought to represent a conserved mechanism for cell polarization across animals?",
+    "syna-15907458": "How can I isolate keratinocytes from adult mouse epidermis, sort them by surface markers, and test the proliferation and differentiation potential of the resulting stem cell subpopulations in vitro and in an in vivo skin reconstitution assay?",
+    "syna-16098747": "How do factors like BMI, age, hormone therapy use, and reproductive history interact to influence mammographic breast density in large population-based studies?",
+    "syna-16128711": "How do E-cadherin and \u03b2-catenin adherens junction dynamics differ between polarizing and polarized Drosophila epithelial cells, as measured by FRAP?",
+    "syna-1616661": "How do Wnt7a and Wnt7b from the developing neuroepithelium influence blood vessel formation and blood-brain barrier differentiation in the CNS?",
+    "syna-1617327": "How does deleting Dicer1 in mouse osteoprogenitor cells affect blood cell development, and can such stromal defects trigger leukemia?",
+    "syna-16322674": "In pooled analyses of individual participant data, which measure of birth size (birth weight, length, or head circumference) is the strongest independent predictor of later breast cancer risk, and does the association depend on whether the data come from birth records or adult recall?",
+    "syna-16488405": "During prolonged moderate-intensity exercise, do peripheral blood mononuclear cells show increased IL-1\u03b2, IL-6, and TNF-\u03b1 mRNA expression that could explain the rise in plasma concentrations of these cytokines?",
+    "syna-164985": "How does Fra-1 drive IL-6 production in macrophages co-cultured with 4T1 breast cancer cells, and what role does this play in M2d macrophage polarization?",
+    "syna-16527698": "Can the impaired glucose-stimulated insulin secretion of islets isolated from human type 2 diabetic donors be reversed by antioxidant treatment such as glutathione?",
+    "syna-16644043": "How do ATR and ATM, along with the homologous recombination machinery, act at different stages of telomere replication to allow chromosome ends to form a protective structure?",
+    "syna-1667063": "How does long non-coding RNA expression in human bone marrow and thymic progenitor cells compare to protein-coding gene expression in terms of lineage and stage specificity during early B and T cell commitment?",
+    "syna-16701509": "Does low serum HDL cholesterol increase the risk of postmenopausal breast cancer, and is this association stronger in overweight women?",
+    "syna-17000834": "Does higher sun exposure during childhood and adolescence lower the risk of developing multiple sclerosis?",
+    "syna-17050065": "How do adp-1 and osm-9 mutations affect odorant-specific olfactory adaptation in C. elegans AWC neurons, and does either gene impair initial odorant sensation?",
+    "syna-17088791": "Do common amino-acid-changing polymorphisms in BRCA1 (Gln356Arg, Pro871Leu, Glu1038Gly, Ser1613Gly) affect breast or ovarian cancer risk in the general population?",
+    "syna-17150648": "How does leptin and metabolic status affect astrocyte glutamate and glucose transporters in the hypothalamus, and what does that mean for POMC neuron activity and obesity?",
+    "syna-1727042": "How does extracellular matrix stiffening trigger pulmonary hypertension via YAP/TAZ and microRNA-130/301 signaling?",
+    "syna-17518195": "How does the C-terminal docking domain of histone H2A affect nucleosome structure, linker histone H1 binding, and RSC-mediated remodeling, and what does this imply about the role of the variant H2A.Bbd?",
+    "syna-17553026": "How does loop1 enable human DNA polymerase mu to perform both terminal transferase (template-independent) and template-dependent synthesis, and what happens when it is deleted or swapped with TdT's loop1?",
+    "syna-17671145": "How does ROR-\u03b3 regulate androgen receptor expression in castration-resistant prostate cancer, and can ROR-\u03b3 antagonists suppress tumor growth?",
+    "syna-17691617": "Does a high-intensity functional exercise program improve ADL independence and balance in older people with dementia living in residential care, and do the effects differ by dementia type?",
+    "syna-17708753": "In the laser-induced CNV mouse model, what drives the initial angiogenic signal before RPE-derived VEGF peaks, and how does myeloid uptake of damaged retinal pigment epithelium relate to VEGF and Arginase-1 expression in infiltrating monocytes?",
+    "syna-1771079": "How many neuronal somata and dendrites does a single cortical astrocyte's territory typically encompass?",
+    "syna-17821387": "In an unselected autopsy cohort, how well do the Braak and McKeith staging systems for \u03b1-synuclein pathology fit observed lesion distributions, and how often do people with advanced \u03b1-synuclein pathology actually have dementia or extrapyramidal symptoms?",
+    "syna-17829012": "Which transcription factor drives IL-4 production in T follicular helper cells by binding the CNS2 region of the IL-4 locus together with IRF4, Stat3 and Stat6?",
+    "syna-17844478": "How does tumor cell-autonomous VEGF/Flt1 signaling cooperate with EGFR to drive squamous skin tumor growth independently of angiogenesis?",
+    "syna-17945638": "Which genes does the PRC2 subunit SUZ12 occupy in human embryonic stem cells, and how does this repression relate to pluripotency and differentiation?",
+    "syna-18027063": "Are codon-position-partitioned nucleotide substitution models a better fit than standard nucleotide models for phylogenetic analysis of protein-coding genes, and can they substitute for computationally expensive codon models?",
+    "syna-18078750": "How does the Kir2.1 potassium channel get selected for export from the Golgi, and what kind of trafficking signal mediates this?",
+    "syna-18098290": "In sporophytic self-incompatibility, why might dominant S-alleles be more common in pollen than in stigmas, and what role do mate limitation and S-locus\u2013modifier linkage play in the evolution of dominance?",
+    "syna-18231807": "How do CD28 versus 4-1BB costimulatory domains differ in their effect on T cell exhaustion caused by antigen-independent tonic signaling from CAR scFv clustering?",
+    "syna-18263406": "Is there a rapid, low-input PCR-based method for detecting alternative lengthening of telomeres in tumor samples that assesses both telomere length and C-circles?",
+    "syna-18361917": "What types of genes were found to be expressed during dedifferentiation of dorsal iris pigmented epithelial cells in newt lens regeneration, based on EST sequencing of a cDNA library?",
+    "syna-1840993": "What were the metabolic effects of the FGF21 analogue LY2405319 when administered subcutaneously to diabetic rhesus monkeys, and did it still work in animals with late-stage diabetes?",
+    "syna-18488986": "How does AIRE-mediated thymic expression of self-antigens like gp100 versus TRP-2 shape the T cell repertoire and antibody responses available for anti-melanoma immunity?",
+    "syna-18639989": "How does loss of Swi1/Timeless, a fork protection complex subunit, affect telomere length and stability in fission yeast?",
+    "syna-18654430": "How can the guide strand of a miRNA duplex be computationally distinguished from the passenger strand using sequence and secondary structure features, and what accuracy can such an SVM-based method achieve?",
+    "syna-18758057": "How does CD28 co-stimulation differentially affect the nanoscale co-clustering of CD3 with CD4 versus CD8 co-receptors on primary T cell membranes as visualized by NSOM/quantum dot imaging?",
+    "syna-18855191": "How do naturally isolated Myxococcus xanthus strains from different locations interact during starvation-induced fruiting body development \u2014 do they cooperate, antagonize, or exploit one another?",
+    "syna-1904291": "How did confirmatory factor analysis of symptoms reported by insulin-treated diabetic patients group hypoglycaemic symptoms, and was the structure replicated across samples?",
+    "syna-1910120": "How does the phospholipid remodeling enzyme Lpcat3 and its incorporation of arachidonate into membranes affect triglyceride secretion and VLDL lipidation in liver and intestine?",
+    "syna-1944452": "How does insertional mutagenesis from retroviral gene vectors cause clonal dominance in hematopoietic cells, and what approaches are being developed to study and improve vector safety?",
+    "syna-19572798": "Which subunit of mammalian PRC1 mediates chromatin compaction, and how does it differ from the Drosophila complex where Posterior Sex Combs performs this role?",
+    "syna-19673227": "Can a drug-resistance gene expression profile of circulating tumor cells isolated from peripheral blood predict response to chemotherapy and correlate with disease-free survival or time to progression in patients with epithelial carcinomas?",
+    "syna-19701340": "How does melatonin affect proliferation in different human melanoma cell lines, and do those lines differ in expression of NQO1, NQO2/MT3, and RORalpha receptors?",
+    "syna-19822046": "What are the clinical consequences of monoallelic versus biallelic germline PARN mutations in patients with bone marrow failure and neurodevelopmental problems?",
+    "syna-19824183": "How did malaria epidemiology in children under 5 change in Ifakara, southern Tanzania between 1995 and 2000, in terms of parasite prevalence, clinical incidence, and the age pattern of hospital admissions?",
+    "syna-19945096": "Why do patients with multiple long-term conditions in England report worse primary care experiences \u2014 is it the number of conditions itself or something else like pain and health-related quality of life?",
+    "syna-19974105": "How is eukaryotic DNA replication regulated across the cell cycle, from origin licensing in G1 to fork establishment at the G1/S transition?",
+    "syna-20109325": "What are the four components of patient assessment recommended in the revised GOLD strategy document, and how do they define the A\u2013D patient categories for COPD management?",
+    "syna-20183360": "How does GATA3 block TGF\u03b2\u2013Smad4-driven fascin expression and invadopodium formation in basal-like breast cancer cells?",
+    "syna-20188586": "Does sending real-time text message reminders triggered by missed dose times, along with counseling based on electronic monitoring data, improve antiretroviral therapy adherence among HIV patients in China?",
+    "syna-20279166": "How can DNA and cell nuclei be imaged label-free in living animals and fresh human tissue, and can such a method detect chromosome dynamics during mitosis and serve as real-time histology for skin cancer diagnosis?",
+    "syna-20311968": "Can CAR-engineered regulatory T cells targeted to lung epithelium reduce airway hyper-reactivity and Th2-driven inflammation in a mouse model of allergic asthma, and are they more effective than unmodified Tregs?",
+    "syna-20313748": "How does \u03b1-catenin sense mechanical tension at adherens junctions and recruit vinculin to strengthen cell-cell adhesion?",
+    "syna-20333864": "How do myoepithelial cells and fibroblasts differentially influence the progression of ductal carcinoma in situ to invasive breast carcinoma, and which signaling pathways maintain myoepithelial differentiation?",
+    "syna-20372201": "How does cancer stem cell theory explain tumor heterogeneity in gastrointestinal cancers, and what therapeutic strategies are being developed to target these cells?",
+    "syna-20381484": "How do nuclear proteins like SIRT1 and HDAC2 become S-nitrosylated if nitric oxide synthase isoforms are mainly located outside the nucleus?",
+    "syna-20491205": "What are the main health care issues facing prison populations, and what challenges exist in delivering health services within correctional settings?",
+    "syna-20646904": "How does the choice of targeted APC surface receptor affect the efficiency and quality of CD8+ T cell, CD4+ T cell, and B cell priming when antigens are delivered as antibody-bound soluble fusion proteins?",
+    "syna-20649327": "How does ATP binding affect peptide association with TAP transporters, and what peptide lengths bind the TAP substrate-binding site most efficiently?",
+    "syna-20675284": "How does TGF-beta inhibit endothelial cell growth\u2014does it change EGF receptor affinity and which EGF-induced competence genes are affected?",
+    "syna-20732789": "How does cigarette smoke affect COX-2 expression and PGE2 levels in the airways, and what role does PGE2 play in neutrophil adhesion to bronchial epithelial cells in COPD?",
+    "syna-20886584": "Which Fanconi Anemia/BRCA pathway gene had SNPs and haplotypes associated with grade 3/4 neurological toxicity in breast cancer patients treated with paclitaxel in the SWOG S0221 trial?",
+    "syna-20888849": "How does inhibiting the Hedgehog pathway with IPI-926 affect gemcitabine delivery and efficacy in mouse models of pancreatic ductal adenocarcinoma?",
+    "syna-2097256": "What population density range was found to be most prone to dengue outbreaks in the Vietnamese cohort study, and how did lack of piped water supply affect rural versus urban dengue risk?",
+    "syna-2099400": "Does Helicobacter pylori use the same signaling pathway to trigger cell motility and cell elongation in AGS gastric epithelial cells, and is the cag pathogenicity island required for both?",
+    "syna-21050357": "What research priorities did the international Global Action and Prioritization of Sudden Infant Death Project identify through its consensus process with experts and bereaved parents?",
+    "syna-21164071": "What mutation in the integrin beta 3 cytoplasmic domain causes a Glanzmann thrombasthenia variant in which alphaIIb beta 3 is present and can bind RGD but fails to be activated to bind soluble fibrinogen?",
+    "syna-21181273": "How does the expression and enzymatic activity of 15-hydroxyprostaglandin dehydrogenase (15-PGDH), the enzyme that degrades PGE2, change in colorectal carcinomas compared with normal intestinal tissue, and what does this suggest about its role in tumor progression?",
+    "syna-21221346": "What types of DNA structures can the Artemis:DNA-PKcs complex cleave during nonhomologous end joining?",
+    "syna-21250322": "How does Polo kinase regulate Asp to enable centrosomes to nucleate microtubule asters during mitosis?",
+    "syna-21372171": "Are plasma HMGB1 levels elevated in patients with peripheral artery disease, and do they correlate with fibrinogen?",
+    "syna-21472388": "In children and adolescents with type 1 diabetes, how do age and HbA1c levels affect the incidence of moderate and severe hypoglycemia?",
+    "syna-21550246": "How sensitive and specific is serial protein misfolding cyclic amplification (PMCA) for biochemically detecting PrPSc in the blood of scrapie-infected hamsters?",
+    "syna-21562657": "How does KSHV K5/MIR2 target BST2/tetherin for degradation, and what role does this play in virion release?",
+    "syna-21616324": "What percentage of UK paediatric kidney transplant recipients remain hypertensive at 6 months to 5 years post-transplant, and which clinical factors predict systolic hypertension?",
+    "syna-21692235": "What are the gene expression-based molecular subtypes of glioblastoma, and which genomic alterations (such as EGFR, NF1, PDGFRA/IDH1) define each subtype?",
+    "syna-21746539": "What is the immunological synapse, and how have new imaging technologies advanced our understanding of T-cell antigen recognition and cell-to-cell communication?",
+    "syna-21866916": "How do PACAP and VIP act on astrocytes, and which receptors do astrocytes express for these neuropeptides?",
+    "syna-21874312": "How did Wolfe's mammographic parenchymal patterns stratify breast cancer risk, and what were the cancer incidence rates for each of the four groups in the Hutzel Hospital study?",
+    "syna-21884059": "What are the current treatment options for acute and chronic graft-versus-host disease after allogeneic stem-cell transplantation, and why is management of steroid-refractory cases still controversial?",
+    "syna-21884449": "How do self-reported inhaled corticosteroid adherence, rhinitis severity, and smoking status each relate to asthma control in patients surveyed at UK general practices?",
+    "syna-21922424": "Which Xenopus LIM-class homeobox gene is expressed in the dorsal lip and dorsal mesoderm of the gastrula (Spemann's organizer), and is it synergistically induced by activin A and retinoic acid?",
+    "syna-21958900": "How do individual NSAIDs compare in their relative risk of serious gastrointestinal complications like bleeding or perforation, and does ibuprofen's low risk hold at higher doses?",
+    "syna-22107641": "Does diffusion tensor imaging show reduced fractional anisotropy in dorsolateral prefrontal white matter in elderly patients with depression, and if so, in which specific region?",
+    "syna-22547508": "What clinical and exposure factors on admission predict survival in patients with acute paraquat poisoning?",
+    "syna-22688699": "What are the complication rates and hospital resource utilization outcomes when awake craniotomy with brain mapping is used as the routine approach for all supratentorial intraaxial tumors, not just those in eloquent cortex?",
+    "syna-22896970": "What does the 3.5 \u00c5 crystal structure of the Tetrahymena thermophila 60S ribosomal subunit bound to eIF6 reveal about eukaryotic-specific ribosomal features and eIF6 binding?",
+    "syna-22914228": "How does the proteome of the PANC-1 pancreatic ductal adenocarcinoma cell line differ from normal pancreatic duct cells in terms of metabolic pathways, particularly regarding glycolysis and glutamine utilization?",
+    "syna-22937815": "How do ATP-dependent chromatin remodelling complexes contribute to the different DNA double strand break repair pathways, and why does this matter for genomic stability in cancer?",
+    "syna-22942787": "Did the 1998 and 2001 expansions of Medicare coverage for screening colonoscopy increase colonoscopy use and the likelihood of early-stage (stage I) colon cancer diagnosis in patients 67 and older, and did the effect differ between proximal and distal tumors?",
+    "syna-22963769": "How do changes in desmosomal and hemidesmosomal protein expression (such as DSG3, DSC2, COL17A1, and LAMC2) relate to differentiation, invasion pattern, and lymph node metastasis in oral squamous cell carcinoma?",
+    "syna-23078022": "How does the MUC1 oncoprotein drive constitutive NF-\u03baB p65 activation in carcinoma cells, and what components of the TNF\u03b1/IKK signalling pathway are required for its recruitment and function?",
+    "syna-23126677": "Can circulating plasma microRNA panels distinguish patients with colorectal polyps or adenomas from FOBt-positive controls in the Bowel Cancer Screening Programme, and which specific miRNAs show significant differences?",
+    "syna-23531592": "What further research is needed on mother-to-child HIV-1 transmission and paediatric HIV disease progression, given projections of millions of infected pregnant women and children by 2000?",
+    "syna-23535770": "What role does the transcription factor NF-kappaB play in regulating proliferation, migration, and differentiation of adult neural stem cells, and how might it relate to brain cancer stem cells?",
+    "syna-2356950": "How does MBD1 control the balance between proliferation and differentiation in adult neural stem cells, and what microRNA and downstream target mediate this effect?",
+    "syna-23716150": "What did genome-wide microarray profiling of the four heart chambers and interventricular septum reveal about chamber-specific gene expression, and is there a database for exploring these results?",
+    "syna-23848916": "How does oridonin from Rabdosia rubescens affect NF-kappa B activity and Bcl-2 family proteins in multiple myeloma and adult T-cell leukemia cells?",
+    "syna-23863551": "Why does PI3K inhibition with XL147 lose efficacy in HER2-overexpressing breast cancer cells, and how can FoxO-driven HER3 upregulation be overcome to improve response?",
+    "syna-23929297": "How does fasting trigger ghrelin release from stomach cells, and which receptor mediates it?",
+    "syna-23934390": "How does miR-203 suppress proliferation and invasion in non-small cell lung cancer, and which gene does it target?",
+    "syna-23972114": "How does TBK1-mediated phosphorylation of optineurin at serine-177 enhance selective autophagy of cytosolic Salmonella?",
+    "syna-23983289": "How accurate are ICD-9-CM codes in Medicare Part A claims data for identifying cardiovascular and stroke risk factors compared to medical record review?",
+    "syna-23985464": "How do tumor-derived p53 mutations at codons 175, 248, 273, and 281 affect transcription from the PCNA promoter and viral promoters compared with wild-type p53?",
+    "syna-24003461": "Do valvular interstitial cells inhibit endothelial-to-mesenchymal transformation and osteogenic differentiation of aortic valvular endothelial cells, and does EndMT occur before osteogenesis?",
+    "syna-24019260": "Does varenicline, the \u03b14\u03b22 nicotinic receptor partial agonist used for smoking cessation, selectively reduce ethanol consumption and seeking in animal models of chronic drinking?",
+    "syna-24044977": "What are the developmental requirements, lineage relationships, and effector functions of ROR\u03b3t-expressing and type 2 innate lymphoid cells, and how do they contribute to lymphoid organogenesis, mucosal immunity, helminth defense, and allergic inflammation?",
+    "syna-24101431": "How do intravenously administered mesenchymal stem cells reverse hyperglycemia in type 1 diabetes models \u2014 do they actually differentiate into insulin-producing beta cells, or do they act through immune and pancreatic microenvironment changes?",
+    "syna-24498673": "How do SLX1-SLX4 and MUS81-EME1 cooperate to resolve Holliday junctions in human cells, and how does this pathway relate to GEN1?",
+    "syna-24541180": "What centrifugation force and collagenase conditions give the best purity and integrity when isolating intact nuclei from mouse liver?",
+    "syna-24554740": "How do integrin-mediated adhesion signals control G1 phase cyclin-dependent kinases and cell cycle progression?",
+    "syna-24706198": "How do the Tat complexes formed by Bacillus subtilis TatAd and TatCd differ from the TatABC and TatA complexes of E. coli, and does TatAd perform both TatA and TatB functions?",
+    "syna-24721347": "How has malaria research evolved from its founding era to the present, and what integrated approach across parasite, mosquito, and human population genetics will be needed to guide control efforts like Roll Back Malaria in the coming century?",
+    "syna-24725136": "Which gene mutations cause the syndrome of hypogonadotropic hypogonadism with ataxia and dementia, and how does disrupted ubiquitination explain the neurodegenerative and reproductive features?",
+    "syna-24863571": "How can mitochondrial protein synthesis be specifically labeled and analyzed in cultured patient cells to detect translation defects?",
+    "syna-24921368": "What is impaired awareness of hypoglycaemia in insulin-treated diabetes, and how is it identified and managed?",
+    "syna-2494748": "How do CpG island hypermethylation frequencies of genes like p16, hMLH1, DAP-kinase, THBS1, and TIMP-3 change across chronic gastritis, intestinal metaplasia, adenoma, and carcinoma stages of gastric carcinogenesis?",
+    "syna-24998637": "What happens to arthritis severity and cartilage destruction in IL-6-deficient mice after induction of antigen-induced arthritis, and how does IL-6 loss affect IL-1\u03b2/TNF-\u03b1 expression and immune responses?",
+    "syna-25263942": "Is there an immunohistochemical marker that can distinguish endometrial polyps from endometrial hyperplasia in biopsy or curettage specimens?",
+    "syna-25300426": "How does LIF/STAT3 signaling maintain self-renewal and pluripotency in mouse ES cells, and what role does c-Myc stability at threonine 58 play in this process?",
+    "syna-25301182": "How does resting left ventricular diastolic dysfunction, compared with variation in systolic function, affect exercise capacity (in METs) in patients undergoing exercise echocardiography without inducible ischemia, and does this association get stronger with age?",
+    "syna-25404036": "How can gap junction distributions in cardiac myocytes be reconstructed and quantified in three dimensions rather than assessed by visual inspection of 2D microscopy images?",
+    "syna-25413327": "Do clonally derived human embryonic stem cell lines retain pluripotency, telomerase activity, and normal karyotypes after many months of continuous culture?",
+    "syna-2541699": "What gene identified in C. elegans encodes a nuclear Argonaute that carries siRNAs in germ cells to direct H3K9me3 at RNAi-targeted loci, and whose loss causes progressive germline silencing failure and sterility across generations?",
+    "syna-25435456": "How does the extracellular matrix and cell\u2013ECM adhesion influence cellular responses to protein, DNA, and siRNA therapeutics, and what does this imply for drug delivery system design?",
+    "syna-25462689": "In yeast, how does the orientation (direct vs. inverted) of repeated LACZ sequences on a plasmid affect the frequency of crossing-over associated with HO-induced double-strand break repair, and do the reciprocal crossover products appear with the same kinetics?",
+    "syna-25562234": "Is there population-level evidence linking serum soluble corin levels to hypertension in Chinese adults?",
+    "syna-25606339": "How does TLR3 activation affect HIV-1 transactivation and replication, and what signaling pathways and epigenetic changes at the HIV-1 promoter are involved?",
+    "syna-25816994": "In the ONTARGET trial, did combining telmisartan with ramipril improve renal outcomes compared with either drug alone in patients at high vascular risk?",
+    "syna-25842866": "What experimental evidence shows that telomeric G-quadruplex structures actually exist in vivo, and how were antibodies used to detect them in Stylonychia lemnae?",
+    "syna-25886725": "Do Medicare-Medicaid dual eligibles get discharged to lower-quality skilled nursing facilities than Medicare-only patients after a hospital stay?",
+    "syna-25900857": "Does genomic evidence from Apis mellifera show that worker-biased genes experience stronger positive selection than queen-biased genes, supporting the idea that worker traits drive adaptation in eusocial insects?",
+    "syna-2593298": "How does VE-cadherin inhibit VEGFR-2 signaling in confluent endothelial cells \u2014 does it block receptor internalization, and does internalized VEGFR-2 still signal?",
+    "syna-25942757": "How does O-glycosylation of PSGL-1 differentially affect its role in selectin-mediated leukocyte rolling versus its binding to homeostatic chemokines like CCL19 and CCL21?",
+    "syna-25950264": "How was a 3-D in vitro model of metastatic hepatocellular carcinoma created using MHCC97H cells, and how closely did it reproduce clinical HCC features and metastatic behavior in mice?",
+    "syna-25953438": "How do malaria-attributed mortality rates in children under 15 vary by age and season across demographic surveillance sites in sub-Saharan Africa with stable Plasmodium falciparum transmission?",
+    "syna-25974070": "How do the amount and type of dietary fat affect blood pressure, arterial compliance, and endothelial function, and what mechanisms are involved?",
+    "syna-26108767": "Which 2A peptide sequence gives the highest cleavage efficiency and monoclonal antibody titer when linking heavy and light chain genes in a single expression cassette in CHO cells, and does adding a GSG linker help?",
+    "syna-26231129": "Why do targeted therapies rarely cure advanced solid tumors, and how might shifting focus from acquired drug resistance to the biology of residual disease enable durable control or cure?",
+    "syna-26244918": "What effects does long-term sitagliptin treatment have on amyloid deposition and memory in APPswe/PSEN1dE9 transgenic mice?",
+    "syna-2638387": "What is the mechanism by which APOBEC3G/CEM15 causes G-to-A hypermutation in HIV-1 DNA, and how does Vif counteract it?",
+    "syna-26462632": "How can veterinarians optimize the diagnostic value of endoscopic biopsies\u2014such as specimen number, quality, and site (including ileal sampling)\u2014when investigating chronic gastrointestinal disease in dogs and cats?",
+    "syna-26672703": "What mechanisms drive the dynamic expansion and tissue-specific instability of DNA repeats in neurological and neuromuscular diseases?",
+    "syna-2682251": "How can a functional thymus be generated from rat embryonic stem cells using nude mouse blastocyst injection to create interspecies chimeras?",
+    "syna-26887439": "Which gene identified in an siRNA synthetic lethal screen shows selective killing of activated K-Ras-transformed DLD-1 colon carcinoma cells compared with isogenic K-Ras-disrupted cells?",
+    "syna-2701077": "Why might quiescence be harmful rather than protective for hematopoietic stem cells after ionizing radiation, given the DNA repair pathway they rely on?",
+    "syna-27129115": "Does giving magnesium sulphate to women at risk of preterm birth reduce the risk of cerebral palsy in their children, and how many women need to be treated to prevent one case?",
+    "syna-27243019": "How does the omission of in vivo T-cell depletion in conditioning regimens affect T-cell recovery after umbilical cord blood transplantation, and what cell therapy options exist for treating post-transplant viral infections in these patients?",
+    "syna-2727303": "How does HDAC6 regulate STIM1 trafficking and store-operated calcium entry differently in cervical cancer cells compared with normal cervical epithelial cells?",
+    "syna-27446873": "In the randomised Finnish screening trial, how did primary HPV DNA testing with cytology triage compare with conventional cytology in detecting CIN III, adenocarcinoma in situ, and invasive cervical cancer?",
+    "syna-27545868": "How does the histone acetyltransferase PCAF promote inflammatory gene expression (such as ICAM-1, VCAM-1, and MCP-1) in diabetic and LPS-induced kidney injury?",
+    "syna-27580223": "What were the main epidemiological characteristics and predisposing factors of the malaria epidemics reported in Sistan va Baluchestan province, Iran, between 2005 and 2009?",
+    "syna-27840664": "How do DNA structure checkpoints respond to different types of replication fork barriers, and what distinguishes recombination protein recruitment at collapsed versus stalled forks?",
+    "syna-28006126": "Which NF-\u03baB subunits are selectively recruited to the IL-8 and Bcl-xL promoters when CD28 is engaged independently of TCR signaling in T cells?",
+    "syna-28069701": "How can hidden Markov models that account for correlation between linked sites improve detection of selective sweeps from SNP data, especially under population bottlenecks?",
+    "syna-2824347": "Why do latent HIV-1 reservoirs in CD4+ T cells and monocyte-macrophages prevent HAART from eradicating the virus, and what strategies might reduce these reservoirs?",
+    "syna-28247027": "How does the antigen dose-dependent formation of stable CD8\u207a T cell\u2013dendritic cell contacts (phase 2) influence whether activated T cells become long-lived memory cells or short-lived effectors?",
+    "syna-28264919": "Which nucleotide in 23S rRNA is dimethylated by the erythromycin resistance methylase from Streptomyces erythraeus, and does the Staphylococcus aureus MLS-resistance methylase modify the same site?",
+    "syna-2828460": "Do cardiac fibroblasts from different embryonic origins (e.g., epicardial vs. endothelial vs. Pax3-derived) differ in their proliferation and activation after pressure overload injury?",
+    "syna-28338268": "What autosomal dominant syndrome was described in a large family in which optic atrophy and sensorineural hearing loss begin in childhood or adolescence and are followed in midlife by ptosis, ophthalmoplegia, ataxia, and myopathy?",
+    "syna-28386343": "How can patient-derived induced pluripotent stem cells be used for small molecule high throughput screening in drug discovery, and what challenges does this approach present?",
+    "syna-2842550": "How does eptifibatide given as a bolus plus 72-hour infusion affect ex vivo platelet aggregation over time in acute coronary syndrome patients, and does plasma drug level predict aggregation inhibition?",
+    "syna-28441310": "How does mutation frequency and mutational spectra change with age in the liver, bladder, and brain of Big Blue lacI transgenic mice, and does this support the oxidative damage theory of aging?",
+    "syna-28517384": "What role does soluble MD-2 play as an acute-phase protein and opsonin in the innate immune response to Gram-negative bacterial infections?",
+    "syna-28617573": "How does HPV testing compare to repeat cytology for triaging women with equivocal or low-grade Pap smear results, and is it accurate enough to use for primary cervical cancer screening and post-treatment follow-up?",
+    "syna-28647122": "What are the molecular mechanisms behind endotoxin tolerance in monocytes/macrophages, and how does this state contribute to immunosuppression in sepsis patients?",
+    "syna-28712203": "How does alpha-1 antitrypsin deficiency disrupt the protease\u2013antiprotease balance and increase the risk of destructive lung disease from neutrophil elastase?",
+    "syna-28937856": "How does SIRT1 alter FOXO3 activity after oxidative stress, and could this shift toward stress resistance rather than apoptosis explain how Sir2 proteins extend lifespan?",
+    "syna-2919030": "How does SOD1 stabilize casein kinase 1-gamma (Yck1p/Yck2p) to repress respiration in response to oxygen and glucose?",
+    "syna-29362104": "How do unsaturated free fatty acids affect anti-CD3-induced calcium influx in Jurkat T cells, and is protein kinase C involved in this effect?",
+    "syna-29689140": "Is c-Myc required for the proliferation and hepatomegaly caused by Apc deletion in the adult mouse liver, as it is in the intestine?",
+    "syna-30122260": "How do ATM/Tel1 and ATR/Mec1 kinases coordinate with each other to sense and signal DNA double-strand breaks, and how does DNA-end processing influence their activation?",
+    "syna-30353437": "How do mutations in the ATM gene lead to the combination of neurodegeneration, immunodeficiency, radiosensitivity, and cancer predisposition seen in ataxia telangiectasia?",
+    "syna-3052642": "How have bioinformatic tools, biochemical enrichment, and deep sequencing enabled genome-wide discovery of endogenous circular RNAs, and what functions\u2014such as microRNA regulation\u2014have been proposed for them?",
+    "syna-30884033": "How does Hsp90 maintain pluripotency in mouse embryonic stem cells, and does it directly interact with Oct4 and Nanog to prevent their proteasomal degradation?",
+    "syna-3090454": "How does graft-versus-host disease affect bone marrow B-cell precursor numbers and B-cell recovery after allogeneic hematopoietic cell transplantation?",
+    "syna-3095620": "Which white matter pathways connect the inferior parietal lobule and lateral temporal cortex to the macaque homologues of Broca's areas 44 and 45, and how do their termination patterns differ?",
+    "syna-3098821": "How does the methylated-CpG island recovery assay combined with next-generation sequencing (MIRA-seq) work, and how does its performance compare to whole genome bisulfite sequencing for profiling DNA methylation at CpG-rich regions?",
+    "syna-3099497": "How many simultaneous spatially separated sound sources can listeners localize at once, and does this limit differ between speech and tones?",
+    "syna-3107733": "How do peroxisomal and mitochondrial MAVS differ in the antiviral responses they trigger after viral infection?",
+    "syna-31293581": "Does the long-term persistence of radiation-induced senescence markers (DNA damage foci and p16INK4a) in mouse tissues depend on p53 or on an intact adaptive/NK immune system?",
+    "syna-313403": "How does the density of CD68-positive tumor-associated macrophages in tumor stroma relate to survival outcomes in invasive breast cancer, particularly in node-negative patients?",
+    "syna-31933981": "How might the acute-phase protein serum amyloid A link chronic inflammation to cancer development, and could it serve as a biomarker for tumour progression?",
+    "syna-32001951": "How does dexamethasone induce placental-type alkaline phosphatase in BC-M1 human breast cancer cells, and how do retinoic acid and phorbol esters affect this induction?",
+    "syna-3215494": "What homocysteine level thresholds should trigger treatment for primary versus secondary prevention of atherosclerotic vascular disease, and what supplement regimen is recommended?",
+    "syna-32324430": "How does competition between binding sites on different RNAs, such as miRNA sponging, influence post-transcriptional gene regulation?",
+    "syna-32423829": "What were the interim findings after three rounds of the Mumbai cluster-randomized trial using primary health workers to deliver VIA and clinical breast examination screening?",
+    "syna-32532238": "How do cells sense and adapt to mechanical forces applied to integrins, and which distinct response phases depend on cytoskeletal prestress, Rho signaling, mechanosensitive ion channels, or Src kinases?",
+    "syna-32587939": "How does WFS1 translocate to the plasma membrane and interact with adenylyl cyclase 8 to control cAMP-dependent insulin biosynthesis and secretion in \u03b2-cells?",
+    "syna-3285322": "How do the rates of triple-negative breast cancer and tumor grade compare between BRCA1 mutation carriers, BRCA2 mutation carriers, and non-carriers?",
+    "syna-33169058": "What mechanisms can prevent or limit cheating that undermines cooperation among microorganisms?",
+    "syna-3330111": "How do neutrophils contribute to immunity beyond simply killing extracellular pathogens, and what disease processes does this broader role implicate them in?",
+    "syna-33387953": "How do recurrent GNB1 and GNB2 mutations drive transformation in myeloid and B cell malignancies, and do they confer resistance to kinase inhibitors in tumors with BCR-ABL, JAK2 V617F, or BRAF V600K alterations?",
+    "syna-33723822": "What factors and policy processes shaped early government adoption of the Hepatitis B vaccine in developing countries like Taiwan and Thailand?",
+    "syna-33912020": "How does thioredoxin link Sema3A-induced CRMP2 oxidation to its phosphorylation during growth cone collapse?",
+    "syna-33920995": "Which specific amino acid motif in the cytoplasmic tail of ICAM-1 is required for its clustering on endothelial microvilli and its association with F-actin/ezrin/moesin, and how does deleting it affect leukocyte adhesion and transendothelial migration?",
+    "syna-33986507": "What are the key regulatory steps in the RNA polymerase II transcription cycle that enable rapid and specific activation of gene expression in response to external stimuli?",
+    "syna-33989422": "Which commentary discusses the origins of ultra-fine anaphase bridges in response to Chan et al.'s 2009 Nature Cell Biology paper on replication stress inducing sister-chromatid bridging at fragile sites in mitosis?",
+    "syna-34016944": "Why are PTEN-deficient EGFR-overexpressing breast cancer cells resistant to gefitinib, and can restoring PTEN or inhibiting PI3K re-sensitize them?",
+    "syna-3413083": "In Britain, how do sexual risk behaviours and subsequent HIV testing compare between people who get chlamydia tests in genitourinary medicine clinics versus general practice and other community settings?",
+    "syna-34254203": "What role does the pre-B-cell receptor play in selecting immunoglobulin heavy chain repertoires and enforcing allelic exclusion, and how does this compare to the pre-T-cell receptor's role in T-cell development?",
+    "syna-3430789": "Does activated charcoal hemoperfusion prevent acute kidney injury or enhance renal paraquat elimination in patients with paraquat poisoning?",
+    "syna-34544514": "How does ibuprofen compare with indomethacin for closing a patent ductus arteriosus in preterm or low birth weight infants, in terms of closure rates and adverse effects like necrotising enterocolitis and renal insufficiency?",
+    "syna-34559336": "Why does pol mu, but not pol lambda, promote accuracy during immunoglobulin kappa recombination despite both being recruited to fill gaps in nonhomologous end joining?",
+    "syna-34905328": "How does disrupting the basic-rich stretch that anchors the CD3\u03b5 cytoplasmic tail to the plasma membrane affect thymocyte development and peripheral T cell responses in mice?",
+    "syna-3504761": "How does TAK1 deficiency in hepatocytes lead to hepatosteatosis and liver tumors, and does mTORC1 inhibition reverse these effects?",
+    "syna-35256900": "How do immune complexes arriving in the lymph get delivered to follicular dendritic cells, and what role do subcapsular sinus macrophages and B cell complement receptors play in that process?",
+    "syna-3545805": "In adoptive transfer models using TRP-1-specific TCR transgenic CD4+ T cells, which polarization state (Th1 vs. Th17) more effectively eradicates large established B16 melanoma, and which cytokine is required for that effect?",
+    "syna-35531883": "How do inwardly rectifying potassium channels like Kir2.3 and Kir4.1/5.1 exit the Golgi, and is the AP-1-dependent export signal identified in Kir2.1 conserved across the family?",
+    "syna-35828148": "What are the second-order rate constants for the reactions of (-)-epicatechin with myeloperoxidase compound I and compound II at pH 7?",
+    "syna-3588621": "How do exosomes and shed microvesicles differ, and what methods exist for isolating, quantifying, and distinguishing these extracellular vesicle subtypes for clinical diagnostic use?",
+    "syna-36025357": "What are the main protective functions of glutathione in cells, how is its status measured, and how is its synthesis regulated?",
+    "syna-36202354": "How can pharmaceutical public-private partnerships between universities and private firms be structured to shift incentives away from an inefficient prisoners' dilemma outcome, and what would a roadmap for creating such partnerships in Europe look like compared to the U.S.?",
+    "syna-36271512": "What are the main topics covered in a review of T-cell activation, from the receptor complex and accessory molecules to signal transduction, gene expression control, IL-2 action, and acquisition of cytolytic activity?",
+    "syna-36480032": "How do ocular pigment epithelial cells from the iris, ciliary body, and retina suppress T-cell activation and contribute to immune privilege in the eye?",
+    "syna-36653415": "Do human non-small-cell lung tumors actually use lactate as a fuel for the TCA cycle in vivo, and how does its contribution compare to glucose?",
+    "syna-36830715": "How does moderate microtubule stabilization affect scar formation and axon regeneration after spinal cord injury in rodents?",
+    "syna-37156349": "Which cognitive skills predict whether a toddler with a physical disability is ready to safely operate a powered wheelchair?",
+    "syna-37182501": "What are the two mechanisms that generate human antibody diversity, and how does the immune system prevent the autoantibodies they inevitably produce from causing autoimmunity?",
+    "syna-37205685": "When and where did chloroquine-resistant Plasmodium falciparum first emerge, and how did it subsequently spread?",
+    "syna-37438296": "What miRNAs change in expression between prenatal and postnatal bovine skeletal muscle, and which gene does the newly identified bta-mir-10020 target?",
+    "syna-37450671": "Do Alzheimer's neurofibrillary tangles contain the same 4 kd amyloid protein found in plaque cores and cerebral blood vessels, and which regions of that protein are recognized in each lesion?",
+    "syna-37480103": "Is placental weight during pregnancy associated with a mother's later risk of developing breast cancer?",
+    "syna-374902": "Could annual universal HIV testing with immediate ART initiation drive a generalised epidemic like South Africa's toward elimination, and what would it cost compared with current treatment strategies?",
+    "syna-37608303": "How does OPA1 regulate cristae structure in response to changes in metabolic substrate availability, and is this function separable from its role in mitochondrial fusion?",
+    "syna-37699461": "Can human fetal liver progenitor cells be engineered with Pdx1 and telomerase to become expandable insulin-producing cells that reverse hyperglycemia after transplantation in diabetic mice?",
+    "syna-3801693": "Is there longitudinal evidence that high plasma TGF-\u03b21 levels predict future onset of hypertension in normotensive individuals?",
+    "syna-38025907": "How does the engineered FGF19 analogue M70 improve steatohepatitis and fibrosis in mouse models of NAFLD without causing the hepatocellular carcinoma seen with native FGF19?",
+    "syna-3828508": "What proportion of celiac patients are overweight or obese at diagnosis, and how does their weight change after two years on a gluten-free diet?",
+    "syna-3831884": "How does pancreatic ductal adenocarcinoma metabolize glutamine differently from normal cells, and what role does oncogenic KRAS play in that rewiring?",
+    "syna-38355793": "How does A20 expression in human glioma tissues and cell lines affect tumor growth, and what happens when it is knocked down with siRNA in vitro and in mouse xenografts?",
+    "syna-38376189": "Is the live attenuated chimeric West Nile virus vaccine rWN/DEN4\u039430 safe and immunogenic in flavivirus-naive adults aged 50\u201365 years?",
+    "syna-38794814": "Does the phase of delta oscillations entrained by a frequency-modulated sound predict whether listeners detect brief gaps in that sound, and does it predict detection better than the stimulus phase itself?",
+    "syna-39128592": "How do positively selected thymocytes drive thymic medulla formation and the development of Aire-expressing medullary thymic epithelial cells?",
+    "syna-393001": "How does ATP allosterically regulate the soluble high-Km 5'-nucleotidase from human placenta, and why does the enzyme preferentially hydrolyze IMP over AMP under physiological conditions?",
+    "syna-39334724": "How do fixed-population spatial filters compare to fixed-geographic-size filters for smoothing disease maps in regions with highly variable population density, such as in the New York State birth weight data?",
+    "syna-39984099": "Is expanding ART eligibility to HIV-positive adults with CD4 counts \u2264500 cells/\u00b5L (or to all HIV-positive adults) cost-effective in low- and middle-income countries such as South Africa, Zambia, India, and Vietnam?",
+    "syna-40044800": "What enzyme detects cytosolic DNA and produces cGAMP to activate STING-dependent type I interferon responses?",
+    "syna-40349336": "What happens when the ATR checkpoint gene is deleted in adult mice, and how does it affect tissue-specific stem cells and aging phenotypes?",
+    "syna-40367499": "How do the dividing cell and its neighboring cells cooperate to control adherens junction formation during cytokinesis in epithelia?",
+    "syna-40476126": "How did the compound AM404 demonstrate that anandamide is inactivated by carrier-mediated transport rather than only by enzymatic hydrolysis?",
+    "syna-4067274": "At which stage of spliceosome assembly do splice sites become functionally committed to pairing during alternative splicing, and is ATP hydrolysis required for this step independently of U2 snRNP binding?",
+    "syna-40710501": "What determines whether glioblastoma tumor-initiating cells respond to EGFR kinase inhibitors like erlotinib and gefitinib, given that EGFR and ERK1/2 phosphorylation are blocked even in resistant cultures?",
+    "syna-40754510": "Who first described staphylococcal disease and its role in sepsis and abscess formation, and when?",
+    "syna-40971746": "How does sex-specific dosage compensation in birds' ZZ/ZW sex chromosome system compare to the mechanisms described in XX/XY systems?",
+    "syna-41120293": "How does the intestinal immune system contribute to obesity-related insulin resistance, and could it serve as a therapeutic target?",
+    "syna-41264017": "How does having multiple vascular risk factors (like diabetes, hypertension, heart disease, and smoking) together affect the risk of developing Alzheimer's disease in older adults?",
+    "syna-41925568": "Does using 75% DMSO as a vehicle for intra-paraventricular nucleus injections alter norepinephrine-induced feeding compared with artificial CSF alone?",
+    "syna-4200695": "Does a targeted rotator cuff and scapula stabiliser exercise programme reduce pain and the proportion of patients opting for arthroscopic subacromial decompression in long-standing subacromial impingement syndrome compared with unspecific shoulder exercises?",
+    "syna-42035464": "How does pericentrin anchor \u03b3-tubulin ring complexes at centrosomes, and why does disrupting this interaction affect spindle organization in mitosis but not microtubule organization in interphase?",
+    "syna-42080024": "How does inhibiting or supplementing VEGF affect fracture healing in endochondral versus intramembranous bone repair in animal models?",
+    "syna-42373943": "Which hematological parameter best predicts malaria in patients presenting with acute undifferentiated febrile illness in the tropics?",
+    "syna-4313478": "How does nonsense-mediated mRNA decay compensate for inefficient splicing of short introns, and what evidence from Paramecium tetraurelia UPF1 knockdowns supports this?",
+    "syna-4319844": "How does mitotic DNA synthesis at telomeres contribute to alternative lengthening of telomeres in ALT cancer cells, and which factors (like RAD52, TIMELESS/TIPIN, or SMC5/6) regulate it?",
+    "syna-4320424": "How can small molecules targeting the prenyl-binding protein PDE\u03b4 be used to disrupt KRAS membrane localization and suppress oncogenic KRAS signalling in pancreatic cancer cells?",
+    "syna-43419566": "Is constitutive activation of MAP kinase kinase (MEK) alone sufficient to transform mammalian cells and make them tumorigenic in nude mice?",
+    "syna-43427621": "Can blood-injury phobia causing malignant vasovagal syncope with prolonged asystole be successfully treated with psychological therapy such as applied tension and cognitive techniques instead of pacemaker implantation?",
+    "syna-4345605": "How do Nrg1 and ErbB4, genes linked to schizophrenia risk, shape cortical circuit development \u2014 do they act on excitatory synapses between pyramidal neurons or on GABAergic interneuron connectivity?",
+    "syna-4350400": "How do PIN auxin efflux carriers become polarly localized in plant cells, and what happens to embryo patterning and cell fate when that polarization fails?",
+    "syna-43557480": "How does hypertension affect the rate of chronic kidney disease progression in children over long-term follow-up, and what does this mean for antihypertensive treatment?",
+    "syna-4373445": "How are RhoA, Rac1, and Cdc42 activities spatially and temporally coordinated during individual membrane protrusion events in migrating fibroblasts?",
+    "syna-43880096": "How do post-translational modifications like phosphorylation and acetylation activate p53 following DNA damage?",
+    "syna-4391685": "How can spindle orientation in adherent HeLa cells be quantitatively predicted from cortical force generators activated by cues in different microenvironment geometries?",
+    "syna-4391817": "How was micronucleus formation shown to cause chromothripsis-like rearrangements within a single cell division?",
+    "syna-4394525": "How does Staphylococcus aureus cause pain during infection \u2014 is it driven by immune activation, or can bacteria directly activate nociceptor neurons?",
+    "syna-4402497": "What features of hepatitis C virus RNA does RIG-I recognize as a PAMP to trigger innate immune signaling?",
+    "syna-4407455": "How do inflammatory caspases like caspase-1 and caspase-11 actually trigger pyroptosis, and what role does gasdermin D cleavage play in that process?",
+    "syna-4409524": "How do corin and ANP contribute to trophoblast invasion and uterine spiral artery remodelling, and what evidence links their deficiency to pre-eclampsia?",
+    "syna-4421547": "How does CTCF binding at the unmethylated H19 imprinting control region block Igf2 from accessing the downstream enhancers, and why does methylation of that region on the paternal allele allow Igf2 expression?",
+    "syna-4421742": "What happens to the lungs in mice carrying the ferroportin C326S mutation that causes hereditary hemochromatosis type 4?",
+    "syna-4422734": "How many agonist peptide\u2013MHC ligands are needed to trigger calcium signalling versus to form an immunological synapse in CD4+ T cells, and how does blocking CD4 change that threshold?",
+    "syna-4423220": "How did researchers use C. elegans chromatin proteomics to narrow down over a thousand spermatogenic chromatin-associated proteins to a shortlist of conserved candidates for male infertility, and how well did those candidates predict sterility in mouse knockouts?",
+    "syna-4449524": "Does the lower hemoglobin concentration observed in Black children compared with White children persist after excluding those with hemoglobinopathies and low mean corpuscular volume, and should separate anemia screening criteria be used?",
+    "syna-4454788": "What are specialized pro-resolving mediators like lipoxins, resolvins, protectins and maresins, and what functions do they have beyond resolving acute inflammation?",
+    "syna-44572913": "How does calcium intake during growth affect calcium balance, absorption, and urinary excretion at different developmental stages, and what does this imply for peak bone mass and recommended intakes?",
+    "syna-44614949": "How does muscle-derived IL-6 influence inguinal white adipose tissue mass and metabolic signaling proteins in mice fed a high-fat diet with or without exercise training?",
+    "syna-4462777": "How can immunogenic tumour neo-epitopes be identified by combining exome/transcriptome sequencing with mass spectrometry and structural modelling of peptide\u2013MHC class I complexes?",
+    "syna-4464565": "How do epicatechin and cocoa polyphenolic extract alter gene expression in Caco-2 colon cells, and which specific genes were validated by RT-PCR and Western blotting?",
+    "syna-44947611": "What does the NMR solution structure of the mouse protein AAH26994.1 reveal about the evolutionary relationship between Urm1, ubiquitin, and MoaD subunits of molybdopterin synthase?",
+    "syna-4506702": "How do online consumer reviews of escitalopram and quetiapine compare with professionally controlled website drug information in the medication effects they report, and does excluding consumer-generated content from health searches make sense?",
+    "syna-45199834": "How do HeLa plasma membranes alter poliovirus type 1 virions, and what assay can distinguish altered particles from those that have released their RNA?",
+    "syna-45200347": "For resequencing studies of nonmodel organisms that lack a species-specific reference genome, what read depths and bioinformatics approaches (genotype calling vs. genotype\u2013haplotype calling vs. no calling) give the most accurate estimates of variability and site-frequency-spectrum neutrality tests?",
+    "syna-45341480": "In young children with scald burns under 10% TBSA, does treatment with a hydrofiber dressing (Aquacel) reduce the need for skin grafting and hospital length of stay compared with silver sulfadiazine?",
+    "syna-45364685": "Which stress treatment, besides heat shock, induces heat-shock puffs and heat-shock protein synthesis in Chironomus thummi salivary gland cells?",
+    "syna-45457778": "How does the history of European dementia population research compare with that in the United States, and what methodological changes are needed to better combine findings across countries?",
+    "syna-45920278": "Do women continue to have higher medical care utilization and charges than men after controlling for health status, sociodemographic factors, and primary care physician specialty?",
+    "syna-461550": "How can CRISPR/Cas9 be used to edit multiple genomic sites simultaneously in human and mouse cells, and can it be modified to act as a nickase for homology-directed repair?",
+    "syna-46182525": "How does aging affect bone mineral density versus section modulus (bending strength) in the femoral neck and proximal femoral shaft in men and women, according to NHANES III DXA structural analysis?",
+    "syna-4662264": "How does MAPK signaling from growth factors like EGF and IGF regulate the transcriptional activity of the human estrogen receptor's AF-1 domain?",
+    "syna-46837626": "How can creatinine clearance be estimated from serum creatinine in adults without a 24-hour urine collection, and how accurate is that estimate?",
+    "syna-4701662": "Is there direct experimental evidence that ERMES mediates phospholipid transfer between the ER and mitochondria, and does this transport require ATP or the mitochondrial membrane potential?",
+    "syna-4702639": "How does unliganded integrin \u03b1v\u03b23 promote cancer stem-like properties and erlotinib resistance, and can that pathway be targeted therapeutically?",
+    "syna-4824840": "How do sepsis incidence and mortality trends from 2009\u20132014 differ when measured with EHR-based clinical criteria versus ICD-9-CM claims codes in US hospitals?",
+    "syna-4857093": "How valid and acceptable is the computerised 24-hour recall tool YANA-C for assessing food and nutrient intake in 11\u201314-year-olds compared with food records and interviewer-administered recalls?",
+    "syna-4896726": "How does the pioneer factor Pax7 specify a pituitary cell lineage, and does the chromatin opening it initiates persist after Pax7 is withdrawn?",
+    "syna-4993011": "How does loss of ATRX affect ribosomal DNA copy number and stability, and does this create a therapeutic vulnerability to RNA polymerase I inhibitors in ALT-positive cancers?",
+    "syna-52175065": "How do VEGF mRNA responses to submaximal knee-extensor exercise and skeletal muscle structure (capillarity, fibre type, mitochondrial density) change after small muscle mass training in patients with heart failure with reduced ejection fraction compared with healthy controls?",
+    "syna-5256564": "What are the preclinical antitumor effects of V-9302, a small molecule inhibitor of the glutamine transporter ASCT2, in cancer cells?",
+    "syna-5278233": "What is KvDMR1 in the KvLQT1 gene, and how does its methylation status relate to loss of IGF2 imprinting in Beckwith-Wiedemann syndrome patients with normal H19 methylation?",
+    "syna-52944377": "How does transcription-coupled homologous recombination at ROS-damaged transcribed loci recruit RAD51 without BRCA1/BRCA2, and what role do R loops and CSB play in initiating it?",
+    "syna-53211308": "How does exosomal miR-99a-5p from epithelial ovarian cancer cells alter peritoneal mesothelial cells to promote cancer invasion, and can serum levels of this miRNA distinguish ovarian cancer patients from those with benign tumors or healthy controls?",
+    "syna-5321708": "How does integrin-mediated adhesion signaling through ERK and RSK affect the completion of cytokinesis in epithelial cells, and is this dependence seen in all cell types?",
+    "syna-5372432": "Does longer travel time to hospital services, especially combined with social deprivation, increase the likelihood that cancer is first diagnosed at death in Northern England?",
+    "syna-5398179": "Are germinal center T follicular helper cells the main HIV-1-producing cells in vivo, and does their CXCR5/PD-1 phenotype change during productive infection?",
+    "syna-54490092": "Does increased 24-hour blood pressure variability, measured as the coefficient of variation of systolic blood pressure on ambulatory monitoring, independently predict cardiovascular events in elderly hypertensive patients?",
+    "syna-54562433": "How does Armcx1 affect mitochondrial transport, neuronal survival, and axon regeneration in adult retinal ganglion cells after injury?",
+    "syna-5487448": "Is birth weight or head circumference at birth associated with mammographic density in postmenopausal women?",
+    "syna-5560962": "Why do broadly neutralizing HIV-1 antibodies require somatic mutations in their framework regions rather than only in the CDR loops?",
+    "syna-5596332": "How do the Sepsis-3 consensus definitions characterize sepsis and septic shock, and what clinical criteria (SOFA and qSOFA) are used to identify them?",
+    "syna-5650232": "What software suite can efficiently compare and intersect large genomic feature datasets in BED, GFF, and BAM formats?",
+    "syna-56893404": "Do heterozygous HNF4A mutations affect birthweight and cause neonatal hypoglycaemia compared with HNF1A mutations?",
+    "syna-5800138": "Does IL-10 or TGF-\u03b2 mediate the protection conferred by CD45RBlow CD4+ regulatory T cells from Helicobacter hepaticus\u2013infected wild-type mice against colitis in reconstituted RAG-deficient mice?",
+    "syna-5849439": "What goes wrong during pollen development in the Arabidopsis male-sterile mutant lacking adenine phosphoribosyltransferase?",
+    "syna-5914739": "How does TCR engagement by peptide\u2013MHC cause the CD3\u03b5 cytoplasmic domain to dissociate from the plasma membrane, and does this depend on Src kinase signaling?",
+    "syna-600808": "Why is human cyclin A degraded at the start of mitosis while cyclin B1 degradation waits until the metaphase-to-anaphase transition?",
+    "syna-6106004": "How can virgin daughter cells be separated from mother cells in budding yeast, and what distinguishes mothers from daughters during the life span?",
+    "syna-6112053": "What does the systematic review evidence say about the timing, duration, and prevalence of withdrawal symptoms after stopping SSRIs, and why do the authors argue \"discontinuation syndrome\" should be renamed \"withdrawal syndrome\"?",
+    "syna-6171953": "How does SirT1 link nutrient availability to inflammation in obesity, and is its expression reduced in macrophages during diet-induced obesity?",
+    "syna-6176498": "Do elevated plasma levels of endothelial dysfunction markers like E-selectin, ICAM-1, and VCAM-1 predict future development of type 2 diabetes in women who are initially nondiabetic?",
+    "syna-623486": "How can large quantities of pure, functionally intact human peripheral blood monocytes be isolated from platelet concentrate byproducts, and do small versus large monocyte subpopulations differ in surface marker expression or ADCC activity?",
+    "syna-6250701": "In adults with severe falciparum malaria and impaired renal function at admission, do urinary markers such as NGAL, fractional excretion of sodium or urea, or the renal failure index predict the later need for renal replacement therapy better than plasma creatinine?",
+    "syna-6325527": "What role does the endothelial GPCR Gpr124 play in maintaining blood\u2013brain barrier integrity in adult mice under pathological conditions like stroke and glioblastoma, and how does Wnt\u2013\u03b2-catenin signaling relate to this?",
+    "syna-6372244": "How do antibiotic-induced changes in gut metabolites, such as bile acids and sugar alcohols, promote Clostridium difficile germination and growth in mice?",
+    "syna-63858430": "Is \"Multiple Imputation for Nonresponse in Surveys\" available online for instant download, and will it work on any device?",
+    "syna-6417632": "Which inflammatory cell types are increased within the airway smooth muscle of peripheral airways in smokers with COPD, and how does their infiltration relate to airflow limitation?",
+    "syna-641786": "Which gene was found to be recurrently mutated at relapse in childhood B-cell acute lymphoblastic leukemia, conferring increased nucleotidase activity and resistance to nucleoside analog chemotherapy?",
+    "syna-6503534": "What are the frequencies of \u03b1-L-iduronidase mutations like W402X, Q70X, and P533R among Italian mucopolysaccharidosis type I patients?",
+    "syna-6549091": "In patients over 35 with recurrent vasovagal syncope and tilt-induced bradycardia, does DDD pacing with rate-drop response reduce syncope recurrence more than atenolol?",
+    "syna-6766459": "How does RBM3 downregulation during fever control body temperature through temperature-sensitive microRNAs like miR-142-5p and miR-143?",
+    "syna-6828370": "How does the PTENP1 pseudogene transcript regulate PTEN levels and suppress tumour growth through competition for microRNA binding?",
+    "syna-6910577": "How does the Sleeping Beauty transposon system enable identification of cancer genes in mouse models, and can its mutagenesis be restricted to specific tissues to model particular human cancers?",
+    "syna-6945285": "In the randomised placebo-controlled trial of bezafibrate 400 mg daily in men with lower extremity arterial disease, did the drug reduce the combined incidence of coronary heart disease and stroke, and were there any subgroup benefits by age?",
+    "syna-6947286": "Are polymorphisms in the APH-1a and APH-1b genes associated with increased risk of sporadic Alzheimer's disease in an Italian population?",
+    "syna-696006": "How does influenza A infection cause airway hyper-reactivity without relying on Th2 cells or adaptive immunity?",
+    "syna-7046487": "What role does NF-\u03baB play in linking inflammation to cancer development, and why is it considered both tumor-promoting and context-dependent?",
+    "syna-70704988": "What textbook covers human nutrition at a biochemical, physiological, and molecular level, including topics like digestion and absorption, gut microflora, satiety mechanisms, macronutrients during exercise, and diseases like coronary heart disease and osteoporosis?",
+    "syna-7185591": "Is calorie restriction's life span extension in yeast entirely dependent on Sir2, or does a parallel Sir2-independent pathway exist (e.g., as shown by combining CR with FOB1 deletion or SIR2 overexpression)?",
+    "syna-7211056": "How does whole-genome doubling contribute to chromosomal instability and tumor evolution in colorectal cancer, and does it predict relapse-free survival in early-stage disease?",
+    "syna-7227763": "In hemorrhagic shock, does measuring pyruvate or calculating excess lactate and the lactate/pyruvate ratio predict oxygen debt and survival any better than blood lactate alone?",
+    "syna-72580164": "Welchen Bereich sehen nieders\u00e4chsische Haus\u00e4rzte laut Telefonbefragung als wichtigsten Verbesserungsbedarf in der Palliativversorgung \u2013 die Schmerztherapie oder die psychosoziale Betreuung?",
+    "syna-7268522": "How does Notch signaling activate different sets of transcriptional targets in different cell types, and what mechanisms regulate those targets?",
+    "syna-7451607": "How can newly synthesized proteins be pulse-chase labeled in cells to isolate and track the stepwise assembly of multiprotein complexes like nuclear pore complexes and preribosomes over time?",
+    "syna-7506409": "How does Wip1 overexpression extend the lifespan of human mesenchymal stem cells in culture, and does it act by reducing mitochondrial ROS or by suppressing downstream p38 MAPK/p16INK4a stress signaling?",
+    "syna-7514614": "Why does evolutionary theory suggest that aging results from limits on somatic maintenance and damage accumulation rather than from an active genetic program, and how do ecological factors like hazard rates and food availability shape species' life spans and the rate of aging?",
+    "syna-7650066": "In the HART study's long-term follow-up, how did the 5-year risk of developing CIN2+ compare between women with a negative baseline HPV test and those with negative baseline cytology?",
+    "syna-7837879": "How can contraction theory with non-Euclidean matrix measures (like those from L1 or L\u221e norms) be used to prove synchronization in diffusively coupled nonlinear systems on line, complete, and star graphs?",
+    "syna-7850867": "How do hematocrit, flow rate, red blood cell aggregation, and white blood cell deformability affect white blood cell margination in microcapillary blood flow simulations?",
+    "syna-79231308": "How much did a computer alert notifying physicians of patients' venous thromboembolism risk reduce the 90-day incidence of deep vein thrombosis or pulmonary embolism in hospitalized patients?",
+    "syna-79336156": "What functional role do beta-band oscillations play across cognitive and motor systems, and how might their pathological enhancement impair flexible behavior?",
+    "syna-7975937": "How does tumor-derived prostaglandin E2 production via cyclooxygenase enable melanoma and other cancers to escape immune control, and does blocking COX improve responses to anti-PD-1 therapy?",
+    "syna-8002529": "Do depressive symptoms in community-dwelling older adults predict subsequent decline in objectively measured physical performance over four years?",
+    "syna-80109277": "What is Joanna Moncrieff's 2013 book The Bitterest Pills about, and what argument does it make about how antipsychotic drugs came to be seen as cures rather than harmful substances?",
+    "syna-8133180": "What role does MAPK phosphatase-2 (MKP-2) play in tumor development driven by oncogenic RET mutations in MEN2A?",
+    "syna-8148304": "What does the sequence and mutational analysis of the yeast RIM1 gene reveal about its structure as a putative transcriptional activator and its relationship to MCK1 and IME4 in regulating IME1 expression during meiosis?",
+    "syna-834336": "Can compound heterozygous mutations in ZMPSTE24, rather than LMNA, cause a severe Hutchinson\u2013Gilford progeria-like phenotype by impairing prelamin A processing?",
+    "syna-84244109": "How can T-cell-deficient mice survive Listeria monocytogenes infection if the murine response to this pathogen is considered a classic model of T-cell-mediated immunity?",
+    "syna-8426046": "How can ribosome profiling data be used to distinguish truly noncoding lincRNAs from protein-coding transcripts, given that lincRNAs show ribosome occupancy?",
+    "syna-8428837": "Is mesalazine (5-aminosalicylic acid) the active component of sulfasalazine responsible for its benefit in treating spondyloarthropathy and ankylosing spondylitis?",
+    "syna-84884645": "What are the chapter titles in the book \"Reproductive Physiology of Marsupials\"?",
+    "syna-8496132": "How does the RNA-binding protein HuR affect bcl-2 mRNA stability and translation, and does it act together with nucleolin in HL60 and A431 cells?",
+    "syna-85394684": "How do intron and exon length distributions across eukaryotic genomes reveal whether splicing uses exon definition or intron definition, and what does that suggest about the ancestral recognition mechanism?",
+    "syna-8595678": "Does population folate status modify the association between the MTHFR 677C\u2192T polymorphism, homocysteine levels, and stroke risk, and do homocysteine-lowering trials show benefit in high-folate versus low-folate regions?",
+    "syna-8596837": "Do normotensive women with a history of hypertensive pregnancy show exaggerated blood pressure, heart rate, and muscle sympathetic nerve activity responses to static handgrip exercise compared with women who had healthy pregnancies?",
+    "syna-86160128": "What health benefits do fenugreek seeds provide, and which component is responsible for their antidiabetic and cholesterol-lowering effects?",
+    "syna-86326468": "How do gastric mucin profiles differ in Lundehunds with intestinal lymphangiectasia and chronic atrophic gastritis compared with control dogs of other breeds?",
+    "syna-8659426": "How has the approach to developing cancer chemopreventive agents changed over the past decade, and in which cancers has chemoprevention shown value?",
+    "syna-8702697": "How does miR-205 downregulation by HIF-1 contribute to cancer-associated fibroblast-induced EMT and metastasis in prostate cancer?",
+    "syna-87430549": "How could identifying differences between cancer stem cells and ordinary cancer cells improve cancer classification, diagnosis, and treatment?",
+    "syna-87758": "Do carotid intima media thickness and ankle-brachial pressure index actually reflect global atherosclerotic burden when assessed against whole body MR angiography in patients with symptomatic peripheral arterial disease?",
+    "syna-8780599": "What foods make up the \"Polymeal\" and how much could eating them daily reduce cardiovascular disease events and increase life expectancy compared with the Polypill?",
+    "syna-8816869": "How do the core clock genes Bmal1 and Clock affect gluconeogenesis and recovery from insulin-induced hypoglycaemia?",
+    "syna-8903143": "How do basic residue-rich motifs in the TCR\u03b6 cytoplasmic tail control its plasma membrane association, and what happens to signaling when they are mutated?",
+    "syna-8925851": "Which genetic disorders are classified as ribosomopathies, and how does the p53 pathway link defective ribosome biogenesis to their clinical features?",
+    "syna-8997410": "What happens to lamellipodial actin architecture, centripetal flow, and cell shape in sea urchin coelomocytes when the Arp2/3 complex is inhibited with CK666?",
+    "syna-90756514": "How many new classes of antibiotics have reached the market since 1962, and what does the late-stage clinical pipeline look like for addressing gram-negative resistance?",
+    "syna-9076196": "Which downstream targets of RUNX1 drive the loss of endothelial identity during the endothelial-to-hematopoietic transition in embryonic development?",
+    "syna-9095394": "How do keratin 15 and keratin 19 expression patterns differ from K5 and K14 in oral squamous cell carcinoma and squamous intraepithelial neoplasia, and what do those differences indicate about tumor differentiation and invasiveness?",
+    "syna-9142761": "How does the concentration of anti-Pfs25 IgG needed to block 50% of oocyst development in membrane-feeding assays differ between mice, rabbits, monkeys, and humans?",
+    "syna-9301606": "How does the PTH-induced primary response gene E4bp4/NFIL3 affect transcription of downstream PTH target genes in osteoblasts?",
+    "syna-935538": "What role does the RNA-binding protein GRSF1 play in mitochondria, and which mitochondrial transcripts does it preferentially bind?",
+    "syna-949309": "How can I avoid mosaicism when generating CRISPR/Cas9 knockout mouse embryos \u2014 does electroporating Cas9 protein instead of mRNA into early pronuclear IVF zygotes produce founders where all cells carry the same mutations?",
+    "syna-9505402": "What mutation detected in cell-free plasma DNA causes resistance to AZD9291 (osimertinib) in EGFR T790M-positive non-small cell lung cancer, and what other resistance patterns emerge?",
+    "syna-9600826": "How does VEGFR2 signaling in endothelial cells use the same GEP100-Arf6-AMAP1-cortactin pathway that drives breast cancer invasion to promote angiogenesis?",
+    "syna-9658390": "How do daily treatment costs for COPD exacerbation patients compare between intensive care units and respiratory intermediate care units?",
+    "syna-9737083": "In glioblastoma, which molecular subtype shows MGMT DNA methylation as a predictive biomarker of treatment response, and what phenotype accounts for the proneural subtype's survival advantage?",
+    "syna-9764256": "In the POBASCAM trial, did adding HPV DNA testing to cytology at baseline reduce detection of CIN3+ and cervical cancer in the second screening round five years later?",
+    "syna-9881829": "Which ATP-dependent chromatin remodeling enzyme catalyzes the replacement of histone H2A with the variant H2AZ in nucleosomes?"
+  }
+}

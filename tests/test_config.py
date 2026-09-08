@@ -10,7 +10,7 @@ from __future__ import annotations
 import pytest
 from pydantic import ValidationError
 
-from reval.experiments.config import ExperimentConfig
+from reval.experiments.config import ContaminationConfig, ExperimentConfig
 from reval.experiments.manifest import Manifest, git_state, package_versions
 from reval.paths import configs_dir
 
@@ -98,18 +98,53 @@ def test_dense_run_tag_names_the_encoder():
 # ---- shipped configs ------------------------------------------------------
 
 
+def _model_for(path) -> type:
+    """Pick the config model a YAML file is written against.
+
+    The repo ships two kinds. ``retrievers`` (plural) is the discriminator: only
+    the contamination experiment sweeps a list of them, because it scores one
+    index against several eval conditions rather than running one retriever.
+    """
+    import yaml
+
+    data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    return ContaminationConfig if "retrievers" in data else ExperimentConfig
+
+
 def test_every_shipped_config_parses():
     paths = sorted(configs_dir().glob("*.yaml"))
     assert paths, "no configs found"
     for p in paths:
-        ExperimentConfig.from_yaml(p)
+        _model_for(p).from_yaml(p)
+
+
+def test_both_config_kinds_are_shipped():
+    # Guards the discriminator above: if every config became one kind, the
+    # dispatch would silently stop being exercised.
+    kinds = {_model_for(p) for p in configs_dir().glob("*.yaml")}
+    assert kinds == {ExperimentConfig, ContaminationConfig}
 
 
 def test_shipped_configs_have_distinct_hashes():
     hashes = {
-        p.name: ExperimentConfig.from_yaml(p).config_hash() for p in configs_dir().glob("*.yaml")
+        p.name: _model_for(p).from_yaml(p).config_hash() for p in configs_dir().glob("*.yaml")
     }
     assert len(set(hashes.values())) == len(hashes), f"duplicate config hashes: {hashes}"
+
+
+def test_the_contamination_config_points_at_real_prompt_variants():
+    """The synthetic sets named in the config must be ones we can generate.
+
+    A config referring to a variant with no prompt file would fail only at
+    generation time, after the corpus load and the sampling.
+    """
+    from reval.contamination.generate import load_prompt
+
+    cfg = ContaminationConfig.from_yaml(configs_dir() / "contamination.yaml")
+    assert cfg.synthetic, "contamination config names no synthetic sets"
+    for path in cfg.synthetic:
+        variant = path.rsplit("-", 1)[-1].split(".")[0]
+        load_prompt(variant)  # raises if the prompt file is missing
 
 
 # ---- manifest -------------------------------------------------------------

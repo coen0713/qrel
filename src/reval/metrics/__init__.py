@@ -19,6 +19,7 @@ from reval.metrics.bootstrap import (
     bootstrap_ci,
     estimate_all,
     paired_bootstrap,
+    unpaired_bootstrap,
 )
 from reval.metrics.core import (
     dcg_at_k,
@@ -50,4 +51,5 @@ __all__ = [
     "recall_at_k",
     "reciprocal_rank_at_k",
     "truncate_run",
+    "unpaired_bootstrap",
 ]

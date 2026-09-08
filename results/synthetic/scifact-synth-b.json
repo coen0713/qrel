@@ -1,0 +1,1954 @@
+{
+  "name": "scifact-synth-b",
+  "provenance": {
+    "corpus": "scifact",
+    "effort": "low",
+    "excluded": {
+      "model_declined": 15,
+      "too_long": 3
+    },
+    "generated_utc": "2026-09-08T05:18:43.272963+00:00",
+    "model": "claude-opus-5",
+    "n_requested": 500,
+    "n_usable": 482,
+    "prompt_sha256_16": "b25cce07cb7d2240",
+    "prompt_variant": "b",
+    "usage": {
+      "calls": 500,
+      "input_tokens": 382162,
+      "output_tokens": 27625
+    }
+  },
+  "qrels": {
+    "synb-10009203": {
+      "10009203": 1
+    },
+    "synb-10010651": {
+      "10010651": 1
+    },
+    "synb-1006165": {
+      "1006165": 1
+    },
+    "synb-10071590": {
+      "10071590": 1
+    },
+    "synb-10209731": {
+      "10209731": 1
+    },
+    "synb-10486817": {
+      "10486817": 1
+    },
+    "synb-10530014": {
+      "10530014": 1
+    },
+    "synb-10555591": {
+      "10555591": 1
+    },
+    "synb-10660080": {
+      "10660080": 1
+    },
+    "synb-1068106": {
+      "1068106": 1
+    },
+    "synb-10704438": {
+      "10704438": 1
+    },
+    "synb-10761515": {
+      "10761515": 1
+    },
+    "synb-10795063": {
+      "10795063": 1
+    },
+    "synb-10846815": {
+      "10846815": 1
+    },
+    "synb-11011905": {
+      "11011905": 1
+    },
+    "synb-11090688": {
+      "11090688": 1
+    },
+    "synb-11117498": {
+      "11117498": 1
+    },
+    "synb-1122279": {
+      "1122279": 1
+    },
+    "synb-11230569": {
+      "11230569": 1
+    },
+    "synb-11254040": {
+      "11254040": 1
+    },
+    "synb-11469078": {
+      "11469078": 1
+    },
+    "synb-11532028": {
+      "11532028": 1
+    },
+    "synb-11721676": {
+      "11721676": 1
+    },
+    "synb-11774598": {
+      "11774598": 1
+    },
+    "synb-11822354": {
+      "11822354": 1
+    },
+    "synb-11844826": {
+      "11844826": 1
+    },
+    "synb-11903247": {
+      "11903247": 1
+    },
+    "synb-11915280": {
+      "11915280": 1
+    },
+    "synb-11921405": {
+      "11921405": 1
+    },
+    "synb-1192458": {
+      "1192458": 1
+    },
+    "synb-11939159": {
+      "11939159": 1
+    },
+    "synb-1203035": {
+      "1203035": 1
+    },
+    "synb-120626": {
+      "120626": 1
+    },
+    "synb-12086599": {
+      "12086599": 1
+    },
+    "synb-12100854": {
+      "12100854": 1
+    },
+    "synb-1215116": {
+      "1215116": 1
+    },
+    "synb-12152977": {
+      "12152977": 1
+    },
+    "synb-12156187": {
+      "12156187": 1
+    },
+    "synb-1220287": {
+      "1220287": 1
+    },
+    "synb-12224536": {
+      "12224536": 1
+    },
+    "synb-12232678": {
+      "12232678": 1
+    },
+    "synb-12428497": {
+      "12428497": 1
+    },
+    "synb-12440953": {
+      "12440953": 1
+    },
+    "synb-12489688": {
+      "12489688": 1
+    },
+    "synb-12513972": {
+      "12513972": 1
+    },
+    "synb-1259359": {
+      "1259359": 1
+    },
+    "synb-1265945": {
+      "1265945": 1
+    },
+    "synb-12909503": {
+      "12909503": 1
+    },
+    "synb-13036442": {
+      "13036442": 1
+    },
+    "synb-1322614": {
+      "1322614": 1
+    },
+    "synb-13277118": {
+      "13277118": 1
+    },
+    "synb-13277623": {
+      "13277623": 1
+    },
+    "synb-13296399": {
+      "13296399": 1
+    },
+    "synb-1336292": {
+      "1336292": 1
+    },
+    "synb-13445579": {
+      "13445579": 1
+    },
+    "synb-13450938": {
+      "13450938": 1
+    },
+    "synb-13466622": {
+      "13466622": 1
+    },
+    "synb-1358909": {
+      "1358909": 1
+    },
+    "synb-13624704": {
+      "13624704": 1
+    },
+    "synb-13714201": {
+      "13714201": 1
+    },
+    "synb-13760557": {
+      "13760557": 1
+    },
+    "synb-13791044": {
+      "13791044": 1
+    },
+    "synb-1379127": {
+      "1379127": 1
+    },
+    "synb-13878124": {
+      "13878124": 1
+    },
+    "synb-13914633": {
+      "13914633": 1
+    },
+    "synb-13934676": {
+      "13934676": 1
+    },
+    "synb-13938878": {
+      "13938878": 1
+    },
+    "synb-13944805": {
+      "13944805": 1
+    },
+    "synb-13955536": {
+      "13955536": 1
+    },
+    "synb-13958154": {
+      "13958154": 1
+    },
+    "synb-13969173": {
+      "13969173": 1
+    },
+    "synb-14060030": {
+      "14060030": 1
+    },
+    "synb-14079881": {
+      "14079881": 1
+    },
+    "synb-14105446": {
+      "14105446": 1
+    },
+    "synb-14192687": {
+      "14192687": 1
+    },
+    "synb-14332945": {
+      "14332945": 1
+    },
+    "synb-14362678": {
+      "14362678": 1
+    },
+    "synb-14380875": {
+      "14380875": 1
+    },
+    "synb-143868995": {
+      "143868995": 1
+    },
+    "synb-14390137": {
+      "14390137": 1
+    },
+    "synb-14471161": {
+      "14471161": 1
+    },
+    "synb-14479433": {
+      "14479433": 1
+    },
+    "synb-14501880": {
+      "14501880": 1
+    },
+    "synb-14657344": {
+      "14657344": 1
+    },
+    "synb-14663842": {
+      "14663842": 1
+    },
+    "synb-1469751": {
+      "1469751": 1
+    },
+    "synb-14711483": {
+      "14711483": 1
+    },
+    "synb-1472815": {
+      "1472815": 1
+    },
+    "synb-14768471": {
+      "14768471": 1
+    },
+    "synb-14797520": {
+      "14797520": 1
+    },
+    "synb-14827874": {
+      "14827874": 1
+    },
+    "synb-15041758": {
+      "15041758": 1
+    },
+    "synb-15048300": {
+      "15048300": 1
+    },
+    "synb-153744": {
+      "153744": 1
+    },
+    "synb-15381976": {
+      "15381976": 1
+    },
+    "synb-15635366": {
+      "15635366": 1
+    },
+    "synb-15648443": {
+      "15648443": 1
+    },
+    "synb-15657779": {
+      "15657779": 1
+    },
+    "synb-15670968": {
+      "15670968": 1
+    },
+    "synb-15685921": {
+      "15685921": 1
+    },
+    "synb-1576955": {
+      "1576955": 1
+    },
+    "synb-15868816": {
+      "15868816": 1
+    },
+    "synb-15907458": {
+      "15907458": 1
+    },
+    "synb-16098747": {
+      "16098747": 1
+    },
+    "synb-16128711": {
+      "16128711": 1
+    },
+    "synb-1616661": {
+      "1616661": 1
+    },
+    "synb-1617327": {
+      "1617327": 1
+    },
+    "synb-16322674": {
+      "16322674": 1
+    },
+    "synb-16488405": {
+      "16488405": 1
+    },
+    "synb-164985": {
+      "164985": 1
+    },
+    "synb-16527698": {
+      "16527698": 1
+    },
+    "synb-16644043": {
+      "16644043": 1
+    },
+    "synb-1667063": {
+      "1667063": 1
+    },
+    "synb-16701509": {
+      "16701509": 1
+    },
+    "synb-16760369": {
+      "16760369": 1
+    },
+    "synb-17000834": {
+      "17000834": 1
+    },
+    "synb-17050065": {
+      "17050065": 1
+    },
+    "synb-17088791": {
+      "17088791": 1
+    },
+    "synb-17150648": {
+      "17150648": 1
+    },
+    "synb-1727042": {
+      "1727042": 1
+    },
+    "synb-17518195": {
+      "17518195": 1
+    },
+    "synb-17553026": {
+      "17553026": 1
+    },
+    "synb-17671145": {
+      "17671145": 1
+    },
+    "synb-17691617": {
+      "17691617": 1
+    },
+    "synb-17708753": {
+      "17708753": 1
+    },
+    "synb-1771079": {
+      "1771079": 1
+    },
+    "synb-17821387": {
+      "17821387": 1
+    },
+    "synb-17829012": {
+      "17829012": 1
+    },
+    "synb-17844478": {
+      "17844478": 1
+    },
+    "synb-17945638": {
+      "17945638": 1
+    },
+    "synb-18027063": {
+      "18027063": 1
+    },
+    "synb-18078750": {
+      "18078750": 1
+    },
+    "synb-18098290": {
+      "18098290": 1
+    },
+    "synb-18231807": {
+      "18231807": 1
+    },
+    "synb-18263406": {
+      "18263406": 1
+    },
+    "synb-18361917": {
+      "18361917": 1
+    },
+    "synb-1840993": {
+      "1840993": 1
+    },
+    "synb-18488986": {
+      "18488986": 1
+    },
+    "synb-18639989": {
+      "18639989": 1
+    },
+    "synb-18654430": {
+      "18654430": 1
+    },
+    "synb-18758057": {
+      "18758057": 1
+    },
+    "synb-18855191": {
+      "18855191": 1
+    },
+    "synb-1904291": {
+      "1904291": 1
+    },
+    "synb-1910120": {
+      "1910120": 1
+    },
+    "synb-1944452": {
+      "1944452": 1
+    },
+    "synb-19572798": {
+      "19572798": 1
+    },
+    "synb-19673227": {
+      "19673227": 1
+    },
+    "synb-19701340": {
+      "19701340": 1
+    },
+    "synb-19822046": {
+      "19822046": 1
+    },
+    "synb-19824183": {
+      "19824183": 1
+    },
+    "synb-19945096": {
+      "19945096": 1
+    },
+    "synb-19974105": {
+      "19974105": 1
+    },
+    "synb-20109325": {
+      "20109325": 1
+    },
+    "synb-20183360": {
+      "20183360": 1
+    },
+    "synb-20188586": {
+      "20188586": 1
+    },
+    "synb-20279166": {
+      "20279166": 1
+    },
+    "synb-20311968": {
+      "20311968": 1
+    },
+    "synb-20313748": {
+      "20313748": 1
+    },
+    "synb-20333864": {
+      "20333864": 1
+    },
+    "synb-20372201": {
+      "20372201": 1
+    },
+    "synb-20381484": {
+      "20381484": 1
+    },
+    "synb-20491205": {
+      "20491205": 1
+    },
+    "synb-20649327": {
+      "20649327": 1
+    },
+    "synb-20675284": {
+      "20675284": 1
+    },
+    "synb-20732789": {
+      "20732789": 1
+    },
+    "synb-20886584": {
+      "20886584": 1
+    },
+    "synb-20888849": {
+      "20888849": 1
+    },
+    "synb-2097256": {
+      "2097256": 1
+    },
+    "synb-2099400": {
+      "2099400": 1
+    },
+    "synb-21050357": {
+      "21050357": 1
+    },
+    "synb-21164071": {
+      "21164071": 1
+    },
+    "synb-21181273": {
+      "21181273": 1
+    },
+    "synb-21221346": {
+      "21221346": 1
+    },
+    "synb-21250322": {
+      "21250322": 1
+    },
+    "synb-21372171": {
+      "21372171": 1
+    },
+    "synb-21472388": {
+      "21472388": 1
+    },
+    "synb-21562657": {
+      "21562657": 1
+    },
+    "synb-21616324": {
+      "21616324": 1
+    },
+    "synb-21692235": {
+      "21692235": 1
+    },
+    "synb-21746539": {
+      "21746539": 1
+    },
+    "synb-21866916": {
+      "21866916": 1
+    },
+    "synb-21874312": {
+      "21874312": 1
+    },
+    "synb-21884059": {
+      "21884059": 1
+    },
+    "synb-21884449": {
+      "21884449": 1
+    },
+    "synb-21922424": {
+      "21922424": 1
+    },
+    "synb-21958900": {
+      "21958900": 1
+    },
+    "synb-22107641": {
+      "22107641": 1
+    },
+    "synb-22547508": {
+      "22547508": 1
+    },
+    "synb-22688699": {
+      "22688699": 1
+    },
+    "synb-22896970": {
+      "22896970": 1
+    },
+    "synb-22914228": {
+      "22914228": 1
+    },
+    "synb-22937815": {
+      "22937815": 1
+    },
+    "synb-22942787": {
+      "22942787": 1
+    },
+    "synb-22963769": {
+      "22963769": 1
+    },
+    "synb-23078022": {
+      "23078022": 1
+    },
+    "synb-23126677": {
+      "23126677": 1
+    },
+    "synb-23531592": {
+      "23531592": 1
+    },
+    "synb-23535770": {
+      "23535770": 1
+    },
+    "synb-2356950": {
+      "2356950": 1
+    },
+    "synb-23716150": {
+      "23716150": 1
+    },
+    "synb-23848916": {
+      "23848916": 1
+    },
+    "synb-23863551": {
+      "23863551": 1
+    },
+    "synb-23929297": {
+      "23929297": 1
+    },
+    "synb-23934390": {
+      "23934390": 1
+    },
+    "synb-23972114": {
+      "23972114": 1
+    },
+    "synb-23983289": {
+      "23983289": 1
+    },
+    "synb-23985464": {
+      "23985464": 1
+    },
+    "synb-24003461": {
+      "24003461": 1
+    },
+    "synb-24019260": {
+      "24019260": 1
+    },
+    "synb-24044977": {
+      "24044977": 1
+    },
+    "synb-24101431": {
+      "24101431": 1
+    },
+    "synb-24498673": {
+      "24498673": 1
+    },
+    "synb-24541180": {
+      "24541180": 1
+    },
+    "synb-24554740": {
+      "24554740": 1
+    },
+    "synb-24706198": {
+      "24706198": 1
+    },
+    "synb-24721347": {
+      "24721347": 1
+    },
+    "synb-24725136": {
+      "24725136": 1
+    },
+    "synb-24863571": {
+      "24863571": 1
+    },
+    "synb-24921368": {
+      "24921368": 1
+    },
+    "synb-2494748": {
+      "2494748": 1
+    },
+    "synb-24998637": {
+      "24998637": 1
+    },
+    "synb-25263942": {
+      "25263942": 1
+    },
+    "synb-25300426": {
+      "25300426": 1
+    },
+    "synb-25301182": {
+      "25301182": 1
+    },
+    "synb-25404036": {
+      "25404036": 1
+    },
+    "synb-25413327": {
+      "25413327": 1
+    },
+    "synb-2541699": {
+      "2541699": 1
+    },
+    "synb-25435456": {
+      "25435456": 1
+    },
+    "synb-25562234": {
+      "25562234": 1
+    },
+    "synb-25816994": {
+      "25816994": 1
+    },
+    "synb-25842866": {
+      "25842866": 1
+    },
+    "synb-25886725": {
+      "25886725": 1
+    },
+    "synb-25900857": {
+      "25900857": 1
+    },
+    "synb-2593298": {
+      "2593298": 1
+    },
+    "synb-25950264": {
+      "25950264": 1
+    },
+    "synb-25953438": {
+      "25953438": 1
+    },
+    "synb-25974070": {
+      "25974070": 1
+    },
+    "synb-26108767": {
+      "26108767": 1
+    },
+    "synb-26231129": {
+      "26231129": 1
+    },
+    "synb-26244918": {
+      "26244918": 1
+    },
+    "synb-2638387": {
+      "2638387": 1
+    },
+    "synb-26462632": {
+      "26462632": 1
+    },
+    "synb-26672703": {
+      "26672703": 1
+    },
+    "synb-2682251": {
+      "2682251": 1
+    },
+    "synb-26887439": {
+      "26887439": 1
+    },
+    "synb-2701077": {
+      "2701077": 1
+    },
+    "synb-27129115": {
+      "27129115": 1
+    },
+    "synb-27243019": {
+      "27243019": 1
+    },
+    "synb-2727303": {
+      "2727303": 1
+    },
+    "synb-27446873": {
+      "27446873": 1
+    },
+    "synb-27545868": {
+      "27545868": 1
+    },
+    "synb-27580223": {
+      "27580223": 1
+    },
+    "synb-27840664": {
+      "27840664": 1
+    },
+    "synb-28006126": {
+      "28006126": 1
+    },
+    "synb-28069701": {
+      "28069701": 1
+    },
+    "synb-2824347": {
+      "2824347": 1
+    },
+    "synb-28247027": {
+      "28247027": 1
+    },
+    "synb-28264919": {
+      "28264919": 1
+    },
+    "synb-2828460": {
+      "2828460": 1
+    },
+    "synb-28338268": {
+      "28338268": 1
+    },
+    "synb-28386343": {
+      "28386343": 1
+    },
+    "synb-2842550": {
+      "2842550": 1
+    },
+    "synb-28441310": {
+      "28441310": 1
+    },
+    "synb-28517384": {
+      "28517384": 1
+    },
+    "synb-28617573": {
+      "28617573": 1
+    },
+    "synb-28647122": {
+      "28647122": 1
+    },
+    "synb-28712203": {
+      "28712203": 1
+    },
+    "synb-28937856": {
+      "28937856": 1
+    },
+    "synb-2919030": {
+      "2919030": 1
+    },
+    "synb-29362104": {
+      "29362104": 1
+    },
+    "synb-29689140": {
+      "29689140": 1
+    },
+    "synb-30122260": {
+      "30122260": 1
+    },
+    "synb-30353437": {
+      "30353437": 1
+    },
+    "synb-30398773": {
+      "30398773": 1
+    },
+    "synb-3052642": {
+      "3052642": 1
+    },
+    "synb-30884033": {
+      "30884033": 1
+    },
+    "synb-3090454": {
+      "3090454": 1
+    },
+    "synb-3095620": {
+      "3095620": 1
+    },
+    "synb-3098821": {
+      "3098821": 1
+    },
+    "synb-3099497": {
+      "3099497": 1
+    },
+    "synb-3107733": {
+      "3107733": 1
+    },
+    "synb-31293581": {
+      "31293581": 1
+    },
+    "synb-313403": {
+      "313403": 1
+    },
+    "synb-31933981": {
+      "31933981": 1
+    },
+    "synb-32001951": {
+      "32001951": 1
+    },
+    "synb-3215494": {
+      "3215494": 1
+    },
+    "synb-32324430": {
+      "32324430": 1
+    },
+    "synb-32423829": {
+      "32423829": 1
+    },
+    "synb-32532238": {
+      "32532238": 1
+    },
+    "synb-32587939": {
+      "32587939": 1
+    },
+    "synb-3285322": {
+      "3285322": 1
+    },
+    "synb-33169058": {
+      "33169058": 1
+    },
+    "synb-3330111": {
+      "3330111": 1
+    },
+    "synb-33387953": {
+      "33387953": 1
+    },
+    "synb-33723822": {
+      "33723822": 1
+    },
+    "synb-33912020": {
+      "33912020": 1
+    },
+    "synb-33920995": {
+      "33920995": 1
+    },
+    "synb-33986507": {
+      "33986507": 1
+    },
+    "synb-33989422": {
+      "33989422": 1
+    },
+    "synb-34016944": {
+      "34016944": 1
+    },
+    "synb-3413083": {
+      "3413083": 1
+    },
+    "synb-34254203": {
+      "34254203": 1
+    },
+    "synb-3430789": {
+      "3430789": 1
+    },
+    "synb-34544514": {
+      "34544514": 1
+    },
+    "synb-34559336": {
+      "34559336": 1
+    },
+    "synb-34905328": {
+      "34905328": 1
+    },
+    "synb-3504761": {
+      "3504761": 1
+    },
+    "synb-35256900": {
+      "35256900": 1
+    },
+    "synb-3545805": {
+      "3545805": 1
+    },
+    "synb-35531883": {
+      "35531883": 1
+    },
+    "synb-35828148": {
+      "35828148": 1
+    },
+    "synb-3588621": {
+      "3588621": 1
+    },
+    "synb-36025357": {
+      "36025357": 1
+    },
+    "synb-36202354": {
+      "36202354": 1
+    },
+    "synb-36271512": {
+      "36271512": 1
+    },
+    "synb-36480032": {
+      "36480032": 1
+    },
+    "synb-36653415": {
+      "36653415": 1
+    },
+    "synb-36830715": {
+      "36830715": 1
+    },
+    "synb-37156349": {
+      "37156349": 1
+    },
+    "synb-37182501": {
+      "37182501": 1
+    },
+    "synb-37205685": {
+      "37205685": 1
+    },
+    "synb-37438296": {
+      "37438296": 1
+    },
+    "synb-37450671": {
+      "37450671": 1
+    },
+    "synb-37480103": {
+      "37480103": 1
+    },
+    "synb-374902": {
+      "374902": 1
+    },
+    "synb-37608303": {
+      "37608303": 1
+    },
+    "synb-37699461": {
+      "37699461": 1
+    },
+    "synb-3801693": {
+      "3801693": 1
+    },
+    "synb-38025907": {
+      "38025907": 1
+    },
+    "synb-3828508": {
+      "3828508": 1
+    },
+    "synb-3831884": {
+      "3831884": 1
+    },
+    "synb-38355793": {
+      "38355793": 1
+    },
+    "synb-38376189": {
+      "38376189": 1
+    },
+    "synb-38794814": {
+      "38794814": 1
+    },
+    "synb-39128592": {
+      "39128592": 1
+    },
+    "synb-393001": {
+      "393001": 1
+    },
+    "synb-39334724": {
+      "39334724": 1
+    },
+    "synb-39984099": {
+      "39984099": 1
+    },
+    "synb-40044800": {
+      "40044800": 1
+    },
+    "synb-40349336": {
+      "40349336": 1
+    },
+    "synb-40367499": {
+      "40367499": 1
+    },
+    "synb-40476126": {
+      "40476126": 1
+    },
+    "synb-4067274": {
+      "4067274": 1
+    },
+    "synb-40710501": {
+      "40710501": 1
+    },
+    "synb-40754510": {
+      "40754510": 1
+    },
+    "synb-40971746": {
+      "40971746": 1
+    },
+    "synb-41120293": {
+      "41120293": 1
+    },
+    "synb-41264017": {
+      "41264017": 1
+    },
+    "synb-41925568": {
+      "41925568": 1
+    },
+    "synb-4200695": {
+      "4200695": 1
+    },
+    "synb-42035464": {
+      "42035464": 1
+    },
+    "synb-42080024": {
+      "42080024": 1
+    },
+    "synb-42373943": {
+      "42373943": 1
+    },
+    "synb-4313478": {
+      "4313478": 1
+    },
+    "synb-4319844": {
+      "4319844": 1
+    },
+    "synb-4320424": {
+      "4320424": 1
+    },
+    "synb-43419566": {
+      "43419566": 1
+    },
+    "synb-43427621": {
+      "43427621": 1
+    },
+    "synb-4345605": {
+      "4345605": 1
+    },
+    "synb-4350400": {
+      "4350400": 1
+    },
+    "synb-43557480": {
+      "43557480": 1
+    },
+    "synb-4373445": {
+      "4373445": 1
+    },
+    "synb-43880096": {
+      "43880096": 1
+    },
+    "synb-4391685": {
+      "4391685": 1
+    },
+    "synb-4391817": {
+      "4391817": 1
+    },
+    "synb-4394525": {
+      "4394525": 1
+    },
+    "synb-4402497": {
+      "4402497": 1
+    },
+    "synb-4407455": {
+      "4407455": 1
+    },
+    "synb-4409524": {
+      "4409524": 1
+    },
+    "synb-4421547": {
+      "4421547": 1
+    },
+    "synb-4421742": {
+      "4421742": 1
+    },
+    "synb-4422734": {
+      "4422734": 1
+    },
+    "synb-4423220": {
+      "4423220": 1
+    },
+    "synb-4449524": {
+      "4449524": 1
+    },
+    "synb-4454788": {
+      "4454788": 1
+    },
+    "synb-44572913": {
+      "44572913": 1
+    },
+    "synb-44614949": {
+      "44614949": 1
+    },
+    "synb-4462777": {
+      "4462777": 1
+    },
+    "synb-4464565": {
+      "4464565": 1
+    },
+    "synb-44947611": {
+      "44947611": 1
+    },
+    "synb-4506702": {
+      "4506702": 1
+    },
+    "synb-45341480": {
+      "45341480": 1
+    },
+    "synb-45364685": {
+      "45364685": 1
+    },
+    "synb-45457778": {
+      "45457778": 1
+    },
+    "synb-45920278": {
+      "45920278": 1
+    },
+    "synb-461550": {
+      "461550": 1
+    },
+    "synb-46182525": {
+      "46182525": 1
+    },
+    "synb-4662264": {
+      "4662264": 1
+    },
+    "synb-46837626": {
+      "46837626": 1
+    },
+    "synb-4701662": {
+      "4701662": 1
+    },
+    "synb-4702639": {
+      "4702639": 1
+    },
+    "synb-4824840": {
+      "4824840": 1
+    },
+    "synb-4857093": {
+      "4857093": 1
+    },
+    "synb-4896726": {
+      "4896726": 1
+    },
+    "synb-4993011": {
+      "4993011": 1
+    },
+    "synb-52175065": {
+      "52175065": 1
+    },
+    "synb-5256564": {
+      "5256564": 1
+    },
+    "synb-5278233": {
+      "5278233": 1
+    },
+    "synb-52944377": {
+      "52944377": 1
+    },
+    "synb-53211308": {
+      "53211308": 1
+    },
+    "synb-5321708": {
+      "5321708": 1
+    },
+    "synb-5372432": {
+      "5372432": 1
+    },
+    "synb-54490092": {
+      "54490092": 1
+    },
+    "synb-54562433": {
+      "54562433": 1
+    },
+    "synb-5487448": {
+      "5487448": 1
+    },
+    "synb-5596332": {
+      "5596332": 1
+    },
+    "synb-5650232": {
+      "5650232": 1
+    },
+    "synb-56893404": {
+      "56893404": 1
+    },
+    "synb-5800138": {
+      "5800138": 1
+    },
+    "synb-5849439": {
+      "5849439": 1
+    },
+    "synb-5914739": {
+      "5914739": 1
+    },
+    "synb-600808": {
+      "600808": 1
+    },
+    "synb-6106004": {
+      "6106004": 1
+    },
+    "synb-6112053": {
+      "6112053": 1
+    },
+    "synb-6171953": {
+      "6171953": 1
+    },
+    "synb-6176498": {
+      "6176498": 1
+    },
+    "synb-623486": {
+      "623486": 1
+    },
+    "synb-6250701": {
+      "6250701": 1
+    },
+    "synb-6325527": {
+      "6325527": 1
+    },
+    "synb-6372244": {
+      "6372244": 1
+    },
+    "synb-63858430": {
+      "63858430": 1
+    },
+    "synb-6417632": {
+      "6417632": 1
+    },
+    "synb-641786": {
+      "641786": 1
+    },
+    "synb-6503534": {
+      "6503534": 1
+    },
+    "synb-6549091": {
+      "6549091": 1
+    },
+    "synb-6828370": {
+      "6828370": 1
+    },
+    "synb-6910577": {
+      "6910577": 1
+    },
+    "synb-6945285": {
+      "6945285": 1
+    },
+    "synb-6947286": {
+      "6947286": 1
+    },
+    "synb-696006": {
+      "696006": 1
+    },
+    "synb-7046487": {
+      "7046487": 1
+    },
+    "synb-7185591": {
+      "7185591": 1
+    },
+    "synb-7211056": {
+      "7211056": 1
+    },
+    "synb-7227763": {
+      "7227763": 1
+    },
+    "synb-72580164": {
+      "72580164": 1
+    },
+    "synb-7268522": {
+      "7268522": 1
+    },
+    "synb-7451607": {
+      "7451607": 1
+    },
+    "synb-7506409": {
+      "7506409": 1
+    },
+    "synb-7514614": {
+      "7514614": 1
+    },
+    "synb-7650066": {
+      "7650066": 1
+    },
+    "synb-7837879": {
+      "7837879": 1
+    },
+    "synb-7850867": {
+      "7850867": 1
+    },
+    "synb-79231308": {
+      "79231308": 1
+    },
+    "synb-79336156": {
+      "79336156": 1
+    },
+    "synb-7975937": {
+      "7975937": 1
+    },
+    "synb-8002529": {
+      "8002529": 1
+    },
+    "synb-80109277": {
+      "80109277": 1
+    },
+    "synb-8133180": {
+      "8133180": 1
+    },
+    "synb-8148304": {
+      "8148304": 1
+    },
+    "synb-834336": {
+      "834336": 1
+    },
+    "synb-84244109": {
+      "84244109": 1
+    },
+    "synb-8426046": {
+      "8426046": 1
+    },
+    "synb-8428837": {
+      "8428837": 1
+    },
+    "synb-84884645": {
+      "84884645": 1
+    },
+    "synb-8496132": {
+      "8496132": 1
+    },
+    "synb-85394684": {
+      "85394684": 1
+    },
+    "synb-8595678": {
+      "8595678": 1
+    },
+    "synb-8596837": {
+      "8596837": 1
+    },
+    "synb-86160128": {
+      "86160128": 1
+    },
+    "synb-86326468": {
+      "86326468": 1
+    },
+    "synb-8659426": {
+      "8659426": 1
+    },
+    "synb-8702697": {
+      "8702697": 1
+    },
+    "synb-87430549": {
+      "87430549": 1
+    },
+    "synb-87758": {
+      "87758": 1
+    },
+    "synb-8780599": {
+      "8780599": 1
+    },
+    "synb-8816869": {
+      "8816869": 1
+    },
+    "synb-8903143": {
+      "8903143": 1
+    },
+    "synb-8925851": {
+      "8925851": 1
+    },
+    "synb-8997410": {
+      "8997410": 1
+    },
+    "synb-90756514": {
+      "90756514": 1
+    },
+    "synb-9076196": {
+      "9076196": 1
+    },
+    "synb-9095394": {
+      "9095394": 1
+    },
+    "synb-9142761": {
+      "9142761": 1
+    },
+    "synb-9301606": {
+      "9301606": 1
+    },
+    "synb-935538": {
+      "935538": 1
+    },
+    "synb-949309": {
+      "949309": 1
+    },
+    "synb-9505402": {
+      "9505402": 1
+    },
+    "synb-9600826": {
+      "9600826": 1
+    },
+    "synb-9658390": {
+      "9658390": 1
+    },
+    "synb-9737083": {
+      "9737083": 1
+    },
+    "synb-9764256": {
+      "9764256": 1
+    },
+    "synb-9881829": {
+      "9881829": 1
+    }
+  },
+  "queries": {
+    "synb-10009203": "Do growing nerve cells change the size and shape of their branching input structures to make up for having too few or too many incoming connections, and what signaling pathway inside the cell controls this?",
+    "synb-10010651": "What official recommendations exist on diet, exercise, and vitamin supplements for people who have finished cancer treatment?",
+    "synb-1006165": "Can gene knockdown in human cells work with double-stranded RNA molecules shorter than the standard 19 base pairs, and are they any more effective?",
+    "synb-10071590": "Has heart inflammation ever been documented in a teenager shortly after receiving several immunizations at once, and how did the boy do with treatment?",
+    "synb-10209731": "How do death rates from heart attacks, high blood pressure, and stroke compare between Singapore's Chinese, Malay, and Indian populations?",
+    "synb-10486817": "How does raising CNBP levels in fibrosarcoma cells reduce hnRNP K expression and limit cell spread and survival?",
+    "synb-10530014": "Which gene defect causes the inherited disorder in siblings with severe bleeding, recurrent infections, and dense bones, where blood cell adhesion receptors fail to switch on despite normal RAP1 signaling, and can a marrow transplant help?",
+    "synb-10555591": "Does the zinc stored in granule cell axon terminals in the hippocampus actually get released during transmission, and if so what does it do to glutamate receptor signaling?",
+    "synb-10660080": "Does losing the SecD/SecF/YajC complex in E. coli actually impair the membrane's electrochemical gradient, or was the apparent defect an artifact of the growth conditions used?",
+    "synb-1068106": "Should trouble managing feelings be considered a core feature of attention deficit disorder in grown-ups, rather than just distractibility and restlessness?",
+    "synb-10704438": "Why don't dividing cells halt and fix broken chromosomes when they're damaged while splitting, and what happens to those breaks afterward?",
+    "synb-10761515": "Are people with colorectal tumors more likely than healthy individuals to exhale CH4, and could that reflect differences in gut bacteria?",
+    "synb-10795063": "How does removing cholesterol from neuron membranes affect the ability of hippocampal synapses to strengthen and survive?",
+    "synb-10846815": "How can the cell's actin meshwork under the plasma membrane both block and help granule release during stimulated secretion in immune cells?",
+    "synb-11011905": "How do the four reprogramming factors used to make iPS cells manage to bind their recognition sequences when the DNA is wrapped around histones in closed chromatin?",
+    "synb-11090688": "Do inherited differences in the receptor targeted by liraglutide help explain why some obese women with polycystic ovary syndrome shed more pounds on the drug than others?",
+    "synb-11117498": "For a single brain metastasis, is gamma knife treatment cheaper per year of life gained than open craniotomy to remove the tumor?",
+    "synb-1122279": "Can regular treadmill exercise restore impaired blood vessel dilation in small heart vessels supplied by collaterals after a coronary artery is gradually blocked, and does it affect nitric oxide synthase gene expression?",
+    "synb-11230569": "How much money would be needed each year to fund global HIV programs reaching everyone by 2015, and how many infections and deaths could a smarter allocation of that funding prevent?",
+    "synb-11254040": "How often do patients on second-line drug regimens for drug-resistant TB experience harmful side effects, which ones are most frequent, and how often do these force a change in the regimen?",
+    "synb-11469078": "Even if a study using area-level data is meant to measure neighborhood or group influences on health rather than personal risk, can differences between areas in how individuals respond still distort the results?",
+    "synb-11532028": "Which genetic regions influencing weight have been discovered in large-scale scans of Asian populations, and were any of them not previously seen in European cohorts?",
+    "synb-11721676": "Has any protein been found that appears only on the limb-side branch of rat sensory nerve roots and not on the spinal-cord side, and does its level change after nerve damage?",
+    "synb-11774598": "How did cloning the receptors for hormones like thyroid hormone and vitamin D lead to the discovery of receptors with unknown ligands, and why is the retinoid X receptor partner so central to how these transcription factors work together?",
+    "synb-11822354": "How does the protein Upstream of N-ras help recruit the MSL complex to the male X chromosome in fruit flies?",
+    "synb-11844826": "What group of related proteins share a conserved interaction module with the copper-metabolism protein that blocks NF-kB, and how does that protein actually repress NF-kB activity in the nucleus?",
+    "synb-11903247": "How does losing or blocking the tumour suppressor protein outside the nucleus affect cells' self-digestion process, and why does breaking it down matter when nutrients run low?",
+    "synb-11915280": "In Apc-mutant mice, does knocking out the de novo DNA methyltransferase enzyme affect early lesion formation in the gut, or only the later growth into visible tumors?",
+    "synb-11921405": "How do gut lining cells themselves limit Salmonella growth soon after invasion, and does this depend on IL-1 or IL-18 signaling?",
+    "synb-1192458": "How can chewing tobacco affect the connective tissue cells beneath the mouth lining, and could those altered support cells then drive nearby pre-cancerous cells to grow and spread more aggressively?",
+    "synb-11939159": "Does getting a flu shot reduce heart attacks and other major heart problems in people with existing heart disease, and is the benefit bigger for those who recently had a heart attack?",
+    "synb-1203035": "In mild cervical dysplasia, does having four copies of chromosomes in the deepest epithelial cell layer depend on which papillomavirus strain is present, or just on whether the virus is cancer-associated?",
+    "synb-120626": "How does carrying excess body fat actually lead to the body not responding properly to insulin, and why do some people with that condition end up with high blood sugar while others don't?",
+    "synb-12086599": "Can yeast increase the number of their rRNA gene copies without Rad52/Rad51-mediated recombination or the replication fork barrier, and what triggers this?",
+    "synb-12100854": "How does silencing enzymes that add methyl groups to lysine 9 of histone H3, or the chromodomain protein that reads that mark, affect the efficiency of turning fibroblasts into stem cells, and which pluripotency gene do they hold down?",
+    "synb-1215116": "What shared characteristics do diseases like river blindness, elephantiasis, and trachoma have, and how much progress has been made in reducing them in poor countries?",
+    "synb-12152977": "What happens to mouse stem cells when the ATPase subunit of the SWI/SNF complex is depleted, and which stemness gene promoters does it bind?",
+    "synb-12156187": "Which histone deposition factors, when knocked down in human cells, trigger the telomerase-independent recombination-based telomere maintenance program, and which genes promote or restrain that switch?",
+    "synb-1220287": "Could a drug already used for multiple sclerosis help with Huntington's, and what effects did it have in mice carrying the mutation?",
+    "synb-12224536": "How did calorie intake from soda and other sweetened drinks change among American kids and adults over the 2000s?",
+    "synb-12232678": "In chickens, is the balancing of Z-linked gene output between the sexes handled chromosome-wide or does it differ from one gene to the next across tissues and developmental stages?",
+    "synb-12428497": "What makes some low-income countries introduce Hib immunization sooner than others \u2014 does donor funding or what nearby countries do actually speed up the decision?",
+    "synb-12440953": "How do small non-coding RNAs help keep animal development and cell function stable despite genetic variation or environmental stress?",
+    "synb-12489688": "How do white blood cells use an enzyme with peroxide and chloride to kill germs they engulf, and can the same reaction end up damaging healthy tissue?",
+    "synb-12513972": "Is there any ultrasound evidence that people with brain aneurysms also have wider aortic roots, suggesting an underlying blood vessel wall disorder?",
+    "synb-1259359": "What proportion of patients hospitalized with TB at a Malawian hospital in the late 1980s tested positive for the AIDS virus, and how did that compare with rates among blood donors there?",
+    "synb-1265945": "Which immune-system gene variant on chromosome 6 is the main risk factor common to both Crohn's disease and colitis, and is carrying two different copies protective in one of them?",
+    "synb-12909503": "How does the DNA-PK catalytic subunit contribute to cell cycle arrest and single-strand binding protein modification when replication forks stall, and how is that different from what ATM and ATR do?",
+    "synb-13036442": "Why do budding yeast cells missing the master activator of sulfur assimilation still grow poorly on rich medium supplemented with methionine, and what mutations arise spontaneously to fix this?",
+    "synb-1322614": "What features were added in the 2.4 release of the ATSAS software suite for handling SAXS and SANS data?",
+    "synb-13277118": "Where did the maternal DNA lineage found in today's polar bears come from, and did they ever interbreed with grizzlies in the past?",
+    "synb-13277623": "How does the protein that targets MYC and cyclin E for proteasomal destruction help prevent tumour formation, and what happens when it's mutated in cancer?",
+    "synb-13296399": "Has gene editing been used in living animals to selectively knock out a mutant copy of a photoreceptor gene and slow vision loss in a dominant inherited blindness model?",
+    "synb-1336292": "How does FTY720 lower circulating T cell counts \u2014 does it block mature T cells from leaving the thymus?",
+    "synb-13445579": "How often do brain artery bulges show up on MR angiography in people born with a narrowed aorta, and does high blood pressure make them more likely?",
+    "synb-13450938": "Which zinc finger domains does the human version of this imprinting-regulator protein use to recognize its methylated target site, and how do disease-linked sequence changes or loss of methylation at the imprinting control region disrupt that recognition in transient neonatal diabetes?",
+    "synb-13466622": "How does metformin actually lower blood sugar in the body, and could the same biological pathways explain why it might help against tumors?",
+    "synb-1358909": "How common is narrowing of the leg arteries in people over 55, and what fraction of them actually experience leg pain when walking?",
+    "synb-13624704": "In children having their tonsils removed, does giving a single IV dose of ondansetron actually cut down on being sick afterwards, and does it save any nursing time or costs?",
+    "synb-13714201": "Is having a wider variety of intestinal bacteria linked to more flexible, less rigid blood vessels in middle-aged females, and does that link depend on metabolic problems like insulin resistance and belly fat?",
+    "synb-13760557": "Why can strontium as well as calcium cross into stimulated mast cells and trigger granule release, if the classic store-depletion-activated channel is supposedly calcium-selective?",
+    "synb-13791044": "Does being born a bit early (37\u201338 weeks) or going past the due date change a baby's chances of developing cerebral palsy compared with a 40-week birth?",
+    "synb-1379127": "Which calcium channel proteins have been shown to drive the spread of breast cancer cells, and does blocking them reduce tumor spread in animal studies?",
+    "synb-13878124": "Why do neural stem cells in the developing cortex die when their long fibers lose contact with the membrane at the brain's outer surface?",
+    "synb-13914633": "How much do people in rural South Africa actually pay out of pocket, and how much time do they lose, to attend clinics for HIV or TB treatment that's supposed to be provided at no charge?",
+    "synb-13934676": "Which health problems are the biggest drivers of needing care among seniors in developing countries like Cuba, Mexico, Peru, China and India, and how common is that need?",
+    "synb-13938878": "How well can symptom-based checklists identify malaria in children versus adults in a Kenyan setting with moderate transmission?",
+    "synb-13944805": "How does a mother's high-fat diet before pregnancy change stem cells in her sons' belly fat, and could DNA methylation changes explain why their fat tissue can't expand normally later in life?",
+    "synb-13955536": "In mouse germ cell precursors, when do imprinted regions and other loci that retain epigenetic marks actually lose their methylation relative to the overall erasure across the genome?",
+    "synb-13958154": "What does whole-transcriptome profiling reveal about how prolonged exposure to a saturated fat like palmitic acid alters gene expression and RNA splicing in human insulin-producing islets, and how does that relate to type 2 diabetes risk genes?",
+    "synb-13969173": "Is there a way to make support cells from skin samples of living Lou Gehrig's disease patients to test whether they harm nerve cells, and do samples from people without inherited mutations behave differently from those with known genetic causes?",
+    "synb-14060030": "Is the old belief that the human heart can't make new muscle cells after birth still accepted, and what evidence changed that view?",
+    "synb-14079881": "Does how old someone looks in a photo actually predict how long they'll live, and is it linked to things like telomere length or physical and mental ability in the elderly?",
+    "synb-14105446": "What happens to salamander limb regrowth if the skin covering the amputation site is pretreated with a transcription-blocking drug before cutting?",
+    "synb-14192687": "Can skin cells turned into stem cells be made into brain cells that survive, wire up properly after grafting, and ease motor deficits in animal models of Parkinson's \u2014 and how is tumor risk handled?",
+    "synb-14332945": "Which repair factor, though not required for normal mouse development, helps restart broken replication forks in tumor cells under oncogene-driven replication stress, and does removing it slow tumor formation in mice?",
+    "synb-14362678": "How does long-term adrenergic overdrive in the heart end up triggering mitochondrial pore opening, and which kinase and fission protein interaction is responsible?",
+    "synb-14380875": "How do steroid hormone receptors shut down inflammatory gene expression driven by NF-kB without blocking its binding to DNA or preventing assembly of the transcription machinery?",
+    "synb-143868995": "Do older adults judge their own everyday remembering abilities accurately compared with how they actually perform on memory tasks?",
+    "synb-14390137": "In veterans with severe mental illness and/or addiction, how do rates of screening, infection, and antiviral treatment for liver-affecting blood-borne viruses compare with other patients?",
+    "synb-14471161": "Can restricting when mice eat each day slow the growth of pancreatic tumors, and if so how does it change gene activity in the tumor if the tumor's own internal clock is broken?",
+    "synb-14479433": "Is there a genetic form of severe infant liver disease with impaired bile flow caused by defects in the gene for the bile acid\u2013sensing nuclear receptor, and what are its typical clinical signs?",
+    "synb-14501880": "How does a tryptophan breakdown product act as a signal linking food deprivation to increased eating and serotonin signaling in worms?",
+    "synb-14657344": "Why do killer T cells fail to work in people with the widespread skin form of Leishmania mexicana infection, and can stimulating innate immune receptors bring their activity back?",
+    "synb-14663842": "How do cancer-associated changes in isocitrate dehydrogenase genes reshape central carbon metabolism, and does that make tumor cells more vulnerable to low oxygen or drugs blocking respiration?",
+    "synb-1469751": "Is there a way to deliver gene-silencing molecules specifically to bone-forming cells to stimulate new bone growth?",
+    "synb-14711483": "Does breathing nitric oxide gas help relieve pain during a sickle cell pain episode in kids and teens, and were there any safety problems in a randomized trial?",
+    "synb-1472815": "In depressed adults (not elderly patients), which brain nerve fiber tracts show reduced structural coherence on diffusion imaging, and do any of those changes track with how severe the depression is?",
+    "synb-14768471": "How do tiny membrane-bound particles released by kidney tumor-initiating cells alter bone marrow stromal cells, and does that make them help the tumor grow and form blood vessels?",
+    "synb-14797520": "How does transcription of non-genic regions in plants help shut down nearby genes and mobile elements rather than activate them?",
+    "synb-14827874": "How do letrozole-type drugs compare with the standard fertility pill for triggering egg release in women who don't ovulate, in terms of success rates, twin pregnancies, and effects on the uterine lining?",
+    "synb-15041758": "Does treating depression alongside diabetes and heart disease risk factors in primary care actually help patients function better in daily life and feel better about their overall wellbeing?",
+    "synb-15048300": "How much do estimates of the cost per stomach bleed prevented by newer arthritis painkillers change when based on real-world prescribing records instead of controlled trial data?",
+    "synb-153744": "Is there a virus that uses its own small RNA to destroy a specific cellular microRNA and thereby alter gene expression in infected cells?",
+    "synb-15381976": "Can a flavonoid from mulberry-family plants reduce allergic lung inflammation in animal models, and does it work by lowering free radical levels and blocking stress-activated kinase signaling in bronchial cells?",
+    "synb-15635366": "What happens to mouse embryos and stem cells when the MBT-domain repressor L3mbtl2 is knocked out, and which silencing partners does it work with?",
+    "synb-15648443": "Does taking daily high-dose aspirin over a couple of years lower bowel tumour rates in people with an inherited predisposition like Lynch syndrome, and what did the extended follow-up of a placebo-controlled trial find?",
+    "synb-15657779": "Can removing calcium and magnesium from the bathing solution cause glial cells to leak excitatory amino acids through open connexin channels rather than through reversed transporters?",
+    "synb-15670968": "What are the criticisms of using a country's income per person as the benchmark for deciding whether a health intervention is worth funding, and what other options exist?",
+    "synb-15685921": "How does blocking large-conductance calcium-activated potassium channels change synaptic input and firing behavior of mouse retinal output neurons, and does this differ between low and high background illumination?",
+    "synb-1576955": "Besides extending lifespan, do mutations in the worm insulin receptor pathway also impair egg production and embryo survival, and does knocking out the downstream transcription factor reverse those effects?",
+    "synb-15868816": "How were the genes controlling asymmetric division in nematode embryos first identified, and why are the proteins they encode thought to be a conserved system for establishing cell axes across the animal kingdom?",
+    "synb-15907458": "How can I separate skin cells from grown mice into marker-defined subsets and test their ability to regenerate hair and skin tissue after transplantation?",
+    "synb-16098747": "How do things like weight, childbearing history, and hormone pills affect how dense a woman's breast tissue appears on a mammogram, and does the effect change with age?",
+    "synb-16128711": "In fruit fly epithelia, how does the turnover and stability of cadherin\u2013catenin cell-cell contacts differ between cells that are still establishing top-bottom polarity and those that have already established it?",
+    "synb-1616661": "How do signals from developing brain tissue direct blood vessel ingrowth and give brain capillaries their distinctive barrier properties compared with vessels elsewhere in the body?",
+    "synb-1617327": "Can defects in bone-forming precursor cells in the marrow environment, rather than mutations in blood cells themselves, cause abnormal blood cell production and eventually trigger myeloid cancer?",
+    "synb-16322674": "Does how big a baby girl is when she's born affect her chances of developing breast cancer later in life, and which measurement matters most?",
+    "synb-16488405": "After a few hours of moderate endurance cycling, do the immune cells circulating in the blood actually produce the inflammatory signaling proteins that rise in the bloodstream?",
+    "synb-164985": "How does breast cancer cells signaling cause monocyte-derived cells to become tumor-supporting, immunosuppressive types, and which transcription factor and cytokine loop drives that shift?",
+    "synb-16527698": "Can antioxidant treatment restore impaired sugar-triggered hormone release in pancreatic tissue taken from deceased donors with adult-onset diabetes?",
+    "synb-16644043": "Why do chromosome ends need checkpoint kinases to work properly if their whole job is to keep the cell from sensing a break, and do these kinases arrive at different times during the cell cycle?",
+    "synb-1667063": "How does noncoding RNA expression differ between early B-cell and T-cell precursors in human marrow and thymus, and is it more cell-type restricted than mRNA expression?",
+    "synb-16701509": "Does having low \"good cholesterol\" raise the chance of developing breast cancer after menopause, especially in overweight women?",
+    "synb-16760369": "In stable outpatients with arterial disease, how much do factors like a recent heart attack or stroke, disease in more than one arterial bed, and diabetes each raise the chance of another major cardiac event over several years of follow-up?",
+    "synb-17000834": "Does spending more time outdoors in sunlight as a child lower the chances of developing MS later in life?",
+    "synb-17050065": "How can a worm become desensitized to one smell but not others when the same neuron detects both, and which genes control this selectivity?",
+    "synb-17088791": "Do frequently occurring amino acid\u2013changing polymorphisms in BRCA1 affect a woman's risk of developing breast or ovarian cancer?",
+    "synb-17150648": "How does the appetite hormone from fat tissue affect support cells in the brain's feeding centers, particularly their handling of sugar and neurotransmitter uptake?",
+    "synb-1727042": "How does stiffening of the vessel wall environment trigger high blood pressure in the lungs, and which signaling molecules link that mechanical change to disease progression?",
+    "synb-17518195": "How does the tail end of histone H2A affect nucleosome stability, DNA unwrapping at the edges, linker histone attachment, and repositioning by ATP-dependent remodelers?",
+    "synb-17553026": "What structural element in Pol mu lets it add nucleotides without a template, and what happens to its activity if that region is removed or swapped with the equivalent piece from terminal transferase?",
+    "synb-17671145": "What nuclear hormone receptor acts upstream to boost androgen receptor levels in treatment-resistant prostate tumors, and could blocking it help overcome resistance to anti-androgen drugs?",
+    "synb-17691617": "Does vigorous strength and balance training help nursing home residents with dementia stay independent in daily tasks, and do results vary depending on whether they have Alzheimer's or another form of dementia?",
+    "synb-17708753": "In laser-injury mouse models of wet AMD, do infiltrating immune cells start producing growth factors that trigger new blood vessel growth before the pigment epithelium does, and does engulfing injured pigment epithelial debris cause that phenotype?",
+    "synb-1771079": "How many nerve cell bodies and dendrites fall within the domain of one glial cell in the cerebral cortex?",
+    "synb-17821387": "In large autopsy series, how often do people with extensive Lewy body deposits in the brain actually show memory loss or movement problems before death, and do the standard grading schemes fit everyone?",
+    "synb-17829012": "Which transcription factor drives interleukin-4 production in germinal center helper T cells but not in classic type 2 helper cells, and how does it affect airway allergy?",
+    "synb-17844478": "Is there evidence that skin cancer cells use their own vascular growth factor as a self-stimulating growth signal independent of blood vessel formation, and does that pathway cooperate with EGF receptor signaling?",
+    "synb-17945638": "Which genes do Polycomb complexes silence in human stem cells, and how do those genes relate to lineage commitment and the core pluripotency transcription factors?",
+    "synb-18027063": "Is there a cheaper alternative to full codon-aware evolutionary models for building trees from gene sequences, and does it actually fit the data better than plain DNA models?",
+    "synb-18078750": "How does the inward rectifier potassium channel linked to Andersen-Tawil syndrome get selected for transport out of the Golgi, and why do some disease mutations leave it stuck there?",
+    "synb-18098290": "Why would dominance among incompatibility alleles evolve differently on the male side versus the female side, and does having few compatible partners or genetic linkage matter?",
+    "synb-18231807": "Why do engineered T cells against some tumor targets lose function early, and does the choice of signaling domain (CD28 vs 4-1BB) affect how long they last?",
+    "synb-18263406": "Is there a fast, low-input PCR-based assay that can identify recombination-based telomere maintenance in tumor samples for use in large cohort or clinical settings?",
+    "synb-18361917": "What genes are turned on when salamander iris pigment cells revert to a stem-like state to rebuild a new eye lens, and is there a public cDNA sequence dataset from that process?",
+    "synb-1840993": "In monkeys with diabetes, what happened to blood sugar, weight, and blood fats after daily injections of a modified version of the hormone FGF21, and did it still work in animals whose disease was far advanced?",
+    "synb-18488986": "Why do anti-cancer immune responses against pigment-cell proteins stay weak, and does losing the gene that drives tissue-specific protein display in the thymus let mice attack skin tumors more effectively?",
+    "synb-18639989": "How does losing the Timeless homolog in S. pombe affect chromosome end maintenance, and does it trigger recombination-based lengthening like the ALT mechanism seen in cancer?",
+    "synb-18654430": "Is there a computational way to tell which of the two strands in a small RNA duplex gets loaded into the silencing complex versus which one gets discarded, based just on the base sequence and folding shape?",
+    "synb-18758057": "How do TCR complexes and CD4 or CD8 molecules physically reorganize on the surface of resting versus stimulated T cells at the sub-100 nm scale, and does costimulatory signaling change that arrangement differently for helper versus cytotoxic cells?",
+    "synb-18855191": "When wild soil bacteria from different places are mixed together during starvation-induced spore formation, do they still work together, or do they harm each other?",
+    "synb-1904291": "Is there statistical evidence from patient-reported data on how low blood sugar warning signs in insulin-treated diabetes cluster into distinct groups, rather than just splitting them into adrenaline-related and brain-related categories by assumption?",
+    "synb-1910120": "Why does deleting the enzyme that inserts arachidonic acid into cell membrane lipids cause fat to build up in gut and liver cells while lowering blood fat levels?",
+    "synb-1944452": "Why can viral vectors that integrate randomly into the genome of blood-forming cells cause one cell clone to dominate or turn cancerous, and what is being done to make these vectors safer?",
+    "synb-19572798": "Which part of gene-silencing repressor complexes lets them condense nucleosome fibers, and is it the same subunit in flies and mammals?",
+    "synb-19673227": "Can testing tumor cells found in a patient's bloodstream for genes linked to treatment resistance predict whether chemotherapy will work and how long before the disease worsens?",
+    "synb-19701340": "Does the pineal hormone slow down growth of human skin cancer cells in culture, and do those cells carry the binding proteins it acts through?",
+    "synb-19822046": "What happens when a child inherits damaging changes in both copies of the gene for the enzyme that trims poly(A) tails \u2014 can that lead to blood production failure and brain white matter problems?",
+    "synb-19824183": "How did rates and age distribution of Plasmodium infection and severe cases among under-fives shift in a southern Tanzanian town during the late 1990s?",
+    "synb-19945096": "Do people living with several chronic illnesses rate their GP care more negatively, and if so is that down to how many illnesses they have or to how unwell they feel \u2014 especially pain?",
+    "synb-19974105": "How do cells decide where and when to start copying their chromosomes, and what keeps that process on schedule during the division cycle?",
+    "synb-20109325": "How do current international guidelines classify patients with chronic lung obstruction into groups, and what factors are considered when evaluating them?",
+    "synb-20183360": "How does the luminal differentiation factor GATA3 block TGF-beta signaling from driving actin-bundling protein expression and invasive behavior in triple-negative-type breast tumor cells?",
+    "synb-20188586": "Do automatic phone alerts sent when a patient misses a scheduled dose, combined with feedback from electronic pill container data, actually help HIV patients in China take their medications more consistently?",
+    "synb-20279166": "Is there a way to see cell nuclei and chromosomes in living tissue without any dyes or fluorescent markers, fast enough to be used for rapid cancer diagnosis on fresh surgical specimens?",
+    "synb-20311968": "Can engineered receptor-targeted suppressor T cells directed at lung tissue reduce airway hypersensitivity and allergic inflammation in mice better than unmodified ones?",
+    "synb-20313748": "How do cell-cell contacts sense mechanical pull from neighboring cells and convert that into a signal that strengthens the junction?",
+    "synb-20333864": "What role do the surrounding stromal and basal cell types play in whether a non-invasive breast tumor becomes invasive?",
+    "synb-20372201": "How do the small subsets of tumor-initiating cells in stomach, colon, and other digestive tract cancers get controlled internally and by their surroundings, and what treatments are being developed to eliminate them?",
+    "synb-20381484": "How do proteins inside the cell nucleus get modified by NO groups when the enzymes that make nitric oxide are located outside the nucleus?",
+    "synb-20491205": "What are the biggest medical challenges facing people who are incarcerated, and how can services be organized to meet them?",
+    "synb-20649327": "How does ATP affect the way antigenic peptides attach to and are released from the ER import pump, and what peptide lengths does it prefer?",
+    "synb-20675284": "How does TGF-beta block vascular lining cell growth \u2014 does it change how these cells respond to mitogens like EGF, and which early-response genes are affected?",
+    "synb-20732789": "How does tobacco smoke drive white blood cell recruitment in the lungs of people with emphysema, and which prostaglandin signaling pathway makes those cells stick to the airway lining?",
+    "synb-20886584": "Are there inherited DNA variants that predict which breast cancer patients will develop severe nerve damage from paclitaxel-based chemotherapy?",
+    "synb-20888849": "Why don't pancreatic tumors respond to gemcitabine, and can stripping away the surrounding connective tissue help the drug reach the tumor in mice?",
+    "synb-2097256": "Is there a specific range of how many people per square kilometer makes an area most likely to see dengue epidemics, and does having piped household water change that risk in the countryside versus cities?",
+    "synb-2099400": "Are the increased cell migration and the stretched, spindle-like shape change seen in stomach epithelial cells infected with H. pylori driven by the same bacterial factors, or does only one of them require the cag island and CagA delivery?",
+    "synb-21050357": "What top research topics did experts and bereaved families from around the world agree should be focused on to further reduce unexplained infant deaths during sleep?",
+    "synb-21164071": "Which genetic change in the tail region of the beta-3 chain of the platelet fibrinogen receptor prevents the receptor from being switched on by agonists like ADP or thrombin, even though the receptor is present and can still bind RGD ligands?",
+    "synb-21181273": "Does the enzyme that breaks down PGE2 lose activity in bowel tumors, and could that loss help drive tumor growth?",
+    "synb-21221346": "What kinds of DNA shapes can the Artemis enzyme with its kinase partner cut, and how does that help explain joining of mismatched broken ends without polymerases?",
+    "synb-21250322": "How does the mitotic kinase in fruit flies act on the 220 kDa microtubule-binding protein to let spindle poles nucleate microtubules?",
+    "synb-21372171": "Are blood levels of HMGB1 elevated in people with clogged leg arteries, and do they track with clotting protein levels?",
+    "synb-21472388": "How often do serious low blood sugar episodes happen in kids with type 1 diabetes, and does tighter blood sugar control or younger age make them more likely?",
+    "synb-21562657": "How does the KSHV protein K5 counteract the host restriction factor that traps virions at the cell surface, and which part of that factor gets tagged for destruction?",
+    "synb-21616324": "How common is high blood pressure in kids after a kidney transplant, and what makes it more likely?",
+    "synb-21692235": "How are brain tumors like GBM grouped into different molecular categories based on RNA expression patterns and mutations, and do those groups respond differently to intensive treatment?",
+    "synb-21746539": "How have advances in live-cell microscopy changed our understanding of the contact zone that forms between a T lymphocyte and an antigen-presenting cell, and what does that reveal about how surface receptors and signaling complexes coordinate communication between the two cells?",
+    "synb-21866916": "How do the neuropeptides PACAP and VIP act on glial support cells in the brain, and which of their receptors do these cells carry?",
+    "synb-21874312": "Can the look of breast tissue on an X-ray be used to sort women into different categories of likelihood of later developing a tumor, and what were the rates found for each category?",
+    "synb-21884059": "What are the current treatment approaches for patients who develop donor immune cell complications after a bone marrow transplant, especially when steroids don't work?",
+    "synb-21884449": "How strongly do patient-reported factors like nasal allergy symptoms, cigarette use, and skipping preventer inhalers predict worse asthma symptom control?",
+    "synb-21922424": "Which frog gene with a zinc-finger-like cysteine motif plus a homeodomain shows transcripts concentrated in the dorsal blastopore lip during gastrulation, and can activin plus vitamin A derivatives turn it on in tissue explants?",
+    "synb-21958900": "Which anti-inflammatory painkillers are least likely to cause stomach bleeding or ulcers requiring hospital treatment, and does dose matter?",
+    "synb-22107641": "Do brain imaging scans show differences in the integrity of frontal lobe nerve fiber tracts in older adults suffering from depression compared to those without it?",
+    "synb-22547508": "What factors on hospital admission indicate whether someone will survive after swallowing herbicide containing this bipyridyl compound?",
+    "synb-22688699": "How safe is it to operate on brain tumors above the tentorium with the patient conscious rather than under general anesthesia, and does doing this for every case shorten hospital stays?",
+    "synb-22896970": "What did high-resolution X-ray work on the big half of a protist's protein-making machine bound to its anti-association factor reveal about features unique to non-bacterial cells?",
+    "synb-22914228": "How does protein expression profiling of a pancreatic tumor cell line compare with healthy duct cells, and what does it show about sugar breakdown and how these cells use glutamine?",
+    "synb-22937815": "How do enzymes that reposition nucleosomes contribute to fixing broken chromosomes, and do different repair routes rely on them to different degrees?",
+    "synb-22942787": "Did expanding insurance coverage for bowel cancer screening tests in seniors actually lead to more tumors being caught early, and did the benefit differ depending on where in the large intestine the tumor was located?",
+    "synb-22963769": "In mouth cancer, how do changes in the amount and location of cell-attachment junction proteins relate to tumor grade, invasion pattern, and spread to lymph nodes?",
+    "synb-23078022": "How does the mucin protein that's overexpressed in carcinomas keep NF-kB permanently switched on, and which components of the kinase complex does it bind?",
+    "synb-23126677": "Can a blood test measuring small RNA markers reliably identify people with precancerous growths in the bowel, and how accurate is it compared to stool-based screening?",
+    "synb-23531592": "How many mothers and kids worldwide are expected to be living with the AIDS virus by 2000, and what research gaps remain in preventing spread during pregnancy?",
+    "synb-23535770": "How might the NF-kB signaling pathway control the growth, movement, and maturation of brain stem cells in adults, and could it also matter for tumor-initiating cells in the brain?",
+    "synb-2356950": "How does a DNA methylation reader protein control the switch between self-renewal and maturation in adult brain stem cells through a small non-coding RNA and its target?",
+    "synb-23716150": "Which genes are switched on differently in the atria versus the ventricles, and is there an online resource where I can look up how a particular gene is expressed across the different regions of the heart?",
+    "synb-23848916": "How does the plant-derived compound from Chinese medicinal herb Rabdosia kill blood cancer cells like myeloma and T-cell leukemia, and does it spare healthy immune cells?",
+    "synb-23863551": "Why do breast tumors with amplified HER2 become resistant to drugs targeting the PI3 kinase pathway, and does adding an anti-HER2 agent help?",
+    "synb-23929297": "What causes the hunger hormone from the stomach to rise when animals go without food, and does the sympathetic nervous system play a role?",
+    "synb-23934390": "Which gene does miR-203 suppress to reduce growth and spread of lung carcinoma cells?",
+    "synb-23972114": "How does a kinase modifying a cargo adaptor protein on a specific serine residue help cells target and destroy bacteria that escape into the cytoplasm?",
+    "synb-23983289": "How reliable are hospital billing diagnosis codes in Medicare claims for detecting conditions like diabetes, high blood pressure, heart failure, or prior stroke compared with what's actually documented in patients' charts?",
+    "synb-23985464": "How do cancer-associated changes in the p53 gene affect gene expression control \u2014 do the altered proteins still shut down transcription like the normal version, or can they instead boost activity of growth-related and virus-derived regulatory sequences?",
+    "synb-24003461": "Do the fibroblast-like cells inside heart valve tissue affect whether the lining cells of the valve turn into bone-forming cells, and does that transition happen after they first shift toward a mesenchymal phenotype?",
+    "synb-24019260": "Can the anti-smoking drug Chantix also cut down how much alcohol rats drink, and does it affect their intake of other rewarding liquids like sugar water?",
+    "synb-24044977": "How do antigen-receptor-negative lymphocyte populations arise, how are the different subsets related to each other, and what roles do they play in gut and lung defense, tissue repair, and allergic disease?",
+    "synb-24101431": "How do injected stromal cells from bone marrow reverse high blood sugar in autoimmune diabetes models \u2014 do they actually turn into new insulin-secreting cells, or is something else going on?",
+    "synb-24498673": "How do human cells process four-way DNA branched intermediates during recombination, and do the different nucleases involved work together or in separate routes?",
+    "synb-24541180": "Is there a way to get clean, undamaged cell nuclei from small pieces of liver tissue without spinning them at very high speeds for a long time?",
+    "synb-24554740": "How does attachment to the extracellular matrix through adhesion receptors influence the enzymes that drive cells from G1 into S phase, and what role does MAP kinase signaling to cyclin D play?",
+    "synb-24706198": "How does protein export machinery work in bacteria that only have two components instead of three, and does the shared subunit take on both roles?",
+    "synb-24721347": "How has malaria science evolved since its early pioneers, and what directions should it take in the coming century to actually reduce the disease burden?",
+    "synb-24725136": "Which gene defects cause the inherited disorder combining cerebellar movement problems, cognitive decline, and failure of puberty due to low pituitary hormone signaling, and how were they confirmed experimentally?",
+    "synb-24863571": "How can you selectively track protein made inside mitochondria in living cell cultures to detect problems in patients with inherited energy metabolism disorders?",
+    "synb-24921368": "Why do some people on insulin stop noticing the warning signs of low blood sugar, and what can be done about it?",
+    "synb-2494748": "At what point during the progression from gastritis to stomach cancer does silencing of tumor suppressor genes by promoter DNA methylation begin, and does it build up as lesions advance?",
+    "synb-24998637": "What happens to joint inflammation and cartilage damage in mice genetically lacking IL-6 when arthritis is triggered experimentally?",
+    "synb-25263942": "Is there an immunostain that can help tell whether a fragmented curettage sample represents a benign uterine growth versus overgrowth of the lining?",
+    "synb-25300426": "How does the leukemia inhibitory factor signaling pathway keep mouse embryonic stem cells undifferentiated, and which downstream gene does it act through?",
+    "synb-25301182": "Does impaired heart relaxation and filling affect how much physical activity someone can tolerate on a treadmill test, even when pumping strength is normal, and does this get worse with age?",
+    "synb-25404036": "How can the spatial arrangement of connexin channels in heart muscle cells be measured objectively in 3D instead of just eyeballing microscope images?",
+    "synb-25413327": "Can a stem cell line started from one single cell taken from a human blastocyst-derived culture still make tissues from all three germ layers and keep normal chromosomes after many months of growth?",
+    "synb-2541699": "Which gene in C. elegans lets RNA-based gene silencing be passed down through several generations, and how does losing it eventually cause worms to become sterile?",
+    "synb-25435456": "How does the tissue surrounding target cells, especially the scaffolding proteins cells attach to, affect how well protein or nucleic acid drugs work, and what does that mean for designing delivery vehicles?",
+    "synb-25562234": "Is there evidence from large community samples in China that blood levels of the protease corin differ between people with and without high blood pressure?",
+    "synb-25816994": "Does adding an ACE inhibitor to an angiotensin receptor blocker protect the kidneys better than either drug used alone in older patients with heart disease or diabetes?",
+    "synb-25842866": "Is there any direct experimental proof that four-stranded G-rich DNA structures actually exist at chromosome ends inside living cells, and how was it obtained?",
+    "synb-25886725": "Do people covered by both Medicare and Medicaid end up in worse nursing homes after a hospital stay than those with Medicare alone?",
+    "synb-25900857": "Is there genome-wide evidence that traits of non-reproductive castes, rather than those of reproductive females, drive adaptation in colony-living bees?",
+    "synb-2593298": "How do junctional adhesion proteins in blood vessel lining cells block growth factor receptor uptake into the cell, and why does that stop proliferation when cells are packed together?",
+    "synb-25950264": "Has anyone grown liver cancer cells as tissue-like aggregates in a rotating bioreactor with scaffolds, and did the resulting cultures behave like real tumors when implanted in mice?",
+    "synb-25953438": "How do child death rates from malaria vary by age and time of year across African communities where transmission is year-round, and what fraction of deaths under 15 can be blamed on it?",
+    "synb-25974070": "How do the amount and kind of fat in your diet affect artery flexibility, inner blood vessel lining health, and blood pressure?",
+    "synb-26108767": "Which self-cleaving viral peptide works best for co-expressing antibody heavy and light chains from one construct in hamster ovary cell lines, and does adding a short flexible spacer improve processing and yield?",
+    "synb-26231129": "Why do precision drugs against cancer-driving mutations rarely wipe out tumors completely, and could tackling the surviving cancer cells early \u2014 instead of waiting for relapse \u2014 lead to lasting remission?",
+    "synb-26244918": "Can a diabetes drug like sitagliptin, given daily for several months, reduce plaque buildup and memory loss in mice genetically engineered to develop dementia?",
+    "synb-2638387": "What host enzyme causes the guanine-to-adenine base changes seen in HIV genomes during reverse transcription, and how does the virus block it?",
+    "synb-26462632": "How many tissue samples should be taken from each part of the digestive tract during scope-guided sampling in dogs and cats, and is sampling the last part of the small bowel worth doing?",
+    "synb-26672703": "What causes the length of DNA repeat sequences to change over generations and between tissues in inherited nerve and muscle diseases?",
+    "synb-2682251": "Can pluripotent stem cells from one rodent species generate a missing organ when injected into early embryos of another species that lacks it?",
+    "synb-26887439": "Which gene did an RNA interference screen identify as selectively required for the viability of colon cancer cells carrying a mutant KRAS allele but not their gene-corrected counterparts?",
+    "synb-2701077": "Why might keeping blood-forming stem cells in a dormant, non-dividing state actually increase their risk of accumulating genetic damage after radiation exposure?",
+    "synb-27129115": "Does giving magnesium to mothers who may deliver early actually prevent brain damage in the baby, and how many mothers need treatment to avoid one case of cerebral palsy?",
+    "synb-27243019": "Why does recovery of the immune system take longer after transplants using stem cells from the umbilical vein, and what factors \u2014 like avoiding antibody-based T-cell removal during preparation \u2014 can speed it up or help treat resulting infections?",
+    "synb-2727303": "How does the tubulin deacetylase enzyme affect calcium entry through the ER sensor protein in tumor cells versus healthy cells, and could blocking it be a treatment approach?",
+    "synb-27446873": "In a national screening service, does starting with a papillomavirus test and only checking cell samples when it's positive find more advanced precancerous cervical lesions than standard Pap smears alone?",
+    "synb-27545868": "How does the PCAF enzyme drive expression of adhesion molecules and chemokines in diabetic or endotoxin-induced kidney damage, and does it work through changes in histone modification at those gene promoters?",
+    "synb-27580223": "What triggers sudden outbreaks of malaria in southeastern Iran, and what are their typical size, duration, and seasonal timing?",
+    "synb-27840664": "How do cells sense and respond to obstacles that halt DNA copying machinery, and why do broken forks\u2014unlike merely paused ones\u2014end up recruiting homologous recombination factors?",
+    "synb-28006126": "Which NF-kB proteins bind the promoters of anti-apoptotic and chemokine genes when the costimulatory molecule on T cells is triggered without antigen receptor engagement?",
+    "synb-28069701": "Is there a genome scan technique that accounts for statistical dependence between neighboring polymorphic sites when searching for regions shaped by positive selection, and does it cut down on spurious signals when the population has gone through a size crash?",
+    "synb-2824347": "Why can't antiretroviral drug combinations completely cure HIV, and how do dormant virus-harboring cells in helper T cells and macrophages differ in how they keep the virus silent and can be reawakened?",
+    "synb-28247027": "Does the amount of antigen presented by dendritic cells change whether killer T cells form prolonged attachments in lymph nodes, and does that determine if lasting immune memory develops?",
+    "synb-28264919": "Which nucleotide in the large subunit rRNA gets modified by the enzymes that make bacteria immune to macrolide drugs?",
+    "synb-2828460": "In the heart, do connective tissue cells from different embryonic sources behave differently when scarring is triggered by increased afterload, or do they all respond the same way?",
+    "synb-28338268": "Is there a described inherited condition passed down from one parent in which vision loss from nerve degeneration and hearing loss begin in childhood or the teens, followed later in adulthood by drooping eyelids, limited eye movement, unsteady gait, and muscle weakness?",
+    "synb-28386343": "How are reprogrammed patient stem cells that have been turned into mature cell types being used for large-scale compound testing in early drug development, and what obstacles come with that approach?",
+    "synb-2842550": "In people treated for unstable angina or heart attack, how completely does an intravenous loading dose plus continuous infusion of a IIb/IIIa blocker suppress clot-forming cell clumping over time, and do drug blood concentrations predict that suppression?",
+    "synb-28441310": "Does the type of DNA damage change as mice get older, and do genetic errors build up equally in different organs like the liver, bladder, and brain?",
+    "synb-28517384": "Does the liver release a circulating form of the TLR4 co-receptor during inflammation, and does it help neutrophils engulf endotoxin-bearing bacteria?",
+    "synb-28617573": "How does checking for the virus compare with Pap smears when sorting out unclear or mildly abnormal smear results, watching patients after treatment of precancerous cervical lesions, and as a first-line screening tool?",
+    "synb-28647122": "Why do immune cells stop responding to bacterial cell wall components after an initial low-dose exposure, and how does this reduced responsiveness relate to weakened immunity in blood infection patients?",
+    "synb-28712203": "Why does a genetic shortage of a certain protein inhibitor make people more likely to develop emphysema, and what normally keeps white blood cell enzymes from damaging lung tissue?",
+    "synb-28937856": "How does the mammalian silent information regulator enzyme alter Forkhead protein activity so that cells survive damaging conditions instead of dying?",
+    "synb-2919030": "How does the copper-zinc antioxidant enzyme control whether cells use mitochondrial energy production versus fermentation when sugar and air are available, and what protein does it stabilize to do that?",
+    "synb-29362104": "Do free fatty acids block antigen-receptor-triggered calcium entry in T lymphocytes, and is protein kinase C responsible for that effect?",
+    "synb-29689140": "In mouse liver, when the tumor suppressor that restrains Wnt signaling is knocked out, which downstream factor is actually required for the resulting overgrowth and increased cell division \u2014 and does removing the same oncogenic transcription factor that blocks these effects in the gut work here too?",
+    "synb-30122260": "How do the two main damage-sensing kinases in humans and their yeast counterparts get switched on one after the other depending on how broken chromosome ends are processed?",
+    "synb-30353437": "Why does losing one gene cause both brain degeneration and higher tumor risk in this inherited disorder with unsteady movement and dilated blood vessels?",
+    "synb-30398773": "In children who get bone marrow transplants, does catching a common respiratory bug in the first weeks afterward raise the risk of later immune-mediated lung damage, and does staying on immune-suppressing drugs longer change that risk?",
+    "synb-3052642": "How are closed-loop RNA molecules identified in cells, and what biological roles have been proposed for them?",
+    "synb-30884033": "How does the chaperone Hsp90 help mouse embryonic stem cells stay undifferentiated, and what happens to Oct4 and Nanog when it's blocked?",
+    "synb-3090454": "Why do patients have low B-cell counts for a long time after a donor stem cell transplant \u2014 is it related to immune complications like donor-versus-host reactions, graft cell dose, or donor/recipient age?",
+    "synb-3095620": "In macaques, which fiber bundles carry input from the parietal and temporal lobes to the frontal regions corresponding to the human speech production area, and where do those inputs come from?",
+    "synb-3098821": "Is there an affordable protein-affinity enrichment technique combined with high-throughput sequencing that can profile methylation across GC-rich regions of the whole genome without needing custom probes, and how does it stack up against bisulfite-based sequencing?",
+    "synb-3099497": "How many simultaneous talkers can a listener actually pinpoint by direction before accuracy breaks down, and is the limit different for pure tones?",
+    "synb-3107733": "Do cell organelles known for fatty acid breakdown have any role in defending cells against viruses, and how would that differ from what mitochondria do?",
+    "synb-31293581": "Do cells showing aging-related damage markers stick around in irradiated mouse tissues for months, and does removing p53 or lymphocytes change how many persist?",
+    "synb-313403": "Does the amount of CD68-positive immune cells in breast tumor tissue affect how long patients survive, even when the cancer hasn't spread to the lymph nodes?",
+    "synb-31933981": "How might SAA, the liver protein that rises during inflammation, play a role in cancer development and spread, and could it work as a blood test marker for malignancy?",
+    "synb-32001951": "How does a glucocorticoid like dexamethasone affect placental-type phosphatase levels in cultured human mammary tumor cells, and does vitamin A acid counteract it?",
+    "synb-3215494": "At what blood level of this amino acid should vitamin therapy be started to prevent heart and artery disease, and how much folate should patients take?",
+    "synb-32324430": "How does rivalry among different RNA molecules for the same regulatory factors, like small noncoding RNAs and protein binders, influence how genes are controlled after transcription?",
+    "synb-32423829": "How was the community-based trial in Mumbai using health workers to check women for cervical and breast tumours set up, and what did the findings look like partway through?",
+    "synb-32532238": "When magnetic beads attached to surface adhesion receptors are pulled on, what distinct kinds of short- and long-term responses do cells show, and which signaling components or structural elements does each one depend on?",
+    "synb-32587939": "How does the wolframin protein move out of the endoplasmic reticulum to help beta cells make cAMP and release insulin after glucose or incretin stimulation?",
+    "synb-3285322": "How often do hereditary breast cancer gene carriers have hormone-receptor and HER2-negative tumors compared to women without such inherited mutations, and do their tumors differ in grade or age at diagnosis?",
+    "synb-33169058": "What ways can bacteria and other single-celled organisms limit freeloaders that exploit group behaviors without contributing?",
+    "synb-3330111": "Besides killing bacteria, what other roles do white blood cells like granulocytes play in shaping immune responses and disease?",
+    "synb-33387953": "Can changes in the beta subunits of heterotrimeric G proteins drive blood cancers and make tumors less responsive to targeted kinase drugs?",
+    "synb-33723822": "Why do some low- and middle-income country governments decide to introduce new immunizations sooner than others, and what did the early rollout of hepatitis B shots in Taiwan and Thailand reveal about how such decisions get made?",
+    "synb-33912020": "How does reactive oxygen species signaling connect to the addition of phosphate groups on CRMP2 when a repellent axon guidance cue causes nerve terminals to retract?",
+    "synb-33920995": "Which short cytoplasmic tail sequence of the endothelial adhesion receptor ICAM-1 controls its concentration on surface protrusions and its linkage to the actin cytoskeleton, and how does removing it affect white blood cell binding and passage across the endothelium?",
+    "synb-33986507": "How do cells turn on genes quickly when they receive an external signal, and what steps besides bringing polymerase to the promoter control this?",
+    "synb-33989422": "Is there a published commentary discussing where the thin DNA threads linking separating chromosomes during mitosis come from, written in response to the 2009 Nature Cell Biology paper by Chan and Hickson on replication stress causing chromatid linkages at fragile sites?",
+    "synb-34016944": "Why don't breast cancer cells lacking the PTEN tumor suppressor respond to EGFR kinase inhibitors, and can adding back the missing gene or blocking downstream survival signaling make them sensitive again?",
+    "synb-3413083": "In the UK, where do people usually get screened for chlamydia outside of sexual health clinics, and do those tested in general practice or community services still have risky sexual behaviour that would warrant full screening for HIV and other infections?",
+    "synb-34254203": "Why do developing B cells and thymocytes both rely on a temporary stand-in partner chain to test their newly rearranged receptor chains, and how does that checkpoint shape which antibody heavy chains survive and enforce single-allele usage?",
+    "synb-3430789": "Does blood purification with carbon filters actually protect the kidneys in people who have swallowed herbicide, and how does the drug get cleared in urine?",
+    "synb-34544514": "In premature babies with an open fetal blood vessel between the aorta and pulmonary artery, does ibuprofen work as well as indomethacin for closing it, and does it cause fewer gut or kidney complications?",
+    "synb-34559336": "Why do pol mu and pol lambda behave differently during antibody gene rearrangement even though both are recruited to repair broken DNA ends?",
+    "synb-34905328": "What happens to thymocyte maturation and immune responses in mice where the positively charged region of the CD3 epsilon tail can no longer bind the lipid bilayer?",
+    "synb-3504761": "How does losing TGF\u03b2-activated kinase 1 in liver cells lead to fat buildup and cancer, and can blocking the mTOR pathway reverse it?",
+    "synb-35256900": "How do antibody-antigen aggregates arriving in the lymph get delivered to the follicular dendritic cell network, and what role do B cells and sinus-lining phagocytes play in that relay?",
+    "synb-3545805": "In mouse models of advanced skin cancer, which helper T cell differentiation state works best for adoptive cell transfer, and does its antitumor activity actually depend on IL-17?",
+    "synb-35531883": "Do different inward rectifier K+ channels use the same structural motif and adaptor protein to leave the Golgi, and how does that relate to correct folding?",
+    "synb-35828148": "How fast does the neutrophil heme enzyme that makes hypochlorous acid react with the cocoa/tea flavanol epicatechin, and what are the measured rate constants for its redox intermediates?",
+    "synb-3588621": "How can I separate and measure the different types of cell-secreted membrane particles from culture supernatant or blood, and which proteins can tell them apart for diagnostic use?",
+    "synb-36025357": "How does the body's main cellular antioxidant defend against reactive compounds, how is its level in cells measured, and how is it made and regulated?",
+    "synb-36202354": "How can universities and drug companies structure joint ventures to bring lab discoveries to market more effectively, and why are such arrangements rarer in Europe than in America?",
+    "synb-36271512": "What topics are covered in a review of how T lymphocytes become stimulated, from surface receptors and co-stimulatory molecules through signaling, gene regulation, and killing function?",
+    "synb-36480032": "How do the pigmented lining cells of the iris, ciliary body, and retina help keep inflammation in check inside the eye, and what molecules do they use to dampen T-cell responses?",
+    "synb-36653415": "Do lung tumors in actual patients burn lactate as fuel, and how does that compare to their use of sugar?",
+    "synb-36830715": "Can drugs that stabilize the cytoskeleton limit fibrous tissue buildup and help nerve fibers regrow after damage to the spinal cord?",
+    "synb-37156349": "Which mental abilities in toddlers with motor impairments indicate they're developmentally ready to safely drive an electric wheelchair?",
+    "synb-37182501": "How does the immune system stop B cells from making antibodies against the body's own tissues, and what goes wrong in autoimmune disease?",
+    "synb-37205685": "When and where did malaria parasites first stop responding to chloroquine, and how did that resistance spread over time?",
+    "synb-37438296": "How do small non-coding RNA profiles in cattle muscle change from fetal stages through adulthood, and was any previously unknown one found to regulate a blood vessel growth factor gene?",
+    "synb-37450671": "Do the tangled fibers inside neurons in Alzheimer's brains consist of the same 4 kd peptide found in senile plaque deposits and vessel wall deposits, and do antibodies to different segments of that peptide label these lesions differently?",
+    "synb-37480103": "Does the size of the afterbirth during pregnancy affect a mother's later chances of developing breast cancer?",
+    "synb-374902": "Could screening everyone yearly for HIV and starting treatment right after diagnosis actually stop the epidemic in a place like South Africa, and what would that cost compared to current practice?",
+    "synb-37608303": "How do mitochondria reshape their inner membrane folds when nutrient availability changes, and can that remodeling happen separately from membrane merging?",
+    "synb-37699461": "Can immature liver cells from human fetuses be genetically reprogrammed to make and secrete insulin, and has this ever corrected high blood sugar in diabetic mice?",
+    "synb-3801693": "Is there long-term evidence that people with higher blood levels of TGF-beta1 are more likely to later develop high blood pressure?",
+    "synb-38025907": "Is there a modified gut hormone variant that can reverse fatty liver inflammation and scarring in animal models without triggering liver tumors?",
+    "synb-3828508": "How many people newly diagnosed with celiac disease are actually heavy rather than thin, and do they put on more weight once they stop eating gluten?",
+    "synb-3831884": "How do pancreatic tumor cells process glutamine differently from normal tissue, and which mutated oncogene drives that rewiring?",
+    "synb-38355793": "Does silencing the anti-apoptotic gene TNFAIP3 with RNA interference slow brain tumor growth in cell culture and in mice?",
+    "synb-38376189": "Has an experimental weakened-virus shot against West Nile been tested for safety and immune response in people over 50 who haven't previously been exposed to related viruses?",
+    "synb-38794814": "Can brain rhythms lock onto a continuously changing tone without sharp onsets, and does that alignment actually make listeners better at catching brief silences in the sound?",
+    "synb-39128592": "What signal from developing T cells that have successfully passed selection drives expansion of the central thymic stroma needed for self-tolerance?",
+    "synb-393001": "How does the cytosolic nucleotidase in placenta that prefers inosine monophosphate respond to adenosine triphosphate and phosphate levels, and what is its subunit makeup?",
+    "synb-39334724": "When making smoothed disease maps for regions where some areas are crowded and others are sparsely settled, is it better to use moving windows of a set land area or ones adjusted to include a similar number of people?",
+    "synb-39984099": "Is it economically worthwhile for poorer countries like South Africa, Zambia, India, or Vietnam to start HIV patients on treatment at higher immune cell counts, and what does modeling say about the cost per year of healthy life gained?",
+    "synb-40044800": "What enzyme in mammalian cells detects foreign genetic material in the cytoplasm and makes a small signaling molecule that switches on STING to drive antiviral interferon production?",
+    "synb-40349336": "What happens to mice if you knock out a key DNA repair checkpoint gene only after they've reached adulthood \u2014 do they show signs of accelerated aging or depletion of tissue-renewing cells?",
+    "synb-40367499": "How do surrounding cells contribute to building the new contact between two daughter cells after an epithelial cell divides?",
+    "synb-40476126": "What evidence shows that brain cells clear this endocannabinoid through a dedicated uptake protein rather than only by enzymatic breakdown, and does blocking that uptake prolong its effects?",
+    "synb-4067274": "At what stage of spliceosome formation do the two ends of an intron become irreversibly matched, and does this differ between competing 5' donor choices versus optional exon skipping?",
+    "synb-40710501": "Why do some brain tumor stem cell lines fail to respond to drugs that block EGF receptor signaling, like erlotinib or gefitinib?",
+    "synb-40754510": "Who first described the bacterium responsible for boils and blood poisoning in the 1880s, and is it still a major cause of illness today?",
+    "synb-40971746": "Why do avian species balance gene expression from their sex chromosomes less completely than mammals or fruit flies do?",
+    "synb-41120293": "How does immune activity in the gut contribute to being overweight and developing poor blood sugar control?",
+    "synb-41264017": "Does having several heart-related health problems at once \u2014 like high blood pressure, diabetes, smoking, or cardiac disease \u2014 make older adults more likely to develop Alzheimer's than having just one?",
+    "synb-41925568": "Does using a high concentration of dimethyl sulfoxide as a solvent for intracranial microinjections interfere with the eating response normally triggered by noradrenaline in the hypothalamus?",
+    "synb-4200695": "Can targeted physiotherapy for the rotator cuff and shoulder blade muscles help patients with long-term shoulder pinching pain avoid keyhole shoulder surgery?",
+    "synb-42035464": "What holds the microtubule-nucleating ring complexes onto centrosomes during cell division, and what happens to spindle formation and cell survival if that attachment is lost?",
+    "synb-42080024": "Does blocking or adding VEGF change how well broken bones heal in animal experiments, and does it matter whether the healing happens through a cartilage stage or directly?",
+    "synb-42373943": "Do low platelet counts in a patient with a short-duration fever in a tropical region make malaria more likely than other infections?",
+    "synb-4313478": "Is there evidence that small non-coding gene segments evolved to trigger early stop codons when they fail to be removed, and that the decay pathway for faulty transcripts cleans up these errors across different kingdoms?",
+    "synb-4319844": "How do cancer cells that maintain chromosome ends without telomerase copy those ends during cell division, and which repair proteins and stress conditions control that process?",
+    "synb-4320424": "Is there a way to block the mutant Ras protein indirectly by disrupting the chaperone that carries it to the cell membrane, and does that actually stop tumor growth?",
+    "synb-43419566": "Is permanently switching on the enzyme upstream of ERK enough by itself to make normal cells cancerous?",
+    "synb-43427621": "Can behavioral therapy stop fainting spells in a teenager who passes out at the sight of blood or needles, even when heart monitoring shows prolonged pauses?",
+    "synb-4345605": "In mice, do the schizophrenia-linked genes neuregulin 1 and its receptor act mainly on connections between excitatory projection neurons, or on the wiring of inhibitory cells in the cortex?",
+    "synb-4350400": "How do plant cells decide which side of the membrane the hormone transport proteins end up on, and what happens to embryo development if that asymmetric targeting fails?",
+    "synb-43557480": "Does high blood pressure make kidney failure get worse faster in kids, and do they end up needing more medications over time?",
+    "synb-4373445": "When a cell membrane pushes forward, are Rac1, RhoA and Cdc42 switched on at the same place and moment, or does one act first at the leading margin while the others follow later and further back?",
+    "synb-43880096": "How does the tumour suppressor protein get switched on after genetic injury, and what chemical changes to the protein drive that switch?",
+    "synb-4391685": "Is there a physics-based model that predicts how the division axis of a dividing human cell is set by its adhesion pattern and shape, including cases where the resulting angle distribution isn't symmetric?",
+    "synb-4391817": "Is there experimental evidence that chromosomes trapped outside the main nucleus after faulty segregation can shatter and be stitched back together in a single cell cycle, causing the clustered rearrangements seen in tumors?",
+    "synb-4394525": "Do staph infections cause pain by directly stimulating nerve cells rather than through immune signaling, and does that nerve activity in turn affect the immune response?",
+    "synb-4402497": "Which part of the hepatitis C viral genome does the cytoplasmic sensor RIG-I actually detect to switch on interferon responses, and what structural features of that RNA are required for binding?",
+    "synb-4407455": "What protein do caspase-1 and the LPS-sensing caspases cut to actually kill the cell, and how does that cut switch it on?",
+    "synb-4409524": "How does the heart-derived hormone system that regulates blood pressure affect placental cell migration and maternal blood vessel changes in the womb, and could faults in it cause hypertensive disorders of pregnancy?",
+    "synb-4421547": "How does DNA methylation upstream of H19 switch off the insulator that keeps distal enhancers from activating Igf2, and which protein binding is involved?",
+    "synb-4421742": "Can a genetic defect that causes excess iron buildup in the body also damage the lungs, and what breathing problems does that lead to in animal models?",
+    "synb-4422734": "How few antigen molecules on a presenting cell can a helper T lymphocyte actually detect, and what role does CD4 play in that threshold?",
+    "synb-4423220": "Which proteins found in developing male germ cells are essential for DNA packaging and reproductive success, and how were they discovered in nematodes in a way that translates to mice?",
+    "synb-4449524": "Do African American kids naturally have lower blood iron-carrying pigment levels than white kids even when nutritional deficiency and inherited blood disorders are ruled out, and should pediatric anemia cutoffs differ by ethnicity?",
+    "synb-4454788": "What are the fat-derived signaling molecules that actively switch off inflammation, and besides ending inflammation what other roles do they play in the body?",
+    "synb-44572913": "How much dietary calcium do teenagers actually need to build maximum bone density, and does getting more of it early in life help prevent brittle bones later on?",
+    "synb-44614949": "How does removing IL-6 production from muscle in mice affect subcutaneous fat stores and the proteins controlling fat storage and breakdown under a fatty diet with or without treadmill training?",
+    "synb-4462777": "How can you tell in advance which cancer-specific protein alterations will actually trigger a T cell response, without having to screen patient lymphocytes against huge libraries?",
+    "synb-4464565": "Which genes change activity in human intestinal tumor cells treated with cocoa flavanols, and how were those changes verified at the transcript and protein levels?",
+    "synb-44947611": "Does the solved solution structure of the mouse ubiquitin-like modifier protein look more like ubiquitin itself or like the sulfur-carrier subunit of bacterial molybdenum cofactor biosynthesis enzymes?",
+    "synb-4506702": "Do patient-written reviews of antidepressants and antipsychotics on health forums provide side effect information that differs from what official drug info pages say, and is it worth including them in health search results?",
+    "synb-45341480": "In young children with small scalds, does using a fiber gelling wound dressing instead of an antimicrobial cream lower the chance of needing surgery and shorten hospital time?",
+    "synb-45364685": "Besides high temperature, can any other stressor trigger the same puff activation and stress protein production in midge salivary gland cells?",
+    "synb-45457778": "How has research on Alzheimer's and related cognitive decline in older adults developed across European countries compared with America, and why do differing study methods make it hard to combine findings internationally?",
+    "synb-45920278": "Do women actually spend more on doctor visits and medical bills than men once you account for things like income, education, and how healthy they are?",
+    "synb-461550": "How can bacterial immune defense proteins be adapted to cut DNA at chosen spots in human and mouse cells, and is it possible to target several genes at once?",
+    "synb-46182525": "Does losing bone density in the hip with age actually mean the bone is weaker, given that the outer bone diameter seems to widen over time in both men and women?",
+    "synb-4662264": "How can growth factor signaling boost the transcriptional output of the estrogen receptor without hormone binding, and which specific residue is involved?",
+    "synb-46837626": "How can kidney filtration rate be estimated from a blood test result without collecting urine over a full day, and how accurate is that estimate?",
+    "synb-4701662": "Is there direct experimental evidence that the yeast tethering complex linking mitochondria to the secretory membrane system actually moves lipids between those two compartments, and does that movement need ATP?",
+    "synb-4702639": "Which cell-surface adhesion receptor identifies cancer cells with self-renewal capacity that don't respond to EGFR-targeted drugs, and how does it signal to cause that resistance?",
+    "synb-4824840": "Has the rate of blood infections in American hospitals actually been rising, or does that just reflect changes in how conditions get coded for billing?",
+    "synb-4857093": "How accurate is a self-administered computer-based dietary recall tool for 11-14 year olds compared with written food diaries and face-to-face interviews?",
+    "synb-4896726": "Does a temporary burst of a chromatin-opening transcription factor leave a lasting mark on regulatory DNA that keeps a cell committed to its lineage even after the factor is gone?",
+    "synb-4993011": "Why do tumors lacking functional ATRX end up with fewer copies of the genes encoding ribosomal RNA, and does that make them vulnerable to drugs blocking nucleolar transcription?",
+    "synb-52175065": "In people with weakened heart pumping function, can leg-only exercise training still trigger normal growth-factor signalling and improve muscle capillaries, fibre size and mitochondria?",
+    "synb-5256564": "Is there a drug that blocks tumor cells from taking up glutamine, and does shutting down that uptake actually slow tumor growth in animal experiments?",
+    "synb-5278233": "In Beckwith-Wiedemann patients whose IGF2 becomes biallelic without changes at the H19 region, what other differentially methylated region on chromosome 11p15 is altered, and is there a reverse-strand transcript linked to it?",
+    "synb-52944377": "How can cells repair oxidative double-strand breaks in genes being expressed without relying on the usual breast cancer susceptibility proteins, and what role do RNA-DNA hybrid structures play in starting that process?",
+    "synb-53211308": "Is there a small non-coding RNA carried in blood vesicles that is raised in women with ovarian tumors and that alters the lining cells of the abdominal cavity to make tumor spread easier?",
+    "synb-5321708": "How does cell attachment to the extracellular matrix influence the final separation of daughter cells during division, and is that effect the same in all cell types?",
+    "synb-5372432": "Does living far from a hospital make it more likely that someone's cancer is only discovered after they die, and does poverty make this worse?",
+    "synb-54490092": "In older people with high blood pressure, do larger swings in readings over a 24-hour period predict a higher chance of stroke or heart attack?",
+    "synb-54562433": "Is there a gene found only in mammals that helps move mitochondria along nerve fibers and improves cell survival and regrowth of damaged optic nerve axons?",
+    "synb-5487448": "Does how big a baby is at birth affect how dense her breast tissue is later in life after menopause?",
+    "synb-5596332": "How was blood poisoning redefined in the most recent expert consensus, and what bedside criteria are now used to spot patients at high risk of dying?",
+    "synb-5650232": "Is there a fast command-line toolkit for finding overlaps between large sets of genome interval files and read alignments that can be chained together in shell scripts?",
+    "synb-56893404": "Why are babies born unusually large and prone to low blood sugar after birth when they inherit certain single-copy gene changes linked to inherited early-onset diabetes?",
+    "synb-5800138": "In mice, can immune-suppressive T cells generated by a gut bacterial infection stop that same microbe from causing intestinal disease, and does that protection depend on IL-10 or TGF-beta?",
+    "synb-5849439": "In Arabidopsis plants that can't recycle adenine into nucleotides, at what point does male gamete formation go wrong, and what cellular defects show up?",
+    "synb-5914739": "How does antigen recognition cause the intracellular tail of CD3\u03b5 to detach from the inner membrane surface, and does this depend on downstream kinase signaling?",
+    "synb-600808": "Why is cyclin A broken down early in mitosis while cyclin B1 survives until chromosomes align, even though both depend on the same ubiquitin ligase?",
+    "synb-6106004": "How can you tell apart parent and offspring yeast cells and collect them separately for studies on replicative lifespan?",
+    "synb-6112053": "When people stop taking antidepressants like paroxetine or fluoxetine, how common and how long-lasting are the resulting adverse effects, and should these be considered true drug withdrawal?",
+    "synb-6171953": "How does the energy-sensing protein SIRT1 connect overeating to the chronic low-grade immune activation seen in obesity, and does its level drop in immune cells like macrophages as well as fat cells?",
+    "synb-6176498": "Do blood markers of blood vessel lining damage, like adhesion molecules, predict who will later develop adult-onset diabetes in women, even after accounting for weight and inflammation?",
+    "synb-623486": "How can you purify high yields of viable macrophage precursors from donor blood by size-based spinning separation, and do the smaller versus bigger fractions differ in surface markers or killing of antibody-coated target cells?",
+    "synb-6250701": "In adults hospitalized with severe malaria and kidney dysfunction, which blood or urine test at admission best predicts who will later need dialysis?",
+    "synb-6325527": "Is there an adult brain vessel receptor whose loss only causes leaky vessels and bleeding after injury or tumors, and can boosting Wnt signaling reverse it?",
+    "synb-6372244": "How do drugs that wipe out normal intestinal bacteria change the chemical environment of the gut in ways that let C. difficile spores sprout and multiply?",
+    "synb-63858430": "Where can I get the digital version of the text on handling missing survey data with multiple imputation, and will it work on my e-reader or phone?",
+    "synb-6417632": "Which immune cell types accumulate inside the muscle layer of small airways in smokers with chronic obstructive lung disease, and does their presence correlate with worse lung function?",
+    "synb-641786": "Which gene acquires mutations at the time of recurrence in pediatric B-cell leukemia that make cells less sensitive to purine analog chemotherapy, and are these mutations linked to how quickly the disease comes back?",
+    "synb-6503534": "Which gene defects cause Hurler syndrome in patients from Italy, and how do their frequencies compare with those seen in northern European populations?",
+    "synb-6549091": "In older patients with frequent fainting spells linked to a drop in heart rate on tilt testing, does implanting a pacemaker prevent further episodes better than taking a beta-blocker?",
+    "synb-6828370": "How can a non-translated duplicate copy of a tumour suppressor gene still affect cancer growth by soaking up small regulatory RNAs?",
+    "synb-6910577": "How can jumping DNA elements be used in mice to find genes that cause tumors, and can this be restricted to particular tissues?",
+    "synb-6945285": "Does taking a fibrate drug lower the chance of heart attacks or strokes in men with peripheral artery disease?",
+    "synb-6947286": "Do variations in the genes encoding the gamma-secretase subunit proteins increase the risk of late-onset dementia in Italian patients?",
+    "synb-696006": "How can a flu virus infection trigger asthma-like bronchial constriction in mice that lack T and B cell responses, and which lung cells and signaling molecules drive it?",
+    "synb-7046487": "How does the NF-\u03baB signaling pathway link chronic immune responses to tumor development, and why does it sometimes suppress rather than promote tumors?",
+    "synb-7185591": "Does eating less still extend yeast lifespan when the sirtuin gene is knocked out, or does the benefit depend entirely on that gene?",
+    "synb-7211056": "Does having twice the normal set of chromosomes make colon tumor cells more likely to accumulate further karyotype errors over time, and does it affect patient outcomes?",
+    "synb-7227763": "In blood loss shock, does adding pyruvate measurements or derived ratios predict oxygen deficit and survival any better than lactate alone?",
+    "synb-72580164": "What do general practitioners in Lower Saxony say about caring for dying patients, and which aspects of end-of-life care do they think most need improvement?",
+    "synb-7268522": "Why do the genes switched on by this signaling pathway vary between different cell types, and how is that gene expression controlled after the receptor fragment moves into the nucleus?",
+    "synb-7451607": "Is there a way to tag a protein only at a chosen moment in living cells so you can follow and purify the complexes it joins as they are being built?",
+    "synb-7506409": "Why do adult marrow-derived stromal stem cells stop dividing after extended culture, and can a phosphatase that dampens stress-activated kinase signaling delay this and keep their ability to form multiple tissue types?",
+    "synb-7514614": "Is getting older driven by a built-in genetic program, or does it just come from wear and tear the body fails to repair \u2014 and why do different animals live for such different lengths of time?",
+    "synb-7650066": "How many years can women safely wait before their next cervical screen if their initial papillomavirus test came back clear, compared with women who just had a normal Pap smear?",
+    "synb-7837879": "How can I prove that coupled nonlinear units on network topologies like chains, stars, or all-to-all coupling converge to a common trajectory when using non-Euclidean distance measures instead of quadratic Lyapunov functions?",
+    "synb-7850867": "How do factors like hematocrit, shear rate, cell clumping, and leukocyte stiffness affect whether leukocytes drift toward vessel walls in small vessels?",
+    "synb-79231308": "How much do automated reminders to doctors about patients' clot risk actually cut rates of blood clots in the legs or lungs in hospitalized patients?",
+    "synb-79336156": "What functional role do 15-30 Hz brain rhythms play, and could too much of this activity explain rigidity in disorders like Parkinson's?",
+    "synb-7975937": "How does PGE2 made by skin cancer cells help them escape immune attack, and would blocking that pathway with common anti-inflammatory drugs improve checkpoint antibody treatment?",
+    "synb-8002529": "Does feeling low or sad make elderly people living at home more likely to lose mobility and strength later on, based on actual measured tests rather than self-report?",
+    "synb-80109277": "Is there a book by a psychiatrist that critically re-examines how schizophrenia medications came to be seen as effective treatments while their harms were downplayed?",
+    "synb-8133180": "How does a dual-specificity phosphatase that inactivates ERK contribute to tumor growth driven by activating mutations in the RET receptor in hereditary endocrine cancer syndromes?",
+    "synb-8148304": "What is the protein structure of the budding yeast RIM1 sporulation activator, and does it work through the same pathway as MCK1 and IME4 in boosting IME1 levels?",
+    "synb-834336": "Can defects in the enzyme that matures the lamin A precursor, rather than changes in the lamin gene itself, cause a childhood premature-aging illness?",
+    "synb-84244109": "Can mice lacking functional T cells still clear a Listeria infection, or is adaptive immunity essential for survival?",
+    "synb-8426046": "If lincRNAs associate with ribosomes, does that mean they actually make peptides, and is there a better way to tell real translation apart from incidental ribosome binding?",
+    "synb-8428837": "Is the salicylate component of sulfasalazine, rather than the sulfa part, what actually helps patients with inflammatory back and joint disease?",
+    "synb-84884645": "Is there a book that covers how kangaroos and other pouched mammals reproduce, chapter by chapter \u2014 things like sperm production, ovary control, gestation, milk production, and seasonal cycles?",
+    "synb-8496132": "How does the RNA-binding protein HuR affect the survival gene bcl-2 in cancer cells \u2014 does it help keep the transcript from degrading and boost its translation, and does it work together with nucleolin?",
+    "synb-85394684": "Can comparing the sizes of coding segments and non-coding segments across different eukaryotic genomes reveal which splicing recognition strategy a species uses, and does that suggest anything about what the common ancestor of plants and animals relied on?",
+    "synb-8595678": "Does the amount of folate in a population's diet change how much a common methylene tetrahydrofolate reductase gene variant raises blood homocysteine and stroke risk, and could that explain why vitamin-based homocysteine-lowering trials failed to prevent strokes?",
+    "synb-8596837": "Do women who had high blood pressure during pregnancy show stronger blood pressure and nerve activity reactions to gripping exercise than women who had normal pregnancies?",
+    "synb-86160128": "What are the proven wellness benefits of methi seeds, and which component is responsible for their blood sugar and cholesterol lowering effects?",
+    "synb-86326468": "How do stomach lining glycoprotein patterns differ between Norwegian Lundehunds with chronic stomach inflammation and dogs of other breeds?",
+    "synb-8659426": "How has the process of developing drugs to prevent tumors changed in recent years, and what evidence is there that giving such compounds long-term actually lowers cancer risk?",
+    "synb-8702697": "Is there a small non-coding RNA that can block the two-way signaling between prostate tumor cells and the supporting stromal fibroblasts that drives cell spread, and how does low oxygen signaling control its levels?",
+    "synb-87430549": "Why might tumors contain a small population of hardier cells that survive treatment, and how could telling them apart from ordinary tumor cells improve how we categorize, detect, and treat malignancies?",
+    "synb-87758": "In patients with leg artery disease, do carotid wall thickness measurements or ankle pressure ratios actually reflect the total amount of plaque throughout the body, as seen on full-body vascular imaging?",
+    "synb-8780599": "Is there research estimating how much a daily combination of foods like red wine, fish, chocolate, garlic, nuts, fruit and veg could cut heart disease risk and add years to life, as an alternative to taking a combined preventive tablet?",
+    "synb-8816869": "How does knocking out core body-clock genes in mice affect blood sugar regulation, liver glucose production, and responses to a fatty diet?",
+    "synb-8903143": "How do positively charged amino acids in the intracellular segment of the zeta subunit of the antigen receptor interact with the lipid bilayer, and what happens to that interaction when the receptor is activated?",
+    "synb-8925851": "Which inherited and acquired blood disorders result from defects in making ribosomes, and how does p53 signaling explain their symptoms?",
+    "synb-8997410": "What happens to the branched actin network at the leading edge of cells like sea urchin immune cells or fish keratocytes when you block branch nucleation with a drug, and where do the resulting curved filament bundles come from?",
+    "synb-90756514": "Which new antibacterial drugs are currently in the later phases of clinical trials, and why has the pipeline for treating resistant gram-negative infections dried up since the mid-20th century?",
+    "synb-9076196": "Which genes act downstream of RUNX1 to switch off blood vessel cell characteristics when embryonic vessel-lining cells convert into blood stem and progenitor cells?",
+    "synb-9095394": "Do the proteins found in the bottom layer of mouth lining tissue change differently from one another when tumors form, and could some of them help distinguish types of mouth cancer or precancerous lesions?",
+    "synb-9142761": "How much purified antibody against the malaria parasite's mosquito-stage surface antigen is needed to halve parasite counts in mosquito feeding experiments, and does that amount differ depending on whether the serum came from mice, rabbits, primates, or people?",
+    "synb-9301606": "How does the bone-regulating hormone from the parathyroid gland trigger a rapid transcription factor in bone-forming cells that then suppresses its own downstream gene targets?",
+    "synb-935538": "What does GRSF1 do inside mitochondria, and what happens to protein production and respiratory chain assembly when it's depleted?",
+    "synb-949309": "How can I avoid getting founder mice with a mixture of different edited cell populations when doing gene knockouts in fertilized eggs?",
+    "synb-9505402": "What genetic changes show up in blood-based DNA testing when lung tumors stop responding to osimertinib?",
+    "synb-9600826": "Is the same small GTPase signaling cascade that drives breast tumor spread also used by endothelial cells downstream of the VEGF receptor to form new blood vessels?",
+    "synb-9658390": "Is it cheaper to treat flare-ups of chronic lung disease in a step-down respiratory ward instead of full critical care, and how do the daily expenses compare?",
+    "synb-9737083": "In brain tumors, is MGMT methylation useful for predicting chemotherapy response across all molecular subgroups, or only in some of them?",
+    "synb-9764256": "In Dutch women over 29 screened twice five years apart, does adding a virus-based test to the initial Pap smear reduce severe precancerous lesions and invasive cervical tumours found at the follow-up round?",
+    "synb-9881829": "Which enzyme complex in yeast uses ATP to swap the standard H2A protein for its alternative form in nucleosomes, and how was its role shown in cells?"
+  }
+}

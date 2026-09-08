@@ -1,0 +1,22 @@
+# Prompt A — "typical RAG tutorial"
+#
+# Deliberately written the way query-generation prompts are usually written in
+# RAG evaluation tutorials and blog posts: ask for a question the passage
+# answers, and say nothing at all about vocabulary. This is the condition under
+# test. It is not a strawman — it is close to verbatim what is commonly
+# recommended, and the point of the experiment is to measure what it produces.
+#
+# Lines beginning with '#' are stripped before use. {passage} is substituted.
+
+You are helping build an evaluation set for a document retrieval system.
+
+Read the passage below and write one question that this passage answers.
+
+Passage:
+"""
+{passage}
+"""
+
+Write a single, specific question that a user might ask, and that this passage
+would be the correct answer to. Output only the question, with no preamble,
+no quotation marks, and no explanation.

@@ -322,3 +322,78 @@ Independent evidence that the loader, chunker, aggregation, tie-breaking and
 metrics are all correct end to end — the parity test proves the metrics match an
 oracle, and this proves the *pipeline feeding them* matches the literature.
 We chunk and BEIR does not, which is the likeliest source of the SciFact gap.
+
+---
+
+## D17 — Degenerate documents are excluded from duplicate detection
+
+**Decided:** `find_near_duplicates` skips documents with fewer than 5 words, and
+`degenerate_documents()` reports them separately as a corpus-quality finding.
+
+**Why:** found on real data, not anticipated. FiQA contains 38 empty documents.
+They collide trivially under MinHash, forming a single 38-member "cluster" that
+accounted for **703 of 890** reported pairs and buried every genuine duplicate.
+"Near duplicate" is not a meaningful claim about two empty strings.
+
+After the fix FiQA reports 187 real pairs across 73 clusters (0.33% of the
+corpus). The separate report surfaces something more interesting than the
+duplicates did: **2 of FiQA's empty documents are judged relevant to a query**,
+which makes those queries unanswerable and caps recall for a reason no retriever
+can fix. NFCorpus, by contrast, has 41 duplicate clusters and **all 41 touch a
+judged document** — the case where duplication actually distorts a metric.
+
+**Would change if:** a corpus legitimately contained meaningful very-short
+documents. The threshold is a parameter for that reason.
+
+---
+
+## D18 — Between-condition contrasts are unpaired
+
+**Decided:** `unpaired_bootstrap`, resampling each condition independently.
+Pre-registered before any data existed (`notes/preregistration.md` §3).
+
+**Why:** synthetic and human queries are *different queries* over the same
+corpus. There is no per-query correspondence, so the paired bootstrap M1 built
+does not apply — and with 492 synthetic against 300 human queries it would
+refuse the inputs anyway. Reaching for the paired test because it was the one
+already imported everywhere would have been a real statistical error, and a
+silent one if the group sizes had happened to match.
+
+Within-condition contrasts (chunker A vs chunker B on the same query set) stay
+paired. `test_unpaired_is_wider_than_paired_on_correlated_data` pins the
+relationship: on genuinely paired data the unpaired interval is wider, because
+it discards shared per-query difficulty.
+
+---
+
+## D19 — H2's threshold does not survive a saturated metric
+
+**Observed, not decided in advance — recorded as a deviation.**
+
+The pre-registration states H2 as confirmed when Spearman rho > 0 with a CI
+excluding zero **and** the top overlap decile exceeds the bottom by >= 10 points.
+On `synth-a` that criterion returns NULL, and the reason is not that the
+relationship is absent:
+
+| condition | decile 0 recall@10 | decile 9 recall@10 |
+|---|---|---|
+| synth-a | 98.0 | 100.0 |
+| synth-b | 49.0 | 95.8 |
+
+`synth-a` scores 100.0 in nine of ten deciles. The metric is **saturated**, so
+there is no headroom for a gradient to appear in, and the decile test is
+uninformative rather than negative. `synth-b`, where the mean effect is null,
+shows a very strong gradient over the same detector: rho = +0.268
+[+0.186, +0.344], a 46.9-point spread.
+
+**The honest reading:** on `synth-a` the contamination effect is large enough to
+push recall@10 to the ceiling, which is itself the finding; the decile analysis
+can only resolve the mechanism on the condition where the mean effect is small.
+The writeup reports H2 as "confirmed on synth-b, uninformative on synth-a due to
+ceiling", not as a null, and states that this reading was formed after seeing
+the data.
+
+**What should have been pre-registered:** a criterion robust to ceiling effects
+— for instance stating H2 on MRR@10 or on a deeper cutoff, or pre-committing to
+report the gradient on whichever condition is unsaturated. Recorded so the next
+experiment gets it right rather than quietly patched here.
