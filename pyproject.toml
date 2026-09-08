@@ -56,8 +56,8 @@ dev = [
 reval = "reval.cli:app"
 
 [project.urls]
-Homepage = "https://github.com/Coen-McFerson/qrel"
-Repository = "https://github.com/Coen-McFerson/qrel"
+Homepage = "https://github.com/coen0713/qrel"
+Repository = "https://github.com/coen0713/qrel"
 
 [build-system]
 requires = ["hatchling"]

@@ -1,12 +1,17 @@
 # qrel
 
+[![CI](https://github.com/coen0713/qrel/actions/workflows/ci.yml/badge.svg)](https://github.com/coen0713/qrel/actions/workflows/ci.yml)
+[![metrics: pytrec_eval parity](https://img.shields.io/badge/metrics-pytrec__eval%20parity%20%E2%89%A41e--6-brightgreen)](tests/test_metrics_parity.py)
+
 A retrieval evaluation harness with contamination detection. It measures how
 well a retriever finds the right documents — and, more to the point, whether
 your evaluation set is quietly lying to you about that.
 
-> **Status: in progress.** M0 (corpus loaders) and M1 (metrics + parity) are the
-> foundation; the headline contamination result lands in M3. The headline number
-> goes here once it is measured, not before. See [PLAN.md](PLAN.md).
+> **Status: in progress.** M0 (corpus loaders), M1 (metrics + `pytrec_eval`
+> parity) and M2 (chunking, BM25 + dense retrieval, embedding cache) are done,
+> with every acceptance criterion in [PLAN.md](PLAN.md) verified. The headline
+> contamination result lands in M3; **the number goes here once it is measured,
+> not before.**
 
 ## Why
 
@@ -22,7 +27,7 @@ the effect actually is.
 ## Install
 
 ```bash
-git clone https://github.com/OWNER/qrel && cd qrel
+git clone https://github.com/coen0713/qrel && cd qrel
 uv venv && uv pip install -e ".[dev]"
 ```
 
