@@ -42,8 +42,22 @@ TRACKED_PACKAGES = (
 )
 
 
+#: Paths whose contents are *produced by* a run, so changes there say nothing
+#: about whether the git SHA describes the code that ran.
+#:
+#: Without this exclusion the dirty flag is self-referential and useless in a
+#: batch: `reval run --all` writes the first run's manifest into `results/`,
+#: which makes the tree dirty, so every run after the first reports
+#: `dirty: true` — caused entirely by its own predecessor's output.
+GENERATED_PATHS = ("results/", "runs/", "data/", "cache/")
+
+
 def git_state(repo: Path | None = None) -> dict[str, str | bool]:
-    """Current commit and whether the tree is dirty."""
+    """Current commit, and whether the tree's *source* differs from it.
+
+    "Dirty" means the code that ran is not the code at this SHA. Generated
+    artifacts are excluded — see :data:`GENERATED_PATHS`.
+    """
     cwd = str(repo) if repo else None
     try:
         sha = subprocess.run(
@@ -59,8 +73,17 @@ def git_state(repo: Path | None = None) -> dict[str, str | bool]:
             text=True,
             check=True,
             cwd=cwd,
-        ).stdout.strip()
-        return {"sha": sha, "dirty": bool(status)}
+        ).stdout
+
+        source_changes = [
+            line
+            for line in status.splitlines()
+            if line.strip()
+            # Porcelain format is 'XY <path>'; take the path and normalise
+            # separators so the prefix test works on Windows too.
+            and not line[3:].strip().strip('"').replace("\\", "/").startswith(GENERATED_PATHS)
+        ]
+        return {"sha": sha, "dirty": bool(source_changes)}
     except (subprocess.CalledProcessError, FileNotFoundError, OSError):
         return {"sha": "unknown", "dirty": True}
 

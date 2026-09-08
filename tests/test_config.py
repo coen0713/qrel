@@ -207,3 +207,34 @@ def test_manifest_warns_about_a_dirty_tree():
         corpus_checksums={},
     )
     assert clean.warnings() == []
+
+
+def test_generated_outputs_do_not_mark_the_tree_dirty(tmp_path, monkeypatch):
+    """The dirty flag must not be self-referential.
+
+    `reval run --all` writes the first run's manifest into results/, which makes
+    the tree dirty, so every later run in the batch reported dirty:true caused
+    entirely by its own predecessor's output. "Dirty" has to mean the *code*
+    differs from the SHA, not that the run produced files.
+    """
+    import subprocess
+
+    from reval.experiments.manifest import git_state
+
+    subprocess.run(["git", "init", "-q", str(tmp_path)], check=True)
+    subprocess.run(["git", "-C", str(tmp_path), "config", "user.email", "t@t"], check=True)
+    subprocess.run(["git", "-C", str(tmp_path), "config", "user.name", "t"], check=True)
+    (tmp_path / "code.py").write_text("x = 1\n", encoding="utf-8")
+    subprocess.run(["git", "-C", str(tmp_path), "add", "-A"], check=True)
+    subprocess.run(["git", "-C", str(tmp_path), "commit", "-qm", "init"], check=True)
+
+    assert git_state(tmp_path)["dirty"] is False
+
+    # A generated artifact appears: still clean.
+    (tmp_path / "results").mkdir()
+    (tmp_path / "results" / "run.json").write_text("{}", encoding="utf-8")
+    assert git_state(tmp_path)["dirty"] is False
+
+    # Source changes: now genuinely dirty.
+    (tmp_path / "code.py").write_text("x = 2\n", encoding="utf-8")
+    assert git_state(tmp_path)["dirty"] is True
