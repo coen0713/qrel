@@ -7,11 +7,39 @@ A retrieval evaluation harness with contamination detection. It measures how
 well a retriever finds the right documents — and, more to the point, whether
 your evaluation set is quietly lying to you about that.
 
-> **Status: in progress.** M0 (corpus loaders), M1 (metrics + `pytrec_eval`
-> parity) and M2 (chunking, BM25 + dense retrieval, embedding cache) are done,
-> with every acceptance criterion in [PLAN.md](PLAN.md) verified. The headline
-> contamination result lands in M3; **the number goes here once it is measured,
-> not before.**
+## The headline number
+
+On SciFact, with the corpus, chunker, retriever, aggregation policy and metric
+held identical across conditions — only the origin of the queries varies:
+
+| eval set | n | query–gold overlap | recall@10 (BM25) |
+|---|---:|---:|---:|
+| **human-authored** (BEIR) | 300 | 0.036 | **80.6** [76.1, 84.9] |
+| **corpus-generated**, typical prompt | 492 | 0.098 | **99.8** [99.4, 100.0] |
+| **corpus-generated**, vocabulary-controlled prompt | 482 | 0.044 | **77.8** [74.1, 81.5] |
+
+Queries generated the way a typical RAG tutorial generates them retrieve their
+own source passage **essentially always**: +19.2 recall@10 points over
+human-authored queries on the same index (95% CI [+14.9, +23.7], unpaired
+bootstrap, p = 0.0001). The pre-registered threshold for calling this confirmed
+was +5 points.
+
+Adding one instruction to the generation prompt — *do not reuse the passage's
+vocabulary* — removes the entire effect (−2.8 points, CI spans zero).
+
+The subtler half: within the vocabulary-controlled set, retrievability is still
+strongly predicted by residual lexical overlap. Sorting those queries into
+overlap deciles gives recall@10 of **49.0** in the lowest and **95.8** in the
+highest (Spearman ρ = +0.268 [+0.186, +0.344]). The mean effect is gone; the
+mechanism is not.
+
+Full analysis, threats to validity and the ceiling-effect caveat:
+[`notes/preregistration.md`](notes/preregistration.md) (written and committed
+*before* any query was generated — check the git history) and
+[`notes/decisions.md`](notes/decisions.md) D19.
+
+> **Status: in progress.** M0–M3 done, every acceptance criterion in
+> [PLAN.md](PLAN.md) verified. M4 (hard negatives) and M5 (writeup) remain.
 
 ## Why
 
@@ -71,6 +99,39 @@ pytest tests/test_metrics_parity.py
 This is the highest-credibility artifact in the repo. It is the difference
 between "here are my numbers" and "here are my numbers, and here is the proof I
 did not make them up."
+
+## Contamination detectors
+
+Three of the four leak types in [PLAN.md](PLAN.md) M3 have detectors; the fourth
+is named rather than pretended away.
+
+```bash
+reval contaminate score --dataset scifact          # query-gold lexical overlap
+reval contaminate dupes --dataset nfcorpus         # MinHash+LSH near-duplicates
+reval contaminate experiment -c configs/contamination.yaml   # the whole table
+```
+
+Running (b) on the three corpora found real problems, including one the detector
+had to be fixed to see:
+
+| corpus | duplicate clusters | touching a judged document |
+|---|---:|---:|
+| SciFact | 0 | 0 |
+| NFCorpus | 41 | **41** |
+| FiQA | 73 | 1 |
+
+Every one of NFCorpus's 41 duplicate clusters contains a gold document, which is
+the case where duplication actually distorts a metric. FiQA initially reported
+890 pairs, but 703 of them came from a single 38-member cluster of *empty*
+documents — "near duplicate" is not a meaningful claim about two empty strings.
+Excluding them surfaced something better: two of FiQA's empty documents are
+judged relevant to a query, making those queries unanswerable and capping recall
+for a reason no retriever can fix.
+
+**Not detected:** encoder pretraining contamination. SciFact is plausibly in
+`all-MiniLM-L6-v2`'s training data and we cannot resolve that without training an
+encoder. It is stated as a threat to validity, which is worth more than
+pretending it is not there.
 
 ## Design decisions worth knowing
 
