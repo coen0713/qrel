@@ -207,22 +207,77 @@ def _render_h4(reports, primary: str) -> None:
             table.add_row(cond_name, *cells, " > ".join(orderings[cond_name]))
         console.print(table)
 
-        human_order = orderings.get("human")
-        if human_order is None:
+        _report_h4_verdicts(group, orderings, primary)
+
+
+def separated(a, b) -> bool:
+    """Whether two estimates' 95% CIs fail to overlap."""
+    return a.hi < b.lo or b.hi < a.lo
+
+
+def _report_h4_verdicts(group, orderings: dict[str, list[str]], primary: str) -> None:
+    """Apply the full pre-registered H4 criterion, including its significance clause.
+
+    The pre-registration is explicit that tau < 1 is *not* on its own evidence of
+    a reordering: with four chunkers whose intervals overlap heavily, rank order
+    is mostly noise. Confirming H4 additionally requires a pair that is
+    significantly ordered one way under one eval set and the other way under the
+    other. Evaluating that here rather than printing tau and leaving it to the
+    reader is the difference between reporting a result and implying one.
+    """
+    human_order = orderings.get("human")
+    if human_order is None:
+        return
+    by_chunker = {r.chunker: r for r in group}
+
+    def est(chunker: str, condition: str):
+        report = by_chunker.get(chunker)
+        cond = report.condition(condition) if report else None
+        return cond.estimates[primary] if cond else None
+
+    for name, order in orderings.items():
+        if name == "human":
             continue
-        for name, order in orderings.items():
-            if name == "human":
-                continue
-            tau = kendall_tau(human_order, order)
-            if tau == 1.0:
-                verdict = "[yellow]identical ordering (NULL)[/yellow]"
-            else:
-                # The pre-registration is explicit that tau < 1 alone is not
-                # evidence of a reordering when the chunkers' intervals overlap.
-                # With four chunkers this test is weak by construction, and
-                # saying so is part of reporting it honestly.
-                verdict = (
-                    f"[cyan]reordered, tau={tau:+.2f}[/cyan] "
-                    "— not a finding unless the swapped pair's CIs separate"
-                )
-            console.print(f"  human vs {name}: {verdict}")
+        tau = kendall_tau(human_order, order)
+        if tau == 1.0:
+            console.print(f"  human vs {name}: [yellow]identical ordering (NULL)[/yellow]")
+            continue
+
+        # Look for a genuine inversion: a pair whose CIs separate under both
+        # eval sets, in opposite directions.
+        inversions: list[str] = []
+        # And the weaker but still reportable case: a pair indistinguishable
+        # under one eval set but significantly separated under the other.
+        newly_separated: list[str] = []
+
+        chunkers = list(by_chunker)
+        for i, x in enumerate(chunkers):
+            for y in chunkers[i + 1 :]:
+                hx, hy = est(x, "human"), est(y, "human")
+                sx, sy = est(x, name), est(y, name)
+                if not all((hx, hy, sx, sy)):
+                    continue
+                h_sep, s_sep = separated(hx, hy), separated(sx, sy)
+                if h_sep and s_sep and ((hx.mean > hy.mean) != (sx.mean > sy.mean)):
+                    inversions.append(f"{x}/{y}")
+                elif s_sep and not h_sep:
+                    better, worse = (x, y) if sx.mean > sy.mean else (y, x)
+                    newly_separated.append(f"{worse} falls behind {better}")
+
+        if inversions:
+            console.print(
+                f"  human vs {name}: [green]CONFIRMED[/green] — tau={tau:+.2f}, "
+                f"significant inversion: {', '.join(inversions)}"
+            )
+        elif newly_separated:
+            console.print(
+                f"  human vs {name}: [cyan]partial[/cyan] — tau={tau:+.2f}; no rank "
+                f"inversion survives the CIs, but {'; '.join(newly_separated)} "
+                f"only under this eval set"
+            )
+        else:
+            console.print(
+                f"  human vs {name}: [yellow]NULL[/yellow] — tau={tau:+.2f}, but every "
+                "chunker pair's CIs overlap under both eval sets, so the reordering "
+                "is noise"
+            )

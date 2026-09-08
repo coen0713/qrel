@@ -385,3 +385,25 @@ def experiment(
     path = out / f"{cfg.name}.{cfg.config_hash()}.json"
     path.write_text(_json.dumps(payload, indent=2, sort_keys=True), encoding="utf-8")
     console.print(f"\n[green]wrote[/green] {path}")
+
+
+@app.command()
+def show(
+    results: Path = typer.Option(..., "--results", exists=True, help="Saved experiment JSON."),
+    measure: str = typer.Option("recall@10", "--measure"),
+) -> None:
+    """Re-render a saved experiment without re-running it.
+
+    The grid takes about an hour. A result you can only look at by recomputing
+    it is a result nobody will check.
+    """
+    from reval.contamination import report as report_mod
+    from reval.contamination.rehydrate import load_reports
+
+    reports, payload = load_reports(results)
+    console.print(
+        f"[bold]{payload['config']['name']}[/bold]  hash={payload['config_hash']}  "
+        f"git={payload.get('git', {}).get('sha', '?')[:8]}"
+        + ("  [yellow](dirty tree)[/yellow]" if payload.get("git", {}).get("dirty") else "")
+    )
+    report_mod.render(reports, measure, payload["config"]["dataset"])

@@ -397,3 +397,61 @@ the data.
 — for instance stating H2 on MRR@10 or on a deeper cutoff, or pre-committing to
 report the gradient on whichever condition is unsaturated. Recorded so the next
 experiment gets it right rather than quietly patched here.
+
+---
+
+## D20 — H3 refuted; paraphrasing defeats BM25 but not dense retrieval
+
+**Predicted:** BM25 would inflate more than the dense retriever, because BM25
+scores lexical overlap directly while a dense encoder scores semantic
+similarity.
+
+**Measured:** for the typical prompt the two are indistinguishable (BM25 minus
+dense between −0.67 and +2.42 points). For the vocabulary-controlled prompt they
+diverge sharply in the *opposite* direction to the prediction:
+
+| chunker | synth-b, BM25 | synth-b, dense | BM25 − dense |
+|---|---:|---:|---:|
+| fixed | −2.83 | +12.36 | −15.20 |
+| recursive | −2.27 | +11.82 | −14.08 |
+| parent | −2.83 | +12.36 | −15.20 |
+| semantic | −9.78 | +8.34 | −18.12 |
+
+**Reading:** instructing the generator not to reuse the passage's vocabulary
+removes the word overlap but not the meaning overlap. BM25 has nothing left to
+exploit; the dense encoder still recognises its own source passage and retrieves
+it far more reliably than it answers a human question. The practical consequence
+is worth stating plainly in the writeup: **paraphrasing a synthetic eval set
+fixes it for a lexical retriever and leaves it broken for a dense one**, which
+is the opposite of the reassurance a practitioner would take from "we told the
+model to paraphrase".
+
+**Caveat, and it is a real one:** the encoder-pretraining threat (§6.1 of the
+pre-registration) bites hardest exactly here. SciFact is plausibly in
+`all-MiniLM-L6-v2`'s training data, so part of the dense retriever's advantage on
+its own source passages could be memorisation rather than the mechanism claimed.
+Unresolvable at this scale; it must be stated next to this result, not only in a
+threats section at the end.
+
+---
+
+## D21 — H4's significance clause is evaluated, not delegated to the reader
+
+**Decided:** the H4 report applies the full pre-registered criterion — a
+confirmed reordering needs a chunker pair significantly ordered one way under one
+eval set and the other way under the other — instead of printing Kendall's tau
+with a caveat.
+
+**Why:** the first implementation printed `tau=-0.67 — not a finding unless the
+swapped pair's CIs separate`. That reads like a finding while disclaiming it,
+which is the worst of both. Applying the criterion turns all four comparisons
+into a clean NULL: the orderings shuffle, but every chunker pair's intervals
+overlap under both eval sets, so the shuffling is noise. With four chunkers whose
+scores span 0.7 points, that is the expected outcome and the test is weak by
+construction — as the pre-registration said in advance.
+
+The closest call: semantic chunking under `synth-b`/BM25 at 70.1 [66.0, 74.1]
+against the other three at 77.8 [74.1, 81.5]. The bounds **touch at exactly
+74.1**, so they are not separated. `test_touching_intervals_are_not_separated`
+pins the strict comparison, because a `<=` there would have converted this null
+into a claimed finding on a boundary coincidence.
