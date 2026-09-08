@@ -6,20 +6,25 @@ on:
   pull_request:
   workflow_dispatch:
 
+# Action versions are held at the majors proven green on this repo.
+# astral-sh/setup-uv@v10 exists as a tag but Actions could not resolve it
+# ("unable to find version `v10`"), so newer majors get verified on a
+# branch before landing here. The Node 20 deprecation notice these emit is
+# a warning, not a failure.
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v4
 
-      - uses: astral-sh/setup-uv@v10
+      - uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true
           cache-dependency-glob: "pyproject.toml"
 
       # Without this, `uv pip install --system` targets the runner's
       # Debian-managed /usr and fails as "externally managed".
-      - uses: actions/setup-python@v7
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
@@ -42,14 +47,14 @@ jobs:
         # and the reproduction instructions in the README claim to work there.
         os: [ubuntu-latest, windows-latest]
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v4
 
-      - uses: astral-sh/setup-uv@v10
+      - uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true
           cache-dependency-glob: "pyproject.toml"
 
-      - uses: actions/setup-python@v7
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
@@ -60,7 +65,7 @@ jobs:
         run: uv pip install --system -e ".[dev]"
 
       - name: Cache BEIR corpora
-        uses: actions/cache@v6
+        uses: actions/cache@v4
         with:
           path: data/beir
           # Bump the suffix to force a re-download if a loader changes.
