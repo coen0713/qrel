@@ -9,6 +9,13 @@ your evaluation set is quietly lying to you about that.
 
 ## The headline number
 
+**[Read the full writeup →](WRITEUP.md)**
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="results/plots/fig1-conditions-dark.png">
+  <img alt="recall@10 by eval condition for BM25 and dense retrieval" src="results/plots/fig1-conditions-light.png">
+</picture>
+
 On SciFact, with the corpus, chunker, retriever, aggregation policy and metric
 held identical across conditions — only the origin of the queries varies:
 
@@ -25,7 +32,10 @@ bootstrap, p = 0.0001). The pre-registered threshold for calling this confirmed
 was +5 points.
 
 Adding one instruction to the generation prompt — *do not reuse the passage's
-vocabulary* — removes the entire effect (−2.8 points, CI spans zero).
+vocabulary* — removes the entire effect for BM25 (−2.8 points, CI spans zero)
+**and leaves 12.4 points of it intact for a dense retriever.** Paraphrasing
+strips the word overlap, not the meaning overlap, so the obvious fix repairs the
+eval set for exactly the retriever that needed it least.
 
 The subtler half: within the vocabulary-controlled set, retrievability is still
 strongly predicted by residual lexical overlap. Sorting those queries into
@@ -38,8 +48,8 @@ Full analysis, threats to validity and the ceiling-effect caveat:
 *before* any query was generated — check the git history) and
 [`notes/decisions.md`](notes/decisions.md) D19.
 
-> **Status: in progress.** M0–M4 done, every acceptance criterion in
-> [PLAN.md](PLAN.md) verified. M5 (the writeup) remains.
+> **Status: complete.** M0–M5 done, every acceptance criterion in
+> [PLAN.md](PLAN.md) verified against a run, not a report.
 
 ## Why
 
@@ -184,8 +194,22 @@ medical corpus a third of *random* documents already look relevant.
   retrievers that surface good-but-unjudged results. That is a threat to
   validity we name rather than paper over.
 
-See [`notes/decisions.md`](notes/decisions.md) for the full log, and
-[`CLAUDE.md`](CLAUDE.md) for the rigor rules the repo is held to.
+See [`notes/decisions.md`](notes/decisions.md) for the full log — 25 entries,
+including three where the first implementation was wrong and the fix is recorded
+with it — and [`CLAUDE.md`](CLAUDE.md) for the rigor rules the repo is held to.
+
+## Reproduce it
+
+```bash
+git clone https://github.com/coen0713/qrel && cd qrel
+uv venv && uv pip install -e ".[dev,dense]"
+reval corpus download
+reval contaminate experiment --config configs/contamination.yaml --quick
+```
+
+Full commands, including the hour-long grid, are in
+[WRITEUP.md](WRITEUP.md#reproduction). The synthetic query sets are committed, so
+no API key is needed to reproduce any number here.
 
 ## License
 
