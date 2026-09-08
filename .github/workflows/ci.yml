@@ -6,20 +6,32 @@ on:
   pull_request:
   workflow_dispatch:
 
-env:
-  # Keep the heavy extras out of CI: the parity test — the one that matters —
-  # needs no torch, so the job that guards our numbers stays fast.
-  UV_SYSTEM_PYTHON: 1
-
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v5
-      - run: uv pip install --system ruff
-      - run: ruff check src tests
-      - run: ruff format --check src tests
+      - uses: actions/checkout@v7
+
+      - uses: astral-sh/setup-uv@v10
+        with:
+          enable-cache: true
+          cache-dependency-glob: "pyproject.toml"
+
+      # Without this, `uv pip install --system` targets the runner's
+      # Debian-managed /usr and fails as "externally managed".
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      # Install the project rather than a bare `ruff`, so the linter version is
+      # the one pinned in pyproject.toml. A floating ruff would eventually fail
+      # `format --check` on an unrelated release, which is a confusing way for
+      # CI to break.
+      - name: Install
+        run: uv pip install --system -e ".[dev]"
+
+      - run: ruff check src tests scripts
+      - run: ruff format --check src tests scripts
 
   test:
     runs-on: ${{ matrix.os }}
@@ -30,21 +42,25 @@ jobs:
         # and the reproduction instructions in the README claim to work there.
         os: [ubuntu-latest, windows-latest]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: astral-sh/setup-uv@v5
+      - uses: astral-sh/setup-uv@v10
         with:
           enable-cache: true
+          cache-dependency-glob: "pyproject.toml"
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.11"
 
+      # Deliberately only the [dev] extra: the parity test — the one that
+      # guards every number in this repo — needs no torch, so the job that
+      # protects our results stays fast.
       - name: Install
         run: uv pip install --system -e ".[dev]"
 
       - name: Cache BEIR corpora
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: data/beir
           # Bump the suffix to force a re-download if a loader changes.
