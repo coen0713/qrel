@@ -38,8 +38,8 @@ Full analysis, threats to validity and the ceiling-effect caveat:
 *before* any query was generated — check the git history) and
 [`notes/decisions.md`](notes/decisions.md) D19.
 
-> **Status: in progress.** M0–M3 done, every acceptance criterion in
-> [PLAN.md](PLAN.md) verified. M4 (hard negatives) and M5 (writeup) remain.
+> **Status: in progress.** M0–M4 done, every acceptance criterion in
+> [PLAN.md](PLAN.md) verified. M5 (the writeup) remains.
 
 ## Why
 
@@ -132,6 +132,44 @@ for a reason no retriever can fix.
 `all-MiniLM-L6-v2`'s training data and we cannot resolve that without training an
 encoder. It is stated as a threat to validity, which is worth more than
 pretending it is not there.
+
+## Hard negatives are mostly not negatives
+
+```bash
+reval negatives mine --dataset scifact --retriever bm25
+```
+
+Mining hard negatives means taking a retriever's top-ranked documents and
+dropping the known positives. BEIR judges 1.1 documents relevant per SciFact
+query out of 5,183, so what is left is mostly *unjudged*, not *non-relevant* —
+and a good retriever ranked it highly for a reason. Share of documents clearing
+the same calibrated relevance bar:
+
+| corpus | retriever | filter AUC | random documents | mined "negatives" | enrichment |
+|---|---|---:|---:|---:|---:|
+| SciFact | BM25 | 0.982 | 4.9% | **82.1%** | 16.9× |
+| SciFact | dense | 0.982 | 4.9% | 75.4% | 15.5× |
+| FiQA | BM25 | 0.965 | 5.5% | **95.9%** | 17.4× |
+| NFCorpus | BM25 | 0.717 | 33.9% | 89.8% | 2.6× |
+| NFCorpus | dense | 0.717 | 33.9% | 84.4% | 2.5× |
+
+One in twenty random documents clears the bar; four in five mined candidates do.
+The highest-scoring "negative" is a **rank-1** result for its own query — an
+obviously correct answer that nobody labelled:
+
+> **query:** *Macropinocytosis contributes to a cell's supply of amino acids via
+> the intracellular uptake of protein.*
+> **"negative":** *Macropinocytosis of protein is an amino acid supply route in
+> Ras-transformed cells*
+
+So a difficulty-stratified eval subset built from unfiltered hard negatives is
+stratified on label noise.
+
+The threshold is **measured, not chosen**: judged-relevant documents scored
+against a random background sample, cut at maximum Youden's J, with the AUC
+reported so the filter can be disbelieved. It earns that on NFCorpus, which
+comes back at AUC 0.717 and prints a warning — in a topically homogeneous
+medical corpus a third of *random* documents already look relevant.
 
 ## Design decisions worth knowing
 

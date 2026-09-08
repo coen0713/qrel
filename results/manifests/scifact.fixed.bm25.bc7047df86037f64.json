@@ -79,12 +79,12 @@
     "documents": 5183,
     "queries": 300
   },
-  "created_utc": "2026-09-08T16:40:04.780039+00:00",
+  "created_utc": "2026-09-08T16:41:02.883716+00:00",
   "dataset": "scifact",
   "encoder": {},
   "git": {
-    "dirty": true,
-    "sha": "e879f77df7cddb6e869f649f7859d842e2dd248e"
+    "dirty": false,
+    "sha": "e342c84a6701d7d947582af41daf606b63c60ea5"
   },
   "packages": {
     "PyStemmer": "3.1.0",
@@ -112,11 +112,11 @@
   "seed": 0,
   "split": "test",
   "timing_seconds": {
-    "bootstrap": 0.423,
-    "chunk": 0.758,
-    "index": 1.945,
+    "bootstrap": 0.383,
+    "chunk": 0.631,
+    "index": 1.222,
     "load": 0.0,
-    "score": 0.112,
-    "search": 0.083
+    "score": 0.087,
+    "search": 0.056
   }
 }

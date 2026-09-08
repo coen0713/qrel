@@ -79,12 +79,12 @@
     "documents": 3633,
     "queries": 323
   },
-  "created_utc": "2026-09-08T16:40:01.235783+00:00",
+  "created_utc": "2026-09-08T16:41:00.321148+00:00",
   "dataset": "nfcorpus",
   "encoder": {},
   "git": {
-    "dirty": true,
-    "sha": "e879f77df7cddb6e869f649f7859d842e2dd248e"
+    "dirty": false,
+    "sha": "e342c84a6701d7d947582af41daf606b63c60ea5"
   },
   "packages": {
     "PyStemmer": "3.1.0",
@@ -112,11 +112,11 @@
   "seed": 0,
   "split": "test",
   "timing_seconds": {
-    "bootstrap": 0.513,
-    "chunk": 0.588,
-    "index": 1.157,
+    "bootstrap": 0.414,
+    "chunk": 0.541,
+    "index": 0.792,
     "load": 0.0,
-    "score": 0.17,
-    "search": 0.066
+    "score": 0.089,
+    "search": 0.043
   }
 }
